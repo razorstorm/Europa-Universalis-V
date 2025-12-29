@@ -2,6 +2,17 @@
 # Hardcoded
 ###################################
 
+
+impatient_annexation = {
+	game_data = {
+		category = country
+	}
+
+	monthly_diplomats = -0.15
+	diplomatic_annexation_cost = -0.4
+
+}
+
 is_bankrupt = {
 	game_data = {
 		category = country
@@ -7216,16 +7227,6 @@ fine_tuned_diplomacy = {
 
 	diplomatic_reputation = diplomatic_reputation_mild_bonus
 	diplomatic_annexation_cost = -0.25
-
-}
-
-impatient_annexation = {
-	game_data = {
-		category = country
-	}
-
-	monthly_diplomats = -0.15
-	diplomatic_annexation_cost = -0.4
 
 }
 

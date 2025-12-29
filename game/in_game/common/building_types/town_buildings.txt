@@ -155,8 +155,8 @@ counting_house = {
 	modifier = {
 		local_crown_estate_power = 1
 	}
-
 }
+
 
 minting_office = {
 	is_foreign = no

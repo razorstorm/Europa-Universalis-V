@@ -1,4 +1,159 @@
-﻿just = {
+﻿
+immortal = {
+    allow = {
+        always = no
+    } # we don't want random AIs with this trait
+
+    modifier = { 
+        character_life_expectancy = 10000
+        is_immortal = yes
+	}
+}
+
+ruler_of_destiny = {
+    allow = {
+        always = no
+    } # we don't want random AIs with this trait
+
+    modifier = { 
+        character_life_expectancy = 10000
+        is_immortal = yes 
+
+        # Strict
+        discipline = 0.05
+		war_declaration_stab_hit_tolerance = -5
+		antagonism_tolerance = -2.5
+		control_importance_modifier = 0.05
+
+        army_tradition_decay = -0.001
+		monthly_towards_quality = societal_value_minor_monthly_move
+		bias_for_militarist_policies = 25
+
+        # Something
+        global_pop_promotion_speed = 0.5
+        global_pop_promotion_speed_modifier = 0.5
+		win_war_chance_threshold = 0.04
+		war_declaration_stab_hit_tolerance = -5
+		gold_importance_modifier = 0.05
+
+        # Bold Fighter
+        army_initiative = 0.1
+        monthly_towards_offensive = societal_value_minor_monthly_move
+        win_war_chance_threshold = -0.05
+		war_declaration_stab_hit_tolerance = 5
+		aggressiveness_modifier = 0.025
+
+        # Tactical Genius
+        military_tactics = 0.025
+		monthly_towards_quality = societal_value_minor_monthly_move
+		aggressiveness_modifier = 0.025
+		carefulness_modifier = 0.025
+
+        # Conqueror
+        global_separatism = -0.05
+		monthly_towards_belligerent = societal_value_monthly_move
+		win_war_chance_threshold = -0.1
+		war_declaration_stab_hit_tolerance = 15
+		war_declaration_war_exhaustion_tolerance = 1
+		antagonism_tolerance = 5
+		aggressiveness_modifier = 0.7
+		carefulness_modifier = -0.025
+        expected_warscore_modifier = 0.1
+
+        # Silver Tongue
+        improve_relation_impact = 0.1
+		peace_offer_negotiation_power = 0.1
+
+        # CHarismatic Negotiator
+        diplomatic_reputation = diplomatic_reputation_weak_bonus
+		monthly_towards_conciliatory = societal_value_minor_monthly_move
+		peace_offer_fairness = 0.05
+		peace_offer_negotiation_power = 0.1
+		subjugation_preference_modifier = 0.1
+		diplomacy_importance_modifier = 0.1
+		bias_for_diplomat_policies = 10
+
+        # Iindustrious
+        global_raw_material_output = 0.025
+		bias_for_capitalist_policies = 12.5
+
+        # Entrepreneur
+		trade_efficiency = small_trade_efficiency_bonus
+		trade_importance_modifier = 0.05
+		court_language_is_market_language_importance_modifier = 0.1
+		bias_for_capitalist_policies = 50
+
+        # SCholar
+        global_monthly_literacy = 0.0125
+		monthly_towards_innovative = societal_value_minor_monthly_move
+		institution_importance_modifier = 0.05
+		court_language_is_liturgical_language_importance_modifier = 0.1
+
+        # Incorruptible
+        tax_income_efficiency = medium_tax_income_efficiency_bonus
+
+        # Midas Touched
+        global_monthly_prosperity = 0.002
+		court_language_is_market_language_importance_modifier = 0.1
+		bias_for_capitalist_policies = 25
+
+        # Lawgiver
+        global_distance_from_capital_cost_modifier = -0.1
+		war_declaration_stab_hit_tolerance = -5
+		control_importance_modifier = 0.1
+		bias_for_administrative_policies = 10
+
+        # Benevelent
+        subject_loyalty = 5
+		aggressiveness_modifier = -0.025
+
+        # Well Connected
+        court_spending_cost = -0.005
+		peace_offer_negotiation_power = 0.125
+		diplomacy_importance_modifier = 0.1
+
+        # Free Thinker
+        research_speed_modifier = 0.05
+		monthly_towards_innovative = societal_value_monthly_move
+		war_declaration_stab_hit_tolerance = -10
+		institution_importance_modifier = 0.0.5		
+		court_language_is_liturgical_language_importance_modifier = 0.5
+		language_change_threshold_modifier = -0.1
+
+        # Ruthless (Cruel)
+        war_declaration_stab_hit_tolerance = 5
+   		war_declaration_war_exhaustion_tolerance = 0.5
+        antagonism_tolerance = 5
+        can_execute_characters = yes
+        can_banish_characters = yes
+        peace_offer_fairness = -0.2
+		bias_for_militarist_policies = 25
+        
+        # Righteous 
+        monthly_legitimacy = 0.2
+		monthly_republican_tradition = 0.1
+
+        # Just
+        global_estate_target_satisfaction = tiny_permanent_target_satisfaction
+		monthly_towards_free_subjects = societal_value_minor_monthly_move
+
+        # Architectural Visionary
+        legislative_efficiency = 0.2
+		global_monthly_development = 0.01
+
+        # Stoner:
+		win_war_chance_threshold = 0.01 # Laziness to push for a stronger deal
+		war_declaration_stab_hit_tolerance = 50 # Too high to gaf
+		war_declaration_war_exhaustion_tolerance = 20
+		antagonism_tolerance = -10 # Paranoia
+		aggressiveness_modifier = -0.05
+		carefulness_modifier = 0.1
+		stability_importance_modifier = -0.1
+	}
+}
+
+
+just = {
 	allow = {
 		adm > 33
 		NOT = { has_trait = cruel }
@@ -832,160 +987,6 @@ unsuited_for_country_ruling = {
 
 	modifier = {
 		blocked_from_being_ruler = yes
-	}
-}
-
-immortal = {
-    allow = {
-        always = no
-    } # we don't want random AIs with this trait
-
-    modifier = { 
-        character_life_expectancy = 10000
-        is_immortal = yes
-	}
-}
-
-# TODO migration to my own mod
-ruler_of_destiny = {
-    allow = {
-        always = no
-    } # we don't want random AIs with this trait
-
-    modifier = { 
-        character_life_expectancy = 10000
-        is_immortal = yes 
-
-        # Strict
-        discipline = 0.05
-		war_declaration_stab_hit_tolerance = -5
-		antagonism_tolerance = -2.5
-		control_importance_modifier = 0.05
-
-        army_tradition_decay = -0.001
-		monthly_towards_quality = societal_value_minor_monthly_move
-		bias_for_militarist_policies = 25
-
-        # Something
-        global_pop_promotion_speed = 0.5
-        global_pop_promotion_speed_modifier = 0.5
-		win_war_chance_threshold = 0.04
-		war_declaration_stab_hit_tolerance = -5
-		gold_importance_modifier = 0.05
-
-        # Bold Fighter
-        army_initiative = 0.1
-        monthly_towards_offensive = societal_value_minor_monthly_move
-        win_war_chance_threshold = -0.05
-		war_declaration_stab_hit_tolerance = 5
-		aggressiveness_modifier = 0.025
-
-        # Tactical Genius
-        military_tactics = 0.025
-		monthly_towards_quality = societal_value_minor_monthly_move
-		aggressiveness_modifier = 0.025
-		carefulness_modifier = 0.025
-
-        # Conqueror
-        global_separatism = -0.05
-		monthly_towards_belligerent = societal_value_monthly_move
-		win_war_chance_threshold = -0.1
-		war_declaration_stab_hit_tolerance = 15
-		war_declaration_war_exhaustion_tolerance = 1
-		antagonism_tolerance = 5
-		aggressiveness_modifier = 0.7
-		carefulness_modifier = -0.025
-        expected_warscore_modifier = 0.1
-
-        # Silver Tongue
-        improve_relation_impact = 0.1
-		peace_offer_negotiation_power = 0.1
-
-        # CHarismatic Negotiator
-        diplomatic_reputation = diplomatic_reputation_weak_bonus
-		monthly_towards_conciliatory = societal_value_minor_monthly_move
-		peace_offer_fairness = 0.05
-		peace_offer_negotiation_power = 0.1
-		subjugation_preference_modifier = 0.1
-		diplomacy_importance_modifier = 0.1
-		bias_for_diplomat_policies = 10
-
-        # Iindustrious
-        global_raw_material_output = 0.025
-		bias_for_capitalist_policies = 12.5
-
-        # Entrepreneur
-		trade_efficiency = small_trade_efficiency_bonus
-		trade_importance_modifier = 0.05
-		court_language_is_market_language_importance_modifier = 0.1
-		bias_for_capitalist_policies = 50
-
-        # SCholar
-        global_monthly_literacy = 0.0125
-		monthly_towards_innovative = societal_value_minor_monthly_move
-		institution_importance_modifier = 0.05
-		court_language_is_liturgical_language_importance_modifier = 0.1
-
-        # Incorruptible
-        tax_income_efficiency = medium_tax_income_efficiency_bonus
-
-        # Midas Touched
-        global_monthly_prosperity = 0.002
-		court_language_is_market_language_importance_modifier = 0.1
-		bias_for_capitalist_policies = 25
-
-        # Lawgiver
-        global_distance_from_capital_cost_modifier = -0.1
-		war_declaration_stab_hit_tolerance = -5
-		control_importance_modifier = 0.1
-		bias_for_administrative_policies = 10
-
-        # Benevelent
-        subject_loyalty = 5
-		aggressiveness_modifier = -0.025
-
-        # Well Connected
-        court_spending_cost = -0.005
-		peace_offer_negotiation_power = 0.125
-		diplomacy_importance_modifier = 0.1
-
-        # Free Thinker
-        research_speed_modifier = 0.05
-		monthly_towards_innovative = societal_value_monthly_move
-		war_declaration_stab_hit_tolerance = -10
-		institution_importance_modifier = 0.0.5		
-		court_language_is_liturgical_language_importance_modifier = 0.5
-		language_change_threshold_modifier = -0.1
-
-        # Ruthless (Cruel)
-        war_declaration_stab_hit_tolerance = 5
-   		war_declaration_war_exhaustion_tolerance = 0.5
-        antagonism_tolerance = 5
-        can_execute_characters = yes
-        can_banish_characters = yes
-        peace_offer_fairness = -0.2
-		bias_for_militarist_policies = 25
-        
-        # Righteous 
-        monthly_legitimacy = 0.2
-		monthly_republican_tradition = 0.1
-
-        # Just
-        global_estate_target_satisfaction = tiny_permanent_target_satisfaction
-		monthly_towards_free_subjects = societal_value_minor_monthly_move
-
-        # Architectural Visionary
-        legislative_efficiency = 0.2
-		global_monthly_development = 0.01
-
-        # Stoner:
-		win_war_chance_threshold = 0.01 # Laziness to push for a stronger deal
-		war_declaration_stab_hit_tolerance = 50 # Too high to gaf
-		war_declaration_war_exhaustion_tolerance = 20
-		antagonism_tolerance = -10 # Paranoia
-		aggressiveness_modifier = -0.05
-		carefulness_modifier = 0.1
-		stability_importance_modifier = -0.1
 	}
 }
 

@@ -2,6 +2,13 @@
 # Hardcoded
 ###################################
 
+immortal_modifier = {
+	game_data = {
+		category = character
+	}
+    is_immortal = yes
+}
+
 character_base_values = {
 	game_data = {
 		category = character
@@ -1000,7 +1007,6 @@ fra_king_fiscal_prudence = {
 	global_monthly_prosperity = 0.001
 	global_estate_target_satisfaction = medium_permanent_target_satisfaction
 }
-
 head_of_the_cabinet_modifier = {
 	game_data = {
 		category = character
@@ -1009,13 +1015,6 @@ head_of_the_cabinet_modifier = {
 	blocked_from_being_leader = yes
 	is_head_of_cabinet = yes
 	cannot_be_removed_from_from_cabinet = yes
-}
-
-immortal_modifier = {
-	game_data = {
-		category = character
-	}
-    is_immortal = yes
 }
 
 temporarily_incarcerated = {
