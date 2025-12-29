@@ -215,7 +215,7 @@ template alert_banner_setup {
 				block "alert_more_icons_before" {}
 
 				icon = {
-					size = { 30 30 }
+					size = { 35 35 }
 					block "alert_banner_texture" { texture = "[PdxGuiWidget.GetTooltipMetaTexture]" }
 					alwaystransparent = yes
 					texture_density = 2
@@ -453,20 +453,20 @@ types AlertManager {
 		onmousehierarchyenter = "[AlertItem.SetAsOld]"
 
 		block "action_tooltip_left" {
-			action_tooltip = {
-				click_type = left
-				title = "ALERT_CTA_LEFT_CLICK"
-				using = snd_UI_alert_openAndCycle
+		action_tooltip = {
+			click_type = left
+			title = "ALERT_CTA_LEFT_CLICK"
+			using = snd_UI_alert_openAndCycle
 			}
 		}
 
 		#block "action_tooltip_right" {
-			action_tooltip = {
-				click_type = right
-				title = "ALERT_CTA_RIGHT_CLICK"
-				clicksound = "UI_alert_discard"
-				on_action = "[AlertItem.Hide]"
-			}
+		action_tooltip = {
+			click_type = right
+			title = "ALERT_CTA_RIGHT_CLICK"
+			clicksound = "UI_alert_discard"
+			on_action = "[AlertItem.Hide]"
+		}
 		#}
 
 		using = alert_tooltip
@@ -549,7 +549,7 @@ types AlertManager {
 							texture = "gfx/interface/icons/international_organizations/union.dds"
 						}
 					}
-				
+
 					blockoverride "title_text" {
 						text = "ALERT_HAS_MEMBER_LEAVING_UNION_TITLE"
 					}
@@ -613,7 +613,7 @@ types AlertManager {
 
 			using = red_alert
 
-			tooltipwidget = { 
+			tooltipwidget = {
 				ContextualTooltipType = {
 					blockoverride "title_text" {
 						text = "ALERT_CONSTRUCTIONS_MISSING_INPUT"
@@ -622,7 +622,7 @@ types AlertManager {
 						icon = {
 							using = tooltip_title_icon_size
 							texture = "gfx/interface/icons/alerts_icons/constructions_missing_input.dds"
-						
+
 						}
 					}
 					blockoverride "concept_link" {
@@ -633,7 +633,7 @@ types AlertManager {
 							blockoverride "text" {
 								text = "ALERT_CONSTRUCTIONS_MISSING_INPUT_TEXT"
 							}
-			
+
 							blockoverride "textblock_background_tint"  {
 								modify_texture = {
 									using = color_red_texture
@@ -645,9 +645,9 @@ types AlertManager {
 							layoutpolicy_horizontal = expanding
 							datacontext = "[GetCountryNeeds(Player.Self)]"
 							datamodel = "[CountryNeeds.GetMarketNeeds]"
-							visible = "[EqualTo_int32(CountryNeeds.GetMarketGovernmentMissingGoodsCount, '(int32)1' )]" 
+							visible = "[EqualTo_int32(CountryNeeds.GetMarketGovernmentMissingGoodsCount, '(int32)1' )]"
 							spacing = 12
-							
+
 							item = {
 								TooltipStringPairList = {
 									blockoverride "block_title" {
@@ -658,14 +658,14 @@ types AlertManager {
 								}
 							}
 						}
-			
+
 						vbox = { #-5 Markets
 							layoutpolicy_horizontal = expanding
 							datacontext = "[GetCountryNeeds(Player.Self)]"
 							datamodel = "[CountryNeeds.GetMarketNeeds]"
-							visible = "[And(LessThanOrEqualTo_int32(CountryNeeds.GetMarketGovernmentMissingGoodsCount, '(int32)4' ), GreaterThan_int32(CountryNeeds.GetMarketGovernmentMissingGoodsCount, '(int32)1' ))]" 
+							visible = "[And(LessThanOrEqualTo_int32(CountryNeeds.GetMarketGovernmentMissingGoodsCount, '(int32)4' ), GreaterThan_int32(CountryNeeds.GetMarketGovernmentMissingGoodsCount, '(int32)1' ))]"
 							spacing = 12
-							
+
 							item = {
 								TooltipScrolledStringPairList = {
 									blockoverride "block_scrollarea" { maximumsize = { -1 120 } }
@@ -680,46 +680,46 @@ types AlertManager {
 
 						TooltipListBase = { #+6 Markets
 						datacontext = "[GetCountryNeeds(Player.Self)]"
-						visible = "[GreaterThan_int32(CountryNeeds.GetMarketGovernmentMissingGoodsCount, '(int32)4' )]" 
-						
+						visible = "[GreaterThan_int32(CountryNeeds.GetMarketGovernmentMissingGoodsCount, '(int32)4' )]"
+
 							TooltipListColumnContent = {
 								TooltipTableColumn = {
 									blockoverride "column_title" {}
-									blockoverride "column_title_text" { 
-										text = "[market|e]" 
+									blockoverride "column_title_text" {
+										text = "[market|e]"
 									}
-									blockoverride "column_title_right" { 
-										expand = {} 
+									blockoverride "column_title_right" {
+										expand = {}
 									}
-					
+
 									blockoverride "field_left" {
 										visible = "[MarketCountryNeeds.HasGovernmentMissingGoods]"
 									}
-					
+
 									blockoverride "field_text" {
 										default_format = "#subtle_name"
 										align = left|nobaseline
 										raw_text = "@market! [MarketCountryNeeds.GetMarket.GetName]"
 									}
-					
+
 									blockoverride "field_right" { expand = {} }
 								}
-					
+
 								TooltipTableColumn = {
 									blockoverride "column_title" {}
-									blockoverride "column_title_left" { 
+									blockoverride "column_title_left" {
 										expand = {}
 									}
-									blockoverride "column_title_text" { 
-										text = "[goods_demands|e]" 
+									blockoverride "column_title_text" {
+										text = "[goods_demands|e]"
 										default_format = "#explanation_link"
 
 									}
-					
+
 									blockoverride "field_text" { visible = no }
 									blockoverride "field_right" {
 										spacing = 7
-										expand = {} 
+										expand = {}
 										visible = "[MarketCountryNeeds.HasGovernmentMissingGoods]"
 										datacontext = "[GetMarketCountryNeeds(Player.Self, Market.Self)]"
 										datacontext = "[MarketCountryNeeds.GetMarket]"
@@ -734,11 +734,11 @@ types AlertManager {
 											shaderfile = "gfx/FX/pdxgui_default.shader"
 											size = {15 15}
 											texture = "gfx/interface/icons/alerts_icons/constructions_missing_input.dds"
-			
+
 											using = bg_banner_button_vertical
-			
+
 											blockoverride "banner_button_extra" {}
-											
+
 											blockoverride "banner_button_color" {
 												modify_texture = {
 													using = color_red_texture
@@ -749,7 +749,7 @@ types AlertManager {
 									}
 								}
 
-								blockoverride "column_datamodel"  {  
+								blockoverride "column_datamodel"  {
 									datacontext = "[GetCountryNeeds(Player.Self)]"
 									datamodel = "[CountryNeeds.GetMarketNeeds]"
 								}
@@ -1101,7 +1101,7 @@ types AlertManager {
 															hbox = {
 																spacing = 2
 																icon = { 
-																	size = { 30 30 }
+																	size = { 35 35 }
 																	texture = "[GetConceptTexture('antagonism')]"
 																}
 
@@ -1124,7 +1124,7 @@ types AlertManager {
 															hbox = {
 																spacing = 2
 																icon = { 
-																	size = { 30 30 }
+																	size = { 35 35 }
 																	texture = "[GetConceptTexture('army')]"
 																}
 
@@ -1147,7 +1147,7 @@ types AlertManager {
 															hbox = {
 																spacing = 2
 																icon = { 
-																	size = { 30 30 }
+																	size = { 35 35 }
 																	texture = "[GetConceptTexture('navy')]"
 																}
 
@@ -1170,7 +1170,7 @@ types AlertManager {
 															hbox = {
 																spacing = 2
 																icon = { 
-																	size = { 30 30 }
+																	size = { 35 35 }
 																	texture = "[GetConceptTexture('great_power_rank')]"
 																}
 
@@ -1193,28 +1193,28 @@ types AlertManager {
 																piechart = {
 																	size = { 25 25 }
 																	visible = "[Country.GetDiplomacy.GetRelation(GetPlayer.Self).HasTruce]"
-												
+
 																	using = bg_circle_piechart
 																	using = piechart_angles
-												
+
 																	pieslice = {
 																		texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
 																		value = "[Country.GetDiplomacy.GetRelation(GetPlayer.Self).GetTruceProgress]"
 																		color = { 0.01 0.6 0.9 1 }
 																	}
-												
+
 																	pieslice = {
 																		texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
 																		value = "[Subtract_float('(float)100.0', Country.GetDiplomacy.GetRelation(GetPlayer.Self).GetTruceProgress)]"
 																		color = { 1 1 1 0 }
 																	}
-												
-																	icon = {
-																		texture = "gfx/interface/icons/diplomatic_status/truce.dds"
+
+																icon = {
+																	texture = "gfx/interface/icons/diplomatic_status/truce.dds"
 																		size = { 85% 85% }
 																		parentanchor = center
 																	}
-												
+
 																	tooltipwidget = {
 																		ContextualTooltipType = {
 																			blockoverride "title_icon" {
@@ -1232,7 +1232,7 @@ types AlertManager {
 																			blockoverride "concept_link" {
 																				text = [truce|E]
 																			}
-													
+										
 																			blockoverride "tooltip_content" {
 																				TooltipTextBlock = {
 																					blockoverride "text" {
@@ -1256,16 +1256,16 @@ types AlertManager {
 																					texture = "gfx/interface/icons/international_organizations/coalition.dds"
 																				}
 																			}
-																		
+
 																			blockoverride "title_text" {
 																				datacontext = "[Country]"
 																				text = "COALITION_AGAINST_US_TITLE"
 																			}
-																								
+
 																			blockoverride "concept_link" {
 																				text = [coalition|E]
 																			}
-										
+
 																			blockoverride "tooltip_content" {
 																				TooltipTextBlock = {
 																					blockoverride "text" {
@@ -1280,7 +1280,7 @@ types AlertManager {
 																	datacontext = "[Country]"
 																	texture = "gfx/interface/icons/diplomatic_status/war.dds"
 																	visible = "[Country.GetDiplomacy.GetRelation(GetPlayer.Self).HasWar]"
-																	size = { 25 25 }
+																	size = { 35 35 }
 																	tooltipwidget = {
 																		ContextualTooltipType = {
 																			blockoverride "title_icon" {
@@ -1312,7 +1312,7 @@ types AlertManager {
 																icon = {
 																	texture = "gfx/interface/icons/diplomatic_status/opinion_improvement_active.dds"
 																	visible = "[GreaterThan_CFixedPoint(Country.GetDiplomacy.GetOpinionOf(GetPlayer), '(CFixedPoint)0')]"
-																	size = { 25 25 }
+																	size = { 35 35 }
 																	tooltipwidget = {
 																		ContextualTooltipType = {
 																			blockoverride "title_icon" {
@@ -1686,7 +1686,7 @@ types AlertManager {
 			blockoverride "alert_more_icons_before" {
 				piechart = {
 					visible = "[Player.GetReligion.HasDoom]"
-					size = { 30 30 }
+					size = { 35 35 }
 					alwaystransparent = yes
 
 					using = piechart_angles
@@ -1747,7 +1747,7 @@ types AlertManager {
 			blockoverride "alert_more_icons_before" {
 				piechart = {
 					visible = "[Player.GetReligion.HasDoom]"
-					size = { 30 30 }
+					size = { 35 35 }
 					alwaystransparent = yes
 
 					using = piechart_angles
@@ -2396,7 +2396,7 @@ types AlertManager {
 									}
 
 									blockoverride "column_title_text" { 
-										text = "[great_power_rank|e]" 
+										text = "[great_power_rank|e]"
 										default_format = "#explanation_link"
 									}
 
@@ -2921,7 +2921,7 @@ types AlertManager {
 								blend_mode = multiply
 							}
 						}
-						
+
 						icon = {
 							texture = "gfx/interface/pie_charts/pie_chart_alpha_80.dds"
 							size = { 100% 100% }
@@ -3058,48 +3058,48 @@ types AlertManager {
 		# Heir Underage
 		####################################
 
-		alert_banner = {
-			name = "is_heir_underage"
+		# alert_banner = {
+		# 	name = "is_heir_underage"
 
-			action_tooltip = {
-				click_type = left
-				title = "ALERT_CTA_LEFT_CLICK"
-				using = snd_UI_alert_openAndCycle
-				on_action = "[AlertManager.ShowHeir]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "ALERT_CTA_LEFT_CLICK"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		on_action = "[AlertManager.ShowHeir]"
+		# 	}
 
-			action_tooltip = {
-				click_modifier = shift
-				click_type = left
-				title = "ALERT_HINT"
-				using = snd_UI_alert_openAndCycle
-				on_action = "[AlertManager.ShowHeir]"
-				on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_is_heir_underage')]"
-			}
+		# 	action_tooltip = {
+		# 		click_modifier = shift
+		# 		click_type = left
+		# 		title = "ALERT_HINT"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		on_action = "[AlertManager.ShowHeir]"
+		# 		on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_is_heir_underage')]"
+		# 	}
 
-			tooltipwidget = {
-				SimpleContextualTooltipType = {
-					lowpriotextcontext = "[AlertItem.GetTooltip]"
-					blockoverride "title_button" {
-						hint_button = {
-							action_tooltip = {
-								title = "OPEN_HINT"
-								on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_is_heir_underage')]"
-							}
-						}
-					}
-					blockoverride "shift_left_extra" {
-						replacement_shift_item = {}
-					}
-				}
-			}
+		# 	tooltipwidget = {
+		# 		SimpleContextualTooltipType = {
+		# 			lowpriotextcontext = "[AlertItem.GetTooltip]"
+		# 			blockoverride "title_button" {
+		# 				hint_button = {
+		# 					action_tooltip = {
+		# 						title = "OPEN_HINT"
+		# 						on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_is_heir_underage')]"
+		# 					}
+		# 				}
+		# 			}
+		# 			blockoverride "shift_left_extra" {
+		# 				replacement_shift_item = {}
+		# 			}
+		# 		}
+		# 	}
 
-			using = yellow_alert
+		# 	using = yellow_alert
 
-			blockoverride "icon_texture" {
-				texture = "gfx/interface/icons/alerts_icons/heir_underage.dds"
-			}
-		}
+		# 	blockoverride "icon_texture" {
+		# 		texture = "gfx/interface/icons/alerts_icons/heir_underage.dds"
+		# 	}
+		# }
 
 		###################################
 		# Heir Incompetent
@@ -3198,7 +3198,7 @@ types AlertManager {
 				using = snd_UI_alert_openAndCycle
 				on_action = "[AlertRelationAboutToBeBroken.Next]"
 			}
-			
+
 			using = alert_list_tooltip
 			using = yellow_alert
 
@@ -3637,7 +3637,7 @@ types AlertManager {
 								blockoverride "text" {
 									text = "ALERT_BUILDINGS_MISSING_EMPLOYEES"
 								}
-				
+								
 								# blockoverride "textblock_background_tint"  {
 								# 	modify_texture = {
 								# 		using = color_yellow_texture
@@ -3654,32 +3654,35 @@ types AlertManager {
 										maximumsize = { -1 400 }
 									}
 									blockoverride "scrollarea_content" {
-										fixedgridbox = {
-											addcolumn = 420
-											addrow = 30
-
+													fixedgridbox = {
+														addcolumn = 420
+														addrow = 30
+	
 											datamodel = "[AlertLackPopPromotion.GetBuildings]"
-											item = {
-												widget = {
-													size = { 100% 30 }
+														item = {
+															widget = {
+																size = { 100% 30 }
 													background = {
 														visible = "[IsOdd_int32(PdxGuiWidget.GetIndexInDataModel)]"
 														using = tooltip_table_field_texture
 													}
 
-													hbox = {
+																hbox = {
 														using = layoutpolicy_expanding
-														margin = { 10 0 }
-														spacing = 10
-
-														text_single = {
-															align = nobaseline
-															text = "ALERT_BUILDINGS_MISSING_EMPLOYEES_BUILDING"
-														}
-														expand = {}
-
-														text_single = {
-															text = "[SelectLocalization(SBuildingWithMissingEmployees.HasMonthsNeeded, SBuildingWithMissingEmployees.GetMonths, 'ALERT_BUILDINGS_MISSING_EMPLOYEES_BUILDING_NONE')]"
+																	margin = { 10 0 }
+																	spacing = 10
+							
+																	text_single = {
+																		align = nobaseline
+																		text = "ALERT_BUILDINGS_MISSING_EMPLOYEES_BUILDING"
+																	}
+																	expand = {}
+							
+																	text_single = {
+																		text = "[SelectLocalization(SBuildingWithMissingEmployees.HasMonthsNeeded, SBuildingWithMissingEmployees.GetMonths, 'ALERT_BUILDINGS_MISSING_EMPLOYEES_BUILDING_NONE')]"
+																	}						
+																}
+															}
 														}
 													}
 												}
@@ -3687,9 +3690,6 @@ types AlertManager {
 										}
 									}
 								}
-							}
-						}
-					}
 
 					blockoverride "title_button" {
 						hint_button = {
@@ -3747,7 +3747,7 @@ types AlertManager {
 								blockoverride "text" {
 									text = "ALERT_RGO_MISSING_EMPLOYEES"
 								}
-				
+								
 								# blockoverride "textblock_background_tint"  {
 								# 	modify_texture = {
 								# 		using = color_yellow_texture
@@ -3758,7 +3758,7 @@ types AlertManager {
 								# blockoverride "block_title" {
 								# 	text = "ALERT_RGO_MISSING_EMPLOYEES"
 								# }
-								
+
 								TooltipListScrollArea = {
 									blockoverride "block_scrollarea" {
 										maximumsize = { -1 400 }
@@ -5508,25 +5508,25 @@ types AlertManager {
 		# We have max Diplomats available
 		###################################
 
-		alert_banner = {
-			name = "has_max_diplomats_available"
+		# alert_banner = {
+		# 	name = "has_max_diplomats_available"
 
-			action_tooltip = {
-				click_type = left
-				title = "ALERT_CTA_LEFT_CLICK"
-				using = snd_UI_alert_openAndCycle
-				on_action = "[OpenLateralView('diplomacy_macrobuilder')]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "ALERT_CTA_LEFT_CLICK"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		on_action = "[OpenLateralView('diplomacy_macrobuilder')]"
+		# 	}
 
-			using = green_alert
+		# 	using = green_alert
 
-			blockoverride "icon_texture" {
-				texture = "gfx/interface/icons/alerts_icons/diplomacy.dds"
-			}
+		# 	blockoverride "icon_texture" {
+		# 		texture = "gfx/interface/icons/alerts_icons/diplomacy.dds"
+		# 	}
 
-			onmousehierarchyenter = "[SetHighlightedTab('diplomacy_group')]"
-			onmousehierarchyleave = "[ResetHighlightedTab]"
-		}
+		# 	onmousehierarchyenter = "[SetHighlightedTab('diplomacy_group')]"
+		# 	onmousehierarchyleave = "[ResetHighlightedTab]"
+		# }
 
 		###################################
 		# We have Religious Aspect available
@@ -5676,22 +5676,22 @@ types AlertManager {
 		# Heir Can Have Better Education
 		####################################
 
-		alert_banner = {
-			name = "heir_can_have_better_education"
+		# alert_banner = {
+		# 	name = "heir_can_have_better_education"
 
-			action_tooltip = {
-				click_type = left
-				title = "ALERT_CTA_LEFT_CLICK"
-				using = snd_UI_alert_openAndCycle
-				on_action = "[AlertManager.ShowHeir]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "ALERT_CTA_LEFT_CLICK"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		on_action = "[AlertManager.ShowHeir]"
+		# 	}
 
-			using = green_alert
+		# 	using = green_alert
 
-			blockoverride "icon_texture" {
-				texture = "gfx/interface/icons/character_interactions/balanced_education.dds"
-			}
-		}
+		# 	blockoverride "icon_texture" {
+		# 		texture = "gfx/interface/icons/character_interactions/balanced_education.dds"
+		# 	}
+		# }
 
 		###################################
 		# We Can Join Sect
@@ -5770,125 +5770,125 @@ types AlertManager {
 		# Children can have better education
 		###########################
 
-		alert_banner = {
-			name = "has_uneducated_child"
+		# alert_banner = {
+		# 	name = "has_uneducated_child"
 
-			action_tooltip = {
-				click_type = left
-				title = "ALERT_CTA_CYCLE_LEFT_CLICK"
-				using = snd_UI_alert_openAndCycle
-				on_action = "[AlertHasUneducatedChild.Next]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "ALERT_CTA_CYCLE_LEFT_CLICK"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		on_action = "[AlertHasUneducatedChild.Next]"
+		# 	}
 
-			using = green_alert
+		# 	using = green_alert
 
-			tooltipwidget = { 
-				ContextualTooltipType = {
-					blockoverride "title_text" {
-						text = "ALERT_CHILD_UNEDUCATED"
-					}
-					blockoverride "title_icon" {
-						icon = {
-							using = tooltip_title_icon_size
-							texture = "gfx/interface/icons/alerts_icons/has_uneducated_child.dds"
+		# 	tooltipwidget = { 
+		# 		ContextualTooltipType = {
+		# 			blockoverride "title_text" {
+		# 				text = "ALERT_CHILD_UNEDUCATED"
+		# 			}
+		# 			blockoverride "title_icon" {
+		# 				icon = {
+		# 					using = tooltip_title_icon_size
+		# 					texture = "gfx/interface/icons/alerts_icons/has_uneducated_child.dds"
 						
-						}
-					}
-					blockoverride "concept_link" {
-						text = "[child|E]"
-					}
-					blockoverride "tooltip_content" {
-						TooltipTextBlock = {
-							blockoverride "text" {
-								text = "ALERT_CHILD_UNEDUCATED_TEXT"
-							}
-						}
-						TooltipScrolledRowList = {
-							blockoverride "block_title" {
-								text = "ALERT_CHILD_UNEDUCATED_PLURAL"
-								default_format = "#color_white"
-							}
-							blockoverride "rowlist_datamodel_is_empty" { visible = "[IsDataModelEmpty(AlertHasUneducatedChild.GetUneducatedChildren)]"}
-							blockoverride "rowlist_datamodel_has_items" { visible = "[DataModelHasItems(AlertHasUneducatedChild.GetUneducatedChildren)]"}
-							blockoverride "rowlist_datamodel" { 
-								datamodel = "[AlertHasUneducatedChild.GetUneducatedChildren]" 
-								ignoreinvisible = yes
-							}
-							blockoverride "visibility" {
-								visible = "[And4(Character.GetEstateType.IsAlwaysLoyal, Not(Character.GetEducation.IsDefault), Not(Character.IsAdult), GreaterThanOrEqualTo_int32(Character.GetAgeInYears, GetDefine('NCharacter','EDUCATION_AGE')))]"
-							}
-							blockoverride "rowlist_content" {
-								hbox = {
-									using = layoutpolicy_expanding
-									margin = { 10 10 }
-									spacing = 0
+		# 				}
+		# 			}
+		# 			blockoverride "concept_link" {
+		# 				text = "[child|E]"
+		# 			}
+		# 			blockoverride "tooltip_content" {
+		# 				TooltipTextBlock = {
+		# 					blockoverride "text" {
+		# 						text = "ALERT_CHILD_UNEDUCATED_TEXT"
+		# 					}
+		# 				}
+		# 				TooltipScrolledRowList = {
+		# 					blockoverride "block_title" {
+		# 						text = "ALERT_CHILD_UNEDUCATED_PLURAL"
+		# 						default_format = "#color_white"
+		# 					}
+		# 					blockoverride "rowlist_datamodel_is_empty" { visible = "[IsDataModelEmpty(AlertHasUneducatedChild.GetUneducatedChildren)]"}
+		# 					blockoverride "rowlist_datamodel_has_items" { visible = "[DataModelHasItems(AlertHasUneducatedChild.GetUneducatedChildren)]"}
+		# 					blockoverride "rowlist_datamodel" { 
+		# 						datamodel = "[AlertHasUneducatedChild.GetUneducatedChildren]" 
+		# 						ignoreinvisible = yes
+		# 					}
+		# 					blockoverride "visibility" {
+		# 						visible = "[And4(Character.GetEstateType.IsAlwaysLoyal, Not(Character.GetEducation.IsDefault), Not(Character.IsAdult), GreaterThanOrEqualTo_int32(Character.GetAgeInYears, GetDefine('NCharacter','EDUCATION_AGE')))]"
+		# 					}
+		# 					blockoverride "rowlist_content" {
+		# 						hbox = {
+		# 							using = layoutpolicy_expanding
+		# 							margin = { 10 10 }
+		# 							spacing = 0
 
-									widget = {
-										size = {50 65}
-										character_frame_small = {
-											blockoverride "portrait_datacontext" {
-												datacontext = "[Character]"
-											}
-											parentanchor = hcenter|bottom
-											blockoverride "character_frame_texture" {
-												texture = "gfx/interface/component_decoration/character_frames/character_non_stretchable_frame_2.dds"
-											}
-										}
-									}
+		# 							widget = {
+		# 								size = {50 65}
+		# 								character_frame_small = {
+		# 									blockoverride "portrait_datacontext" {
+		# 										datacontext = "[Character]"
+		# 									}
+		# 									parentanchor = hcenter|bottom
+		# 									blockoverride "character_frame_texture" {
+		# 										texture = "gfx/interface/component_decoration/character_frames/character_non_stretchable_frame_2.dds"
+		# 									}
+		# 								}
+		# 							}
 
-									expand = {}
+		# 							expand = {}
 
-									text_multi = {
-										autoresize = no
-										multiline = yes
-										size = { 300 60 }
-										align = left|nobaseline
-										text = "[Character.GetName], [Character.GetAge|Y]"
-									}
-								}
-							}
+		# 							text_multi = {
+		# 								autoresize = no
+		# 								multiline = yes
+		# 								size = { 300 60 }
+		# 								align = left|nobaseline
+		# 								text = "[Character.GetName], [Character.GetAge|Y]"
+		# 							}
+		# 						}
+		# 					}
 
-							blockoverride "block_scrollarea" {
-								maximumsize = { -1 210 }
-							}
+		# 					blockoverride "block_scrollarea" {
+		# 						maximumsize = { -1 210 }
+		# 					}
 
-							blockoverride "row_size" {
-								maximumsize = { -1 50 }
-								minimumsize = { -1 50 }
-							}
-						}
-					}
-				}
-			}
+		# 					blockoverride "row_size" {
+		# 						maximumsize = { -1 50 }
+		# 						minimumsize = { -1 50 }
+		# 					}
+		# 				}
+		# 			}
+		# 		}
+		# 	}
 
-			blockoverride "icon_texture" {
-				texture = "gfx/interface/icons/alerts_icons/has_uneducated_child.dds"
-			}
-		}
+		# 	blockoverride "icon_texture" {
+		# 		texture = "gfx/interface/icons/alerts_icons/has_uneducated_child.dds"
+		# 	}
+		# }
 
 		###################################
 		# We can ask for money
 		###################################
 
-		alert_banner = {
-			name = "can_ask_for_money"
+		# alert_banner = {
+		# 	name = "can_ask_for_money"
 
-			action_tooltip = {
-				click_type = left
-				title = "ALERT_CTA_LEFT_CLICK"
-				using = snd_UI_alert_openAndCycle
-				on_action = "[AlertCanAskForMoney.OnAction]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "ALERT_CTA_LEFT_CLICK"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		on_action = "[AlertCanAskForMoney.OnAction]"
+		# 	}
 
-			using = green_alert
+		# 	using = green_alert
 
-			blockoverride "icon_texture" {
-				texture = "gfx/interface/icons/diplomatic_actions/friendly_actions.dds"
-			}
+		# 	blockoverride "icon_texture" {
+		# 		texture = "gfx/interface/icons/diplomatic_actions/friendly_actions.dds"
+		# 	}
 
-			onmousehierarchyenter = "[SetHighlightedTab('diplomacy_group')]"
-			onmousehierarchyleave = "[ResetHighlightedTab]"
-		}
+		# 	onmousehierarchyenter = "[SetHighlightedTab('diplomacy_group')]"
+		# 	onmousehierarchyleave = "[ResetHighlightedTab]"
+		# }
 
 		###################################
 		# We can ask subject to improve cultural view
@@ -6063,119 +6063,119 @@ types AlertManager {
 		# Welcome to Project Caesar
 		###########################
 
-		alert_banner = {
-			name = "is_startup_help"
+		# alert_banner = {
+		# 	name = "is_startup_help"
 
-			action_tooltip = {
-				click_type = left
-				title = "OUTLINER_AGENDA_OPEN"
-				using = snd_UI_alert_openAndCycle
-				on_action = "[OpenGameView('agenda')]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "OUTLINER_AGENDA_OPEN"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		on_action = "[OpenGameView('agenda')]"
+		# 	}
 
-			action_tooltip = {
-				click_modifier = shift
-				click_type = left
-				title = "OPEN_HINTS"
-				using = snd_UI_alert_openAndCycle
-				on_action = "[OpenLateralViewWithParams('hints', '')]"
-			}
+		# 	action_tooltip = {
+		# 		click_modifier = shift
+		# 		click_type = left
+		# 		title = "OPEN_HINTS"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		on_action = "[OpenLateralViewWithParams('hints', '')]"
+		# 	}
 			
-			tooltipwidget = {
-				SimpleContextualTooltipType = {
-					lowpriotextcontext = "[AlertItem.GetTooltip]"
-					blockoverride "shift_left_extra" {
-						replacement_shift_item = {}
-					}
-				}
-			}
+		# 	tooltipwidget = {
+		# 		SimpleContextualTooltipType = {
+		# 			lowpriotextcontext = "[AlertItem.GetTooltip]"
+		# 			blockoverride "shift_left_extra" {
+		# 				replacement_shift_item = {}
+		# 			}
+		# 		}
+		# 	}
 
-			using = blue_alert
+		# 	using = blue_alert
 
-			blockoverride "icon_texture" {
-				texture = "gfx/interface/icons/alerts_icons/welcome_to_caesar.dds"
-			}
-		}
+		# 	blockoverride "icon_texture" {
+		# 		texture = "gfx/interface/icons/alerts_icons/welcome_to_caesar.dds"
+		# 	}
+		# }
 
 		###########################
 		# Non-Expert Welcome
 		###########################
 
-		alert_banner = {
-			name = "non_expert_welcome"
-			datacontext = "[Player]"
+		# alert_banner = {
+		# 	name = "non_expert_welcome"
+		# 	datacontext = "[Player]"
 
-			action_tooltip = {
-				click_type = left
-				title = "OPEN_HINTS"
-				using = snd_UI_alert_openAndCycle
-				visible = "[EqualTo_string(Country.GetTag, 'HUN')]"
-				on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_hungary')]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "OPEN_HINTS"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		visible = "[EqualTo_string(Country.GetTag, 'HUN')]"
+		# 		on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_hungary')]"
+		# 	}
 
-			action_tooltip = {
-				click_type = left
-				title = "OPEN_HINTS"
-				using = snd_UI_alert_openAndCycle
-				visible = "[EqualTo_string(Country.GetTag, 'HOL')]"
-				on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_holland')]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "OPEN_HINTS"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		visible = "[EqualTo_string(Country.GetTag, 'HOL')]"
+		# 		on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_holland')]"
+		# 	}
 
-			action_tooltip = {
-				click_type = left
-				title = "OPEN_HINTS"
-				using = snd_UI_alert_openAndCycle
-				visible = "[EqualTo_string(Country.GetTag, 'NOR')]"
-				on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_norway')]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "OPEN_HINTS"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		visible = "[EqualTo_string(Country.GetTag, 'NOR')]"
+		# 		on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_norway')]"
+		# 	}
 
-			action_tooltip = {
-				click_type = left
-				title = "OPEN_HINTS"
-				using = snd_UI_alert_openAndCycle
-				visible = "[EqualTo_string(Country.GetTag, 'NAP')]"
-				on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_naples')]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "OPEN_HINTS"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		visible = "[EqualTo_string(Country.GetTag, 'NAP')]"
+		# 		on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_naples')]"
+		# 	}
 
-			action_tooltip = {
-				click_type = left
-				title = "OPEN_HINTS"
-				using = snd_UI_alert_openAndCycle
-				visible = "[EqualTo_string(Country.GetTag, 'CAS')]"
-				on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_castile')]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "OPEN_HINTS"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		visible = "[EqualTo_string(Country.GetTag, 'CAS')]"
+		# 		on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_castile')]"
+		# 	}
 
-			action_tooltip = {
-				click_type = left
-				title = "OPEN_HINTS"
-				using = snd_UI_alert_openAndCycle
-				visible = "[EqualTo_string(Country.GetTag, 'TUR')]"
-				on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_ottomans')]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "OPEN_HINTS"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		visible = "[EqualTo_string(Country.GetTag, 'TUR')]"
+		# 		on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_ottomans')]"
+		# 	}
 			
-			tooltipwidget = {
-				SimpleContextualTooltipType = {
-					lowpriotextcontext = "[AlertItem.GetTooltip]"
-				}
-			}
+		# 	tooltipwidget = {
+		# 		SimpleContextualTooltipType = {
+		# 			lowpriotextcontext = "[AlertItem.GetTooltip]"
+		# 		}
+		# 	}
 
-			using = blue_alert
+		# 	using = blue_alert
 
-			blockoverride "icon_texture" {
-				texture = "gfx/interface/icons/alerts_icons/welcome_to_caesar.dds"
-			}
+		# 	blockoverride "icon_texture" {
+		# 		texture = "gfx/interface/icons/alerts_icons/welcome_to_caesar.dds"
+		# 	}
 
-			blockoverride "alert_banner_texture" {
-				size = { 1 1 }
-				using = color_white_texture
-			}
+		# 	blockoverride "alert_banner_texture" {
+		# 		size = { 1 1 }
+		# 		using = color_white_texture
+		# 	}
 
-			blockoverride "icon_setup" {
-				country_flag_small = {
-					parentanchor = center
-				}
-			}
-		}
+		# 	blockoverride "icon_setup" {
+		# 		country_flag_small = {
+		# 			parentanchor = center
+		# 		}
+		# 	}
+		# }
 
 		###########################
 		# Start New Mission
@@ -6275,7 +6275,7 @@ button = {
 				}
 
 				icon = {
-					size = { 30 30 }
+                    size = { 35 35 }
 					texture = "gfx/interface/icons/alerts_icons/can_call_ally.dds"
 					texture_density = 2
 					alpha = 1
@@ -6343,7 +6343,7 @@ button = {
 				}
 
 				icon = {
-					size = { 30 30 }
+					size = { 35 35 }
 					texture = "[DiploAlert.GetIconTexture]"
 					texture_density = 2
 					alpha = 1
@@ -6440,11 +6440,11 @@ situation_banner = {
 					blockoverride "show_as_button" { visible = no }
 					blockoverride "show_as_icon" { visible = yes }
 				}
-	
+
 				icon = {
 					size = { 22 22 }
 					texture = "gfx/interface/icons/map_modes/war.dds"
-	
+
 					glow = {
 						name = "drop_shadow"
 						glow_radius = 3
