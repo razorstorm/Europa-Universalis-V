@@ -18,11 +18,11 @@ save\ games/
 old_saves/
 binaries/
 
-game/in_game/gfx/terrain2/terrain_cache/
 *.bin
 
 game/loading_screen/sound/
 game/in_game/gfx
+game/in_game/content_source
 game/main_menu/gfx
 
 clausewitz/
