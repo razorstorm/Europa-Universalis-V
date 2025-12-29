@@ -25,5 +25,6 @@ game/loading_screen/fonts/
 game/in_game/gfx
 game/in_game/content_source
 game/main_menu/gfx
+game/main_menu/localization
 
 clausewitz/
