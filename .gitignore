@@ -21,6 +21,7 @@ binaries/
 *.bin
 
 game/loading_screen/sound/
+game/loading_screen/fonts/
 game/in_game/gfx
 game/in_game/content_source
 game/main_menu/gfx
