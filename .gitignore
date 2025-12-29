@@ -22,9 +22,7 @@ game/in_game/gfx/terrain2/terrain_cache/
 *.bin
 
 game/loading_screen/sound/
-game/in_game/gfx/map
-game/in_game/gfx/models
-game/in_game/gfx/terrain2
-game/in_game/gfx/map
+game/in_game/gfx
+game/main_menu/gfx
 
 clausewitz/
