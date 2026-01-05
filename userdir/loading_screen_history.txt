@@ -1,0 +1,9 @@
+﻿loading_screen_scene_martin_luther=5
+loading_screen_scene_aztec=5
+loading_screen_scene_zheng_he=5
+loading_screen_scene_hansa=5
+loading_screen_scene_ashanti=5
+loading_screen_scene_white_mountain=5
+loading_screen_scene_deccan=5
+loading_screen_scene_damascus_ambassadors=5
+loading_screen_scene_iroquois_ambush=5

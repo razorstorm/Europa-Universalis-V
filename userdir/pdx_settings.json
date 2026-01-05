@@ -1,0 +1,75 @@
+{
+	"Accessibility":	{
+},
+	"Account":	{
+},
+	"Audio":	{
+		"volume.bus:/":	0.200000,
+		"volume.vca:/MUSIC":	0,
+		"volume.vca:/UI":	0.500000,
+		"volume.vca:/UI_CLOCK":	1,
+		"volume.vca:/SFX":	0.700000,
+		"volume.vca:/AMBIENT_MAP":	0.500000,
+		"volume.vca:/ARMIES":	1,
+		"volume.vca:/AMBIENT_MAP_BACKGROUND":	1,
+		"volume.vca:/AMBIENT_OBJECTS":	1,
+		"volume.vca:/AMBIENT_PANEL":	1,
+		"volume.vca:/MUSIC_DENSITY":	0,
+		"audio_device_profile":	"PDX_Headphones",
+		"disabled_categories":	"",
+		"disabled_tracks":	""
+	},
+	"Game":	{
+		"skip_welcome_new_game":	true,
+		"first_time_playing":	false,
+		"num_game_times_opened":	7,
+		"player_proficiency":	"SETTING_PLAYER_PROFICIENCY_EXPERT",
+		"skip_playthrough":	true,
+		"show_message_log":	false,
+		"autosave":	"halfyear",
+		"debug_saves":	25
+	},
+	"Graphics":	{
+		"ssr_quality":	"disabled",
+		"mapobject_quality":	"medium",
+		"ssao":	true,
+		"refraction_quality":	"disabled",
+		"renderer":	"DX12",
+		"vsync":	false,
+		"texture_streaming":	false,
+		"mesh_lod_bias":	"high",
+		"texture_quality":	"ultra",
+		"maximize_tick_speed":	true,
+		"resolution":	"3840x2160",
+		"upscale":	"DISABLED",
+		"upscale_quality":	"off",
+		"anti_aliasing":	"DISABLED",
+		"portrait_multi_sampling":	"x8",
+		"anisotropic_filtering":	"x16"
+	},
+	"GUI":	{
+		"scale":	"1.5"
+	},
+	"Interface":	{
+		"map_tooltips":	"SETTING_MAP_TOOLTIPS_ENABLE_NO_SEAZONES",
+		"map_tooltip_delay":	0.500000,
+		"skip_agenda":	true,
+		"tooltip_delay":	0.400000,
+		"warning_wrong_playset":	false
+	},
+	"Map":	{
+		"province_mapname_mode":	"always_off",
+		"country_names":	"LONG"
+	},
+	"Notifications":	{
+},
+	"System":	{
+		"user_bindings":	"user_bindings/final.bindings",
+		"telemetry_consent":	false,
+		"clock_type":	"clock_12h"
+	},
+	"Terrain":	{
+},
+	"Tools":	{
+}
+}

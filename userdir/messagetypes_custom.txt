@@ -1,0 +1,60 @@
+﻿ACTION_take_over_loan_PERFORMED_ON_US={
+	settings={
+	}
+}LOAN_REPAID_TO_COUNTRY={
+	settings={
+	}
+}ADD_GOV_REFORM={
+	settings={
+	}
+}RIVAL_SET_ON_US={
+	settings={
+	}
+}RULER_FAMILY_CHAR_COMES_OF_AGE={
+	settings={
+	}
+}OTHER_PERFORMS_violate_treaty_of_tordesillas_ACTION={
+	settings={
+	}
+}COUNTRY_JOIN_INTERNATIONAL_ORGANIZATION_TARGETTING_US={
+	settings={
+	}
+}CHANGE_POLICY_IN_LAW={
+	settings={
+	}
+}OTHER_PERFORMS_tordesillas_upheld_treaty_relevance_ACTION={
+	settings={
+	}
+}SIEGEOVER_WON={
+	settings={
+		onmap=yes
+	}
+}CREATE_MARKET_OTHERS={
+	settings={
+	}
+}WE_IMPROVE_RELATION={
+	settings={
+	}
+}OTHER_MAKE_SUBJECT={
+	settings={
+		log=no
+	}
+}OTHER_PERFORMS_create_market_ACTION={
+	settings={
+		onmap=yes
+	}
+}NEWBORN_RULER={
+	settings={
+	}
+}IMPORTANT_CHAR_DEATH={
+	settings={
+		onmap=yes
+	}
+}PROPOSE_resolution_in_international_organization_ACTION={
+	settings={
+	}
+}RULER_FAMILY_CHAR_DEATH={
+	settings={
+		onmap=yes
+	}
+}

@@ -1,0 +1,131 @@
+{
+	"file_version":	"1.0.0",
+	"playsets":	[{
+			"name":	"Initial playset",
+			"isAutomaticallySorted":	true,
+			"orderedListMods":	[{
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3601047146/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3607293096/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3606305941/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3605677866/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3602160105/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3603031599/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3604105554/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3600582579/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3601937478/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3619130338/",
+					"isEnabled":	true
+				}],
+			"DLC":	[{
+					"paradoxAppId":	"Ancient Monument Pack",
+					"isEnabled":	true
+				}, {
+					"paradoxAppId":	"Shared DLC Data",
+					"isEnabled":	true
+				}, {
+					"paradoxAppId":	"Sacred Sites",
+					"isEnabled":	true
+				}]
+		}, {
+			"name":	"Main",
+			"isActive":	true,
+			"isAutomaticallySorted":	true,
+			"orderedListMods":	[{
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3601047146/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3607293096/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3606305941/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3605677866/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3603031599/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3604105554/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3600582579/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3601937478/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3616723597/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3619130338/",
+					"isEnabled":	true
+				}],
+			"DLC":	[{
+					"paradoxAppId":	"Ancient Monument Pack",
+					"isEnabled":	true
+				}, {
+					"paradoxAppId":	"Shared DLC Data",
+					"isEnabled":	true
+				}, {
+					"paradoxAppId":	"Sacred Sites",
+					"isEnabled":	true
+				}]
+		}, {
+			"name":	"main 2",
+			"isAutomaticallySorted":	true,
+			"orderedListMods":	[{
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3600582579/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3601047146/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3601937478/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3602160105/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3603031599/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3604105554/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3605677866/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3606305941/",
+					"isEnabled":	true
+				}],
+			"DLC":	[{
+					"paradoxAppId":	"Ancient Monument Pack",
+					"isEnabled":	true
+				}, {
+					"paradoxAppId":	"Shared DLC Data",
+					"isEnabled":	true
+				}, {
+					"paradoxAppId":	"Sacred Sites",
+					"isEnabled":	true
+				}]
+		}]
+}

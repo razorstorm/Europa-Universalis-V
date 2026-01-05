@@ -1,0 +1,2553 @@
+debug_mode
+make_subject fiefdom cro
+make_subject fief cro
+make_subject fiefdom cro
+make_subject fiefdom CRO
+cancel_subject
+run prov.txt
+make_subject CRO fiefdom
+make_subject fiefdom CRO
+autosave
+save
+save autosave
+gui.CreateDockable gui/debug_menus.gui map_debug_menu
+save autosave
+cash 114.82
+stability 1111
+stability 111
+save autosave
+cash 340
+save autosave
+stability 13
+manpower 100
+manpower -100
+manpower 0.1
+manpower 1
+cash
+cash -400
+stability 20
+legitimacy 20
+add_legitimacy 20
+delete_wars
+delete_war
+run prov.txt
+yesman
+winwars
+yesman
+save autosave
+cash
+stability 10
+cash -250
+manpower 1
+save autosave
+run prov.txt
+save autosave
+autosave
+cash 300
+make_subject personal_union nap
+create_pu nap
+run prov.txt
+autosave
+run prov.txt
+autosaveautosavesave autosave
+save autosave
+ave autosave
+save autosave
+add_trait immortal
+add_trait immortality
+add_trait immortal_trait
+fast_diplo
+add_trait ruler_of_destiny
+save autosave
+run prov.txt
+run prov.txtw run prov.txt
+run prov.txt
+save autosave
+set_mil 75
+set_adm 100
+set_adm 757 100
+cash
+stability 1000
+cash
+stablity 4050
+stability 1000
+cash
+
+cash
+cash 250
+cash -250
+kill 12217
+kill character:12217
+kill character:name_casper
+gui.debug
+kill 12217
+kill_character 12217
+cash 300
+set_diplomacy 76 759
+set_di 76 759
+set_dip 76 759
+set_dip 759 76
+set_admin 22889 100
+set_adm 22889 100
+set_mil 22889 4
+set_dip 759 86
+cash 1452
+save autosave
+fast_diplo
+kill_heir boh
+save autosave
+kill_character 5842
+save autosave
+kill_character 25512
+kill_character 6744
+save autosave
+make_subject fiefdom cli
+run prov.txt
+run prov.txtrun prov.txtrun prov.txt
+run prov.txtrun prov.txtrun prov.txrun prov.txt
+run prov.txt
+run prov.txtrun prov.txtrun prov.txrun prov.txt
+run prov.txt
+run prov.txtrun prov.txt
+run prov.txt
+run prov.txtrun prov.txrun prov.txt
+run prov.txt
+run prov.txtrun prov.txt
+run prov.txt
+run prov.txtrun prov.txt
+favors cro 25
+run prov.txtrun prov.txt
+favors cro 25
+run prov.txt
+run prov.txsave autosaveave autosave
+ave autosavesave autosave
+
+save autosave
+yesman
+make_subject wal fiefdom
+make_subject fiefdom wal
+tag hun
+cash 1661
+yesman
+integrate ser AAA18
+annex ser AAA18
+save autosave
+annex c:AAA18 SER
+annex AAA18 SER
+annex ser
+own_core 5739
+own 5739
+add_core
+change_control
+change_control 5725
+change_control hun 5725
+change_control 5725 hun
+change_control 5725 100
+run prov.txt
+run prov.tx
+run prov.txt
+save autosave
+ave autosaverun prov.txt
+run prov.txt
+ave autosaveave autosave
+save autosave
+ti
+save autosave
+ti
+ti_off
+no_ti
+off_ti
+ti_on
+undiscover
+discover
+manpower
+manpower 10
+manpower 100
+stability 10
+save autosave
+run prov.txt
+run prov.txtrun prov.txt
+run prov.txt
+add_adm 26475 100
+set_adm 26475 100
+set_dip 26475 100
+set_mil 26475 100
+add_trait 26475 ruler_of_destiny
+add_trait ruler_of_destiny 26475
+save autosave
+age 26475 15
+age 15
+set_age 15
+unit_age
+set_adm 6746 100
+set_dip 6746 100
+set_mil 6746 100
+stability 100
+cash 1600
+ave autosavesave autosave
+ve autosave
+save autosave
+manpower 1000
+save autosave
+manpower 10000
+ve autosave
+save autosave
+ave autosave
+save autosave
+save autosavesave autosaveave autosave
+save autosave
+manpower 100
+delete_wars TUN
+run prov.txt
+save autosave
+run prov.txt
+save autosavesave autosave
+save autosave
+add_trait ruler_of_destiny
+ave autosave
+save autosavesave autosave
+save autosave
+manpower 1000
+cah 200
+cash 200
+manpower
+manpower 100
+prestige 50
+ave autosave
+ave autosavesave autosaveave autosave
+save autosave
+presige 50
+prestige 50
+stability 50
+manpower 1000
+save autosave
+fast_diplo
+run prov.txt
+ave autosave
+save autosave
+stability 50
+ave autosave
+set_mil
+set_mil 759 100
+ave autosavesave autosave
+save autosave
+run prov.txt
+run prov.txtrun prov.txt
+run prov.txt
+save autosave
+run prov.txt
+save autosavesave autosave
+save autosave
+run prov.txt
+save autosaveave autosave
+save autosave
+run prov.txt
+ave autosave
+save autosave
+manpower 100
+save autosave
+save autosavesave autosave
+save autosave
+ave autosave
+save autosave
+fps
+cash 400
+cash -run prov.txt400
+run prov.txt
+legitimacy 100
+change_legitimacy 100
+add_legitimacy 100
+set_legitimacy 100
+run prov.txt
+save autosaveave autosave
+save autosave
+cash 495
+ave autosave
+run prov.txt
+wrun prov.txt
+run prov.txt
+save autosave
+manpower
+manpower 1000
+save autosave
+manpower 10
+save autosave
+stability 110
+cash
+save autosave
+cash 129
+cash
+cash 50000
+cash -14000
+save autosave
+ave autosave
+save autosave
+cash 500
+save autosave
+save autosavesave autosave
+manpowr 1000
+manpowr
+manpower 100
+save autosaveave autosave
+save autosave
+manpower 1000
+save autosave
+population 3482 300000
+population 3482 -300000
+population 3482 3
+population 3482 10
+population 3482 200
+save autosave
+run prov.txt
+cash 500
+save autosaveave autosaveave autosave
+save autosave
+
+save autosave
+event artist_events.35
+event artist_events.34
+ave autosave
+save autosave
+manpower 1000
+cash 500
+save autosavesave autosavesave autosave
+save autosave
+cash 1000
+cash 100000
+stability 50
+legitimacy 100
+ve autosave
+save autosave
+ave autosave
+save autosave
+control
+run prov.txt
+clear
+run prov.txt
+clear
+run prov.txt
+yesman
+run prov.txt
+save autosave
+run prov.txt
+cash -5000
+ave autosave
+save autosave
+run prov.txt
+ave autosave
+ave autosaveave autosavesave autosavesave autosave
+save autosave
+wsave autosave
+save autosave
+clear_antagonism
+run prov.txt
+spynetwork
+spy gol 100
+run prov.txt
+spy gol 100
+spynetwork gol 100
+run prov.txt
+save autosave
+add_trait 759 immortal
+add_trait 759 ruler_of_destiny
+add_trait immortal 759
+add_trait ruler-of_destiny 759
+add_trait ruler_of_destiny 759
+set_adm 759 100
+set_dipm 759 100
+set_dip 759 100
+set_mil 759 100
+ave autosave
+save autosaveave autosavsave autosave
+save autosave
+spynetwork
+spy_network
+save autosave
+run prov.txt
+clear
+run prov.txt
+manpowr 1000
+manpower 1000
+save autosave
+run prov.txt
+run prov.txtrun prov.txt
+run prov.txt
+autosave
+save autosave
+run prov.txt
+vlrst
+clear
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+run prov.txtrun prov.txt
+run prov.txt
+clear
+run prov.txt
+save autosave
+run prov.txt
+clear
+run prov.txt
+fast_dplo
+run prov.txt
+save autosave
+favors lit 100
+yesman
+FastDiplo
+run fix_oninion.txt
+save autosave
+run prov.txt
+SAVE AUTOSAVE
+RUN PROV.TXT
+run prov.txt
+legitimacy 100
+save autosave
+run prov.txt
+save autosave
+debug_mode
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+xrun prov.txt
+run prov.txt
+antagonism -10
+antagonism -100
+1run prov.txt
+run prov.txt
+antagonism 1386 -500
+save autosave
+antagonism 3115 -1000
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+clearae
+clar antagonlism
+save autosave
+run prov.txt
+save autosave
+yesman
+prestige 50
+save autosave
+legitimacy 10
+legitimacy 100
+ReligiousInfluence 20
+save autosave
+remove_trait malevolant
+delete_trait malevolant
+run prov.txt
+delete_trait malevolant
+set_dip 168000084100
+set_dip 168000084 100
+set_dip 16800084 100
+add_trait 16800084 immortal
+add_trait immortal 16800084
+add_trait immortality 16800084
+set_mil 16800084 100
+set_adm 16800084 100
+set_adm 16808030 64
+set_mil 16808030 82\
+set_mil 16808030 72
+set_dip 16808030 55
+save autosave
+legitimacy 100
+run prov.txt
+chagne_culture 3337
+culture
+culture szekely
+cultureszekely_culture
+cultures zekely_culture
+culture szekely_culture
+culture hungarian_culture
+culture hungarian
+yseman
+yesman
+save autosave
+fps
+stat fps
+control 3273
+occupy 3273
+occupy_province friuli_province
+save autosave
+run prov.txtrun prov.txt
+run prov.txt
+add_trai strict
+add_trait strict
+1save autosave
+save autosave
+stability 20
+save autosave
+stabiltiy 90
+stability 19
+stability 190
+save autosave
+favors 50 hab
+favors hab 50
+save autosave
+stability 199
+save autosave
+event  johan.1.title
+event johan.1.title
+eveent johan.1
+event johan.1
+gui.CreateDockable gui/debug_menus.gui language_window
+gui_editor
+GUI.ClearWidgets language_window
+switchlanguage l_english
+GUI.ClearWidgets language_window
+inspect_player_country
+gui.debug
+set_mil 16808030 20
+set_mil 167966517 25
+set_mil 16796517 25
+set_mil 16808030 20
+set_mil run prov.txt16808030 20
+run prov.txt
+run prov.txtsave autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+w5qsave autosave
+save autosave
+control 5624 ven
+run prov.txt
+save autosave
+run prov.txt
+run prov.txt  n prov.run prov.txt
+run prov.txt
+RUN PROV.TXT
+SAVE AUTOSAVE
+remove_trait
+relete_trait
+run prov.txt
+run prov.txtsave autosave
+save autosave
+run prov.txt
+save autosave
+windwars
+white_peace
+run prov.txt
+save autosave
+run prov.txt
+
+run prov.txtrun prov.txt
+run prov.txt
+save autosave
+run prov.txt
+
+control
+add_control\
+change_control 3086 c:hun
+change_control 3086 hun
+change_control 3086 c:HUN
+annex AAAA58
+annex AAA58
+annex AAA69
+save autosave
+clearantagonism
+claer antagonism
+clear antagonism
+antagonism
+antagonism -50
+antagonism -500
+save autosave
+manpower
+run prov.txt
+save autosave
+run prov.txt
+make_subject
+make_subject fiefdom ven
+run prov.txtrun prov.txt
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+cash
+save autosave
+prestige 50
+cash
+ti
+fow
+ti
+unti
+noti
+tioff
+ti_off
+no_ti
+noy di
+not ti
+ti off
+off ti
+Tirun prov.txt
+run prov.txt
+fow
+run prov.txt
+save autosave
+date
+date 1407
+change_date 1407
+change_date 1408
+change_date 1409
+
++save autosave
+save autosave
+stability 100
+legitimacy 100
+save autosave
+run prov.txt
+save autosave
+fow
+fsave autosave
+save autosave
+legitimacy 100
+run prov.txt
+legitimacy 100
+add_legitimacy 100
+run prov.txt
+save autosave
+set_adm 85 16808972
+set_adm 16808972 85
+legitimacy 100
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+set_mil 16808972
+set_mil 16808972 10
+set_mil 16808972 90
+save autosave
+gui.createwidget gui/glorpUI_window.gui glorpUI_window
+GUI.ClearWidgets ideas_window
+debug_mode
+gui.ClearWidgets glorpUI_window
+save autosave
+GUI.ClearWidgets ideas_window
+add_core 3385
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosavecash
+cash
+save autosave
+cash -2500
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+clear
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txtrun prov.txt
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+cash 500
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+manpower 100
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+ve autosave
+save autosave
+osave save autosave
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+cash 5000
+cash -5000
+cash 5000
+cash -5000
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+autosave
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+cash
+cash 50000
+legitimacy 100
+run prov.txt
+cash -50000
+cash 13000
+cash 170
+save autosave
+GUI.ClearWidgets ideas_window
+manpower 10
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+manpower 1000
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+run prov.txtrun prov.txt
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+cash 100000
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+set_mil 39992 100
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+SAVE AUTOSAVE
+GUI.ClearWidgets ideas_window
+SAVE AUTOSAVE
+save autosave
+prestige 500
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+clear
+run prov.txt
+run prov.txt\
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+event flavor_swe.4
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+legitimacy 100
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+change_religion TWS lutheran
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+ave autosave
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+legitimacy
+legitimacy 1000
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+cash
+save autosave
+cash
+GUI.ClearWidgets ideas_window
+cash
+cash -72
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+cash 1623
+GUI.ClearWidgets ideas_window
+save autosave
+prestige 7
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+sailors 1000
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+cash
+cash 5000
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosavesave autosave
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+control
+run prov.txt
+yesman
+run prov.txt
+manower 123
+manpower 234
+yesman
+run prov.txt
+run prov.txtrun prov.txt
+run prov.txt
+run prov.txtrun prov.txt
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+cash
+save autosave
+cash
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+cash
+cash 100000
+GUI.ClearWidgets ideas_window
+cash -86000
+save autosave
+GUI.ClearWidgets ideas_window
+legitimacy 100
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+change_religion
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+add_adm 39992 100
+set_adm 39992 100
+set_dip 39992 100
+add_trait 39992 immortal
+add_trait immortal 39992
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+tag tws
+yesman
+tag hun
+GUI.ClearWidgets ideas_window
+stability 50
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+cash 10000
+GUI.ClearWidgets ideas_window
+save autosave
+yesman
+save autosave
+make_pu hab
+wsave autosave
+save autosave
+run prov.txt
+legitimacy 100
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+legitimacy 100
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+kill_character 16819581
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+run prov.txt
+GUI.ClearWidgets ideas_window
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+kill_character 55255
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+cash
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+ti
+unti
+no_ti
+ti_off
+Ti
+ti_off
+no_ti
+explorer
+!ti
+no_ti
+_tisave autosave
+save autosave
+yesman
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+cash
+cash 100000
+cash -70000
+save autosave
+stability 50
+save autosave
+GUI.ClearWidgets ideas_window
+set_mil 16817820 100
+set_mil 50979
+set_mil 50979 100
+set_dip 50979 100
+set_adm 50979 100
+GUI.ClearWidgets ideas_window
+set_dip 16817820 100
+set_adm 16817820 100
+cash 100000
+manpower 10
+cash -94000
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save testsave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+cash 4000
+save autosave
+run prov.txt
+save autosave
+ave autosave
+save autosavesave autosave
+save autosave
+GameStateTick.RenderFrameIfNeeded
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+add_trait immortal 39992
+add_trait immortal 3
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+cash
+cash 10000
+save autosave
+stability 2
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GameStateTick.RenderFrameIfNeeded
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+set_mil 76 56314
+set_mil 56314 76
+save autosave
+run prov.txt
+save autosave
+set_mil 76 16823947
+set_mil 16823947  76
+set_mil 16823947 76
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+cash 100
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+cash 1000
+cash 10000
+cash 100000
+save autosave
+cash -50000
+save autosave
+GUI.ClearWidgets ideas_window
+legitimacy 100
+GUI.ClearWidgets ideas_window
+cash 10000
+legitimacy 100
+run prov.txt
+GUI.ClearWidgets ideas_window
+stability 100
+GUI.ClearWidgets ideas_window
+save autosave
+cash 1000
+cash 100000
+cash -40000
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+stability 7
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+ve
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+wsave autosave
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+manpower 1000
+GUI.ClearWidgets ideas_window
+save autosave
+cash 10000
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+set_adm 50597 100
+set_dip 50597 100
+set_mil 50597 100
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+utosave
+save autosave
+cash 1000
+cash 100000
+cash -48000
+save autosave
+stabilty 50
+stability 50
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+
+run prov.txt
+prestige 50
+save autosave
+GUI.ClearWidgets ideas_window
+cash 100000
+cash -70000
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+manpower 100
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+yesman
+save autosave
+tag aaa92
+yesman
+tag hun
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+yesmansave autosave
+save autosave
+make_union
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+manpower 1000
+set_adm 16830748 100
+set_dip 16830748 100
+set_mil 16830748 100
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+yesman
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+cash 10000
+cash 100000
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+manpower 100save autosave
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+gui.createwidget gui/glorpUI_window.gui glorpUI_window
+gui.ClearWidgets glorpUI_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+tosave
+save autosave
+GameStateTick.RenderFrameIfNeeded
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+run prov.txtrun prov.txt
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+clear
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+run prov.txt
+yesman
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+cash 10000
+cash -10000
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+autosave
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+cash 10000
+csave autosave
+save autosave
+GUI.ClearWidgets ideas_window
+save autosasave autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+cash 100000
+save autosave
+cash 100000
+save autosave
+cash 100000
+cash -100000
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+yesman
+run prov.txt
+make_subject byz fiefdom
+make_subject fiefdom byz
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+cash 1000000
+save autosave
+GUI.ClearWidgets ideas_window
+cash -700000
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+ave autosave
+save autosave
+cash 10000
+cash 1000000
+save autosave
+cash -900000
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+tag save autosave
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+set_adm 67062 100
+set_dip 67062 100
+set_mil 67062 100
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+w save autosave
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+cash 100000
+cash -90000
+GUI.ClearWidgets ideas_window
+save autosave
+manpower 10000
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+stability 100
+stability -15
+stability -9
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+RUN PROV.TXT
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save
+save autosasave autosave
+GUI.ClearWidgets ideas_window
+cash 100000
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+cash
+cash 10000
+manpower 10000
+cash 10000
+GUI.ClearWidgets ideas_window
+save autosave
+tag tws
+yesman
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+
+run prov.txt
+save autosave
+yesman
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+yesman
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+make_subject bur fiefdom
+make_subject fiefdom bur
+make_subject fiefdom BGP
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GameStateTick.RenderFrameIfNeeded
+save autosave
+make_subject fiefdom sav
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+make_subject fiefdom TWS
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+make_subject vassal byz
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+osave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+make_subject vassal cri
+GUI.ClearWidgets ideas_window
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+sailors 1000
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+cash 10000
+cash 100000
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txtrun prov.txt
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+ve autosa autosave
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+make_subject vassal aaa82
+save autosave
+make_subject vassal mfe
+save autosave
+make_subject vassal aaa15
+save autosave
+make_subject vassal bsk
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+make_subject fiefdom bav
+save autosave
+make_subject fiefdom aaa23
+GUI.ClearWidgets ideas_window
+run prov.txt
+GUI.ClearWidgets ideas_window
+run prov.txt
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+set_mil 16836222 70
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+add_adm 26475 100
+GUI.ClearWidgets ideas_window
+
+add_adm 26475 100
+set_adm 26475 100
+GUI.ClearWidgets ideas_window
+set_adm 100 26475
+GUI.ClearWidgets ideas_window
+set_dip 26475 100
+save autosave
+set_dip 26475 10
+set_dip 26475 100
+save autosave
+remove_modifier
+remove_character_modifier
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+make_subject march cri
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+yesman
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+control
+change_controller
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+yesman
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+set_mil 76667 75
+save autosave
+GUI.ClearWidgets ideas_window
+set_adm 50343176 100
+set_dip 50343176 100
+set_mil 50343176 100
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txtrun prov.txt
+run prov.txt
+save autosave
+make_subject fiefdom lit
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+yesman
+GUI.ClearWidgets ideas_window
+set_adm 74572 85
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+set_adm 16824383 90
+set_dip 16824383 90
+set_mil 16824383 90
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+yesman
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+log
+log asdf
+help log
+log list
+blueprint_debugger
+explorer
+gui.CreateDockable gui/debug_menus.gui language_window
+GUI.ClearWidgets language_window
+gui.CreateDockable gui/debug_menus.gui map_debug_menu
+GUI.ClearWidgets map_debug_menu
+inspect_player_country
+run prov.txt
+GUI.ClearWidgets ideas_window
+run prov.txt
+inspect_player_country
+run prov.txt
+inspect_player_country
+run prov.txt
+tag pap
+GUI.ClearWidgets ideas_window
+tag hun
+GUI.ClearWidgets ideas_window
+run prov.txt
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+set_dip 16833716 75
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+stability 100
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+manpower 1000
+GUI.ClearWidgets ideas_window
+yesman
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+stability 62
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+stability 35
+cash 1000
+cash 100000
+cash -10000
+save autosave
+manpower 1000
+save autosave
+stability 25
+stability 1
+save autosave
+cash
+cash 100000
+cash -50000
+save autosave
+yesman
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+yesman
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+set_adm 80060 100
+set_mil 80060 100
+GameStateTick.RenderFrameIfNeeded
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+run prov.txtrun prov.txt
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+make_subject vassal aaa90
+GUI.ClearWidgets ideas_window
+make_subject march aaa90
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+make_subject vassal ste
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+debug_mode
+GUI.ClearWidgets ideas_window
+save autosave
+GameStateTick.RenderFrameIfNeeded
+save autosave
+debug_mode
+save autosave
+debug_mode
+GUI.ClearWidgets ideas_window
+debug_mode
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+set_adm 100 76667
+set_adm 76667 100
+set_dip 76667 100
+set_mil 76667 100
+save autosave
+GUI.ClearWidgets ideas_window
+set_mil 33605233 100
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+manpower 10000
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+sailors 1000
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+run prov.txt
+set_lowborn
+run prov.txt
+GUI.ClearWidgets ideas_window
+
+save autosave
+run prov.txt
+kill_character 50339275
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+create_character male new
+create_character male new ruler
+run prov.txt
+GUI.ClearWidgets ideas_window
+kill_character 67141133
+cash 85
+cash 850\
+cash 850
+GUI.ClearWidgets ideas_window
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+stability 20
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+cash 10000
+cash 30000
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+tag hun
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+yesman
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+yesman
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+make_subject vassal lit
+make_subject vassal ABA65
+make-subject march tws
+make_subject march tws
+GUI.ClearWidgets ideas_window
+make_subject march fiefdom
+make_subject march fief
+make_subject fiefdom tws
+make_subject fiefdom sav
+make_subject vassal sav
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+make_subject vassal mol
+manpower 10000
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+gui.CreateDockable gui/debug_menus.gui map_debug_menu
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+cash 10000
+cash -30000
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+make_subject vassal sav
+make_subject vassal byz
+make_subject vassal mol
+make_subject march swi
+make_subject march aaa82
+make_subject march aba65
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+cash 10000
+cash -20000
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+w save autosave
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+save autosasave autosave
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+manpower 1000
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+yesman
+winwars
+win_wars
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+save test
+save autosave
+save test
+save lastKnownGood
+save lastKnownGood2
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+
+save autosave
+save stillworking
+save autosave
+save working_may_9_1584
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave

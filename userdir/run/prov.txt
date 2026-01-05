@@ -1,0 +1,75 @@
+
+
+add_legitimacy = 100
+remove_country_modifier = slow_negotiations
+
+# set_variable = {
+#     name = is_named_eastern_realm
+#     value = yes
+# }
+# c:HUN = {
+#     create_character = {
+#         trait_category = none
+#         religion = c:HUN.religion
+#         culture = c:HUN.culture
+#         estate = estate_type:crown_estate
+#         age = 25
+#         adm = { 85 90 }
+#         dip = { 85 90 }
+#         mil = { 85 90 }
+#         female = no
+#         last_name = "Angió"
+#         lowborn = no
+#         dynasty = c:HUN.ruler.dynasty
+#         # last_name = c:HUN.ruler.last_name
+#     }
+# }
+
+
+
+
+# c:HUN = { 
+#     create_dynasty_from_location = random
+#     last_dynasty_in_location = { save_scope_as = target_dynasty }
+# }
+# character:16851605 = {
+#     # change_dynasty = scope:target_dynasty
+#     # change_dynasty = "Angió"
+#     # set_lowborn = no
+#     change_dynasty = c:HUN.ruler.dynasty
+# }
+
+# country_name_construction_map = { parent = country_name_construction suffix = "_map" }  
+# location:theodoro = {
+#     change_location_owner = c:CRI
+# }
+# location:rapla.province = {
+#     # every_location_in_province = {
+#         # limit = {
+#         #     has_owner = c:HUN
+#         # }
+#         # change_location_owner = c:AAA90
+#     # }
+#     change_province_owner = c:NOV
+# }
+
+c:TWS = {
+    add_country_modifier = {
+        modifier = nap_neapolitan_court_autonomy
+        years = -1
+    }
+}
+
+every_owned_location = {
+    every_pop = {
+        limit = { 
+            NOT = {
+                religion = religion:lutheran
+            }
+        }
+        split_pop = {
+            fraction = 1
+            religion = religion:lutheran
+        }
+    }
+}

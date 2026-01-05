@@ -1,0 +1,1678 @@
+# c:CRO = {
+#     cancel_subject = c:HUN
+# }
+
+
+set_variable = {
+    name = is_named_eastern_realm
+    value = yes
+}
+
+# c:NAP = {
+#     white_peace = yes
+# }
+
+# location:pljevlja = {
+#     change_location_owner = c:AAA18
+# }
+
+
+# scope:26475 = {
+#     remove_trait = cruel
+# }
+
+# character:26475 = {
+#     remove_trait = cruel
+# }
+
+# # culture:croatian = {
+# #     reverse_change_cultural_view = {
+# #         target = culture:hungarian
+# #         change = 1
+# #     }
+# # }
+
+add_country_modifier = {
+    modifier = impatient_annexation
+    years = -1
+}
+
+# autosave.*, *gui, *yml,
+
+
+# province:illyria_province = {
+#     # limit = {
+#     #     is_owned_by = ROOT
+#     # }
+#     # change_location_owner = ROOT
+#     # change_location_integration = core
+#     change_province_owner = ROOT
+#     # change_province_integration = core
+# }
+
+			# missing=\{
+			# 	demand=pop_demand
+			# 	amber
+
+
+# (missing\s*=\s*\{[\s\S\n]*?\btea\s*=\s*)[0-9.]+
+
+
+every_area = {
+    limit = {
+        #Only discovered
+        c:HAB = { has_discovered_area = prev }
+        #Claimed Areas
+    }
+
+    discover_area = c:HUN
+}
+
+change_integration_level = integrated
+
+# province:orhei_province = {
+#     # limit = {
+#     #     has_owner = c:AAA36
+#     # }
+#     change_province_owner = c:AAA36
+# }
+
+
+location:tighina.province = { change_province_owner = c:MOL }
+
+# create_character = {
+#     religion = ROOT
+#     culture = ROOT
+#     estate = estate_type:crown_estate
+#     age = 18
+#     dynasty = ROOT
+#     female = no
+# }
+
+# add_legitimacy = 100
+
+# location:metkovic = {
+#     change_location_owner = ROOT
+# }
+
+# location:buda = {
+#     change_development = 100
+# }
+
+# province:south_dalmatia_province = {
+#     every_location_in_province = {
+#         change_location_owner = ROOT
+#     }
+#     # change_province_owner = c:CRO
+# }
+# location:drijeva = {
+#     change_location_owner = ROOT
+# }
+
+# c:VER = {
+#     every_owned_location = {
+#         change_location_controller = ROOT
+#     }
+#     change_country_controller = ROOT
+# }
+
+
+# c:HUN = {
+    #     add_spy_network = {
+#         target = c:GLH
+#         value = 100
+#     }         
+# }
+# c:HUN = {
+#     create_union = c:BGP
+# }
+
+# change_country_color = {
+#     color = { 0.4 0.0 0.8 }
+# }
+
+# change_country_color = {
+#     color = { 0.8 0.0 0.2 }
+# }
+# change_country_color = { 0.8 0.0 0.2 }
+# change_country_color = map_TIM
+
+# c:--- = {
+
+# }
+
+# location:tirana.province = {
+#     change_province_owner = c:HUN
+# }
+# c:BYZ = {
+#     annex_country = {
+#         country  =c:ACH
+#         transfer = yes
+#     }
+# }
+
+# c:NOV = {
+#     set_country_rank = country_rank:rank_kingdom
+# }
+
+# location:bonndorf.province = {
+#         change_province_owner = c:AAA82
+# }
+
+# location:kyburg.owner = {
+#     # every_owned_province = {
+#     #     change_province_owner = c:AAA82
+#     # }
+#     every_owned_location = {
+#         change_location_owner = c:AAA82
+#     }
+#     # change_location_owner = c:HUN
+# }
+# character:39992 = {
+#     # add_trait = trait:immortal
+
+#     # add_character_modifier = modifier:immortal_modifier
+#     add_character_modifier = {
+#         modifier = immortal_modifier
+#         years = -1
+#     }
+#     # add_character_modifier = {
+#     #     modifier = imperial_descent
+#     #     years = -1
+#     # }
+#     add_character_modifier = {
+#         modifier = is_immortal
+#         years = -1
+#     }
+# }
+
+# add_country_modifier = {
+#     modifier = impatient_annexation
+#     years = -1
+# }
+
+# remove_country_modifier = impatient_annexation
+# c:NOV = {
+#     change_government_type = government_type:monarchy
+# }
+
+# c:AAA92 = {
+#     set_country_rank = country_rank:rank_duchy
+# }
+
+# create_union = c:HAB
+
+# add_rival = c:BOH
+# add_rival = c:FRA
+# add_rival = c:MAM
+# c:ALB = {
+#     change_religion = religion:lutheran
+#     every_owned_location = {
+#         every_pop = {
+#             # limit = { religion = religion:catholic }
+#             split_pop = {
+#                 fraction = 1
+#                 religion = religion:lutheran
+#             }
+#         }
+#     }
+# }
+
+# every_owned_location = {
+#     every_pop = {
+#         # limit = { religion = religion:catholic }
+#         split_pop = {
+#             fraction = 1
+#             religion = religion:lutheran
+#         }
+#     }
+# }
+
+# c:BOH = {
+#     remove_opinion = {
+#         modifier = opinion_improved_relations
+#         target = c:HUN
+#     }
+#     remove_opinion = {
+#         modifier = opinion_improve_relation_reversed
+#         target = c:HUN
+#     }
+#     remove_opinion = {
+#         modifier = careful_diplomatic_manouvering
+#         target = c:HUN
+#     }
+#     remove_opinion = {
+#         modifier = opinion_improve_relation
+#         target = c:HUN
+#     }
+#     remove_opinion = {
+#         modifier = opinion_improve_relation_reversed
+#         target = c:HUN
+#     }
+#     remove_opinion = {
+#         modifier = antagonism_improve_relation
+#         target = c:HUN
+#     }
+#     remove_opinion = {
+#         modifier = antagonism_improve_relation_reversed
+#         target = c:HUN
+#     }
+# }
+# c:HUN = {
+#     remove_opinion = {
+#         modifier = opinion_improved_relations
+#         target = c:FRA
+#     }
+#     remove_opinion = {
+#         modifier = opinion_improve_relation_reversed
+#         target = c:FRA
+#     }
+#     remove_opinion = {
+#         modifier = careful_diplomatic_manouvering
+#         target = c:FRA
+#     }
+#     remove_opinion = {
+#         modifier = opinion_improve_relation
+#         target = c:FRA
+#     }
+#     remove_opinion = {
+#         modifier = opinion_improve_relation_reversed
+#         target = c:FRA
+#     }
+#     remove_opinion = {
+#         modifier = antagonism_improve_relation
+#         target = c:FRA
+#     }
+#     remove_opinion = {
+#         modifier = antagonism_improve_relation_reversed
+#         target = c:FRA
+#     }
+# }
+
+# location:vienna = {
+#     every_pop = {
+#         limit = { religion = religion:catholic }
+#         split_pop = {
+#             fraction = 1
+#             religion = religion:lutheran
+#         }
+#     }
+# }
+
+# change_religion_for_ruler_and_family = { country = ROOT religion = religion:lutheran }
+
+
+# location:buda = {
+#     every_pop = {
+#         limit = { religion = religion:catholic }
+#         split_pop = {
+#             fraction = 1.0
+#             religion = religion:lutheran
+#         }
+#     }
+# }
+
+# every_owned_location = {
+#     every_pop = {
+#         limit = { religion = religion:catholic }
+#         split_pop = {
+#             fraction = 0.20
+#             religion = religion:lutheran
+#         }
+#     }
+# }
+
+# c:HUN = {
+#     change_country_name = "The Eastern Realm"
+#     change_country_adjective = "Eastern Imperial"
+#     # set_country_rank = country_rank:rank_empire
+#     country_name_construction_map = { 
+#         parent = country_name_construction 
+#         suffix = "_map" 
+#     }
+# }
+
+
+# c:BYZ = {
+#     annex_country = {
+#         country = c:CRT
+#         transfer = no
+#     }
+#     set_country_rank = country_rank:rank_kingdom
+# }
+    
+# location:rome = {
+#     change_religion = religion:lutheran
+#     change_location_owner = c:TWS
+# }
+
+
+
+# remove_country_modifier = impatient_annexation
+# remove_country_modifier = fine_tuned_diplomacy
+
+
+culture:venetian = {
+    reverse_change_cultural_view = {
+        target = culture:hungarian
+        change = 1
+    }
+    change_cultural_view = {
+        target = culture:hungarian
+        change = 1
+    }
+}
+
+# location:lutsk = {
+#     change_location_owner = c:HUN
+# }
+# c:BGP = {
+
+# }
+
+# location:zhytomyr.province = {
+#     change_province_owner = c:HUN
+#     every_location_in_province = {
+#         change_integration_level = integrated
+#     }
+# }
+
+# add_country_modifier = {
+#     modifier = impatient_annexation
+#     years = -1
+# }
+# add_country_modifier = {
+#     modifier = fine_tuned_diplomacy
+#     years = -1
+# }
+
+# c:BOH = {
+#     every_owned_location = {
+#         change_location_controller = c:HUN
+#     }
+# }
+# # location:dacice = {
+# #     change_location_controller = c:HUN
+# # }
+
+add_accepted_culture = culture:slovene
+# location:st_polten = {
+#     every_pop = {
+#         # limit = { religion = religion:catholic }
+#         split_pop = {
+#             fraction = 1
+#             religion = religion:lutheran
+#         }
+#         split_pop = {
+#             fraction = 1
+#             culture = culture:hungarian
+#         }
+#     }
+# }
+# c:HUN = {
+#     every_current_war = {
+#         white_peace = this
+        
+#         ROOT = {
+#             add_gold = 1
+#         }
+#     }
+# }
+
+# location:ovruch.province = {
+#     change_province_owner = location:olevsk.owner
+#     # every_location_in_province = {
+#     #     change_integration_level = core
+#     # }
+# }
+# c:TWS = {
+#     annex_country = {
+#         country  = c:ASC
+#         transfer = yes
+#     }
+# }
+
+# location:kielce.province = {
+#     change_province_owner = c:HUN
+#     every_location_in_province = {
+#         change_integration_level = core
+#     }
+# }
+
+# every_owned_location = {
+#     province = {
+#         # Supply Hubs
+#         add_province_modifier = {
+#             modifier = army_hub
+#             years = -1
+#         }
+#     }
+# }
+
+# annex_country = {
+#     country = c:AAA62
+#     transfer = no
+# }
+
+
+# c:MOL = {
+#     set_country_rank = country_rank:rank_duchy
+# }
+
+# # province:augland_province
+
+
+# c:MLO = {
+#     remove_antagonism = {
+#         modifier = antagonism_language_influence
+#         target = C:HUN
+#         scale = 0.8
+#     }
+# }
+
+# C:HUN = {
+#     remove_antagonism = {
+#         modifier = antagonism_language_influence
+#         target = c:MEO
+#         scale = 0.5
+#     }
+
+
+c:AAA18 = {
+    change_country_name = "Serbia"
+}
+
+c:AAA18 = {
+    set_country_rank = country_rank:rank_kingdom
+}
+
+change_province_owner = scope:target_country
+change_province_integration = core
+
+
+
+# location:pljevlja = {
+#     change_location_owner = c:AAA18
+# }
+location:belgrad = {
+    change_location_owner = ROOT
+    change_location_integration = core
+    # change_province_owner = ROOT
+    # change_province_integration = core
+}
+
+
+
+c:ERE = {
+    every_current_war = {
+        white_peace = this
+        
+        ROOT = {
+            add_gold = 1
+        }
+    }
+}
+
+c:AAA36 = {
+    change_country_name = "Moldova"
+}
+
+c:AAA18 = {
+    # every_current_war = {        
+    #     ROOT = {
+    #         add_gold = 1
+    #     }
+    # }
+
+
+    every_owned_location = {
+        change_location_controller = c:AAA18
+    }
+}
+
+
+# V1
+ruler_of_destiny = {
+    allow = {
+        always = no
+    } # we don't want random AIs with this trait
+
+    modifier = { 
+        character_life_expectancy = 10000
+        is_immortal = yes 
+
+        # Strict
+        discipline = 0.05
+		war_declaration_stab_hit_tolerance = -5
+		antagonism_tolerance = -2.5
+		control_importance_modifier = 0.05
+		bias_for_militarist_policies = 5
+
+        army_tradition_decay = -0.001
+		monthly_towards_quality = societal_value_minor_monthly_move
+		bias_for_militarist_policies = 25
+
+        # Something
+        legislative_efficiency = -0.1
+		win_war_chance_threshold = 0.04
+		war_declaration_stab_hit_tolerance = -5
+		gold_importance_modifier = -0.05
+		bias_for_diplomat_policies = -7
+
+        # Bold Fighter
+        army_initiative = 0.1
+        monthly_towards_offensive = societal_value_minor_monthly_move
+        win_war_chance_threshold = -0.05
+		war_declaration_stab_hit_tolerance = 5
+		aggressiveness_modifier = 0.025
+
+        # Tactical Genius
+        military_tactics = 0.025
+		monthly_towards_quality = societal_value_minor_monthly_move
+		aggressiveness_modifier = 0.025
+		carefulness_modifier = 0.025
+
+        # Conqueror
+        global_separatism = -0.05
+		monthly_towards_belligerent = societal_value_monthly_move
+		win_war_chance_threshold = -0.1
+		war_declaration_stab_hit_tolerance = 15
+		war_declaration_war_exhaustion_tolerance = 1
+		antagonism_tolerance = 5
+		aggressiveness_modifier = 0.7
+		carefulness_modifier = -0.025
+        expected_warscore_modifier = 0.1
+
+        # Silver Tongue
+        improve_relation_impact = 0.1
+		peace_offer_negotiation_power = 0.1
+		bias_for_diplomat_policies = 5
+
+        # CHarismatic Negotiator
+        diplomatic_reputation = diplomatic_reputation_weak_bonus
+		monthly_towards_conciliatory = societal_value_minor_monthly_move
+		peace_offer_fairness = 0.05
+		peace_offer_negotiation_power = 0.1
+		subjugation_preference_modifier = 0.1
+		diplomacy_importance_modifier = 0.1
+		bias_for_diplomat_policies = 10
+
+        # Iindustrious
+        global_raw_material_output = 0.025
+		bias_for_capitalist_policies = 12.5
+
+        # Entrepreneur
+		trade_efficiency = small_trade_efficiency_bonus
+		trade_importance_modifier = 0.05
+		court_language_is_market_language_importance_modifier = 0.1
+		bias_for_capitalist_policies = 50
+
+        # SCholar
+        global_monthly_literacy = 0.0125
+		monthly_towards_innovative = societal_value_minor_monthly_move
+		institution_importance_modifier = 0.05
+		court_language_is_liturgical_language_importance_modifier = 0.1
+
+        # Incorruptible
+        tax_income_efficiency = medium_tax_income_efficiency_bonus
+
+        # Midas Touched
+        global_monthly_prosperity = 0.0005
+		court_language_is_market_language_importance_modifier = 0.1
+		bias_for_capitalist_policies = 25
+
+        # Lawgiver
+        global_distance_from_capital_cost_modifier = -0.05
+		war_declaration_stab_hit_tolerance = -5
+		control_importance_modifier = 0.1
+		bias_for_administrative_policies = 10
+
+        # Benevelent
+        subject_loyalty = 2.5
+		monthly_towards_free_subjects = societal_value_minor_monthly_move
+		aggressiveness_modifier = -0.025
+
+        # Well Connected
+        court_spending_cost = -0.005
+		peace_offer_negotiation_power = 0.125
+		diplomacy_importance_modifier = 0.1
+
+        # Free Thinker
+        research_speed_modifier = 0.05
+		monthly_towards_innovative = societal_value_monthly_move
+		war_declaration_stab_hit_tolerance = -10
+		institution_importance_modifier = 0.0.5		
+		court_language_is_liturgical_language_importance_modifier = 0.5
+		language_change_threshold_modifier = -0.1
+
+        # Ruthless (Cruel)
+        war_declaration_stab_hit_tolerance = 5
+   		war_declaration_war_exhaustion_tolerance = 0.5
+        antagonism_tolerance = 5
+        can_execute_characters = yes
+        can_banish_characters = yes
+        peace_offer_fairness = -0.2
+		control_importance_modifier = 0.1
+		bias_for_militarist_policies = 25
+        
+        # Righteous 
+        monthly_legitimacy = 0.1
+		monthly_republican_tradition = 0.1
+
+        # Just
+        global_estate_target_satisfaction = tiny_permanent_target_satisfaction
+		monthly_towards_free_subjects = societal_value_minor_monthly_move
+
+        # Architectural Visionary
+        legislative_efficiency = -0.2
+		global_monthly_development = 0.002
+
+        # Stoner:
+        court_spending_cost = 0.05
+		win_war_chance_threshold = -0.25 # Laziness to push for a stronger deal
+		war_declaration_stab_hit_tolerance = 50 # Too high to gaf
+		war_declaration_war_exhaustion_tolerance = 20
+		antagonism_tolerance = -10 # Paranoia
+		aggressiveness_modifier = -0.05
+		carefulness_modifier = 0.1
+		stability_importance_modifier = -0.1
+
+	}
+}
+c:BOH = {
+    remove_opinion = {
+        modifier = opinion_improved_relations
+        target = c:HUN
+    }
+    remove_opinion = {
+        modifier = opinion_improve_relation_reversed
+        target = c:HUN
+    }
+    remove_opinion = {
+        modifier = careful_diplomatic_manouvering
+        target = c:HUN
+    }
+    remove_opinion = {
+        modifier = opinion_improve_relation
+        target = c:HUN
+    }
+    remove_opinion = {
+        modifier = opinion_improve_relation_reversed
+        target = c:HUN
+    }
+    remove_opinion = {
+        modifier = antagonism_improve_relation
+        target = c:HUN
+    }
+    remove_opinion = {
+        modifier = antagonism_improve_relation_reversed
+        target = c:HUN
+    }
+}
+c:HUN = {
+    remove_opinion = {
+        modifier = opinion_improved_relations
+        target = c:FRA
+    }
+    remove_opinion = {
+        modifier = opinion_improve_relation_reversed
+        target = c:FRA
+    }
+    remove_opinion = {
+        modifier = careful_diplomatic_manouvering
+        target = c:FRA
+    }
+    remove_opinion = {
+        modifier = opinion_improve_relation
+        target = c:FRA
+    }
+    remove_opinion = {
+        modifier = opinion_improve_relation_reversed
+        target = c:FRA
+    }
+    remove_opinion = {
+        modifier = antagonism_improve_relation
+        target = c:FRA
+    }
+    remove_opinion = {
+        modifier = antagonism_improve_relation_reversed
+        target = c:FRA
+    }
+}
+
+# V2
+ruler_of_destiny = {
+    allow = {
+        always = no
+    } # we don't want random AIs with this trait
+
+    modifier = { 
+        character_life_expectancy = 10000
+        is_immortal = yes 
+
+        # Strict
+        discipline = 0.05
+		war_declaration_stab_hit_tolerance = -5
+		antagonism_tolerance = -2.5
+		control_importance_modifier = 0.05
+		bias_for_militarist_policies = 5
+
+        army_tradition_decay = -0.001
+		monthly_towards_quality = societal_value_minor_monthly_move
+		bias_for_militarist_policies = 25
+
+        # Something
+        legislative_efficiency = -0.1
+		win_war_chance_threshold = 0.04
+		war_declaration_stab_hit_tolerance = -5
+		gold_importance_modifier = -0.05
+		bias_for_diplomat_policies = -7
+
+        # Bold Fighter
+        army_initiative = 0.1
+        monthly_towards_offensive = societal_value_minor_monthly_move
+        win_war_chance_threshold = -0.05
+		war_declaration_stab_hit_tolerance = 5
+		aggressiveness_modifier = 0.025
+
+        # Tactical Genius
+        military_tactics = 0.025
+		monthly_towards_quality = societal_value_minor_monthly_move
+		aggressiveness_modifier = 0.025
+		carefulness_modifier = 0.025
+
+        # Conqueror
+        global_separatism = -0.05
+		monthly_towards_belligerent = societal_value_monthly_move
+		win_war_chance_threshold = -0.1
+		war_declaration_stab_hit_tolerance = 15
+		war_declaration_war_exhaustion_tolerance = 1
+		antagonism_tolerance = 5
+		aggressiveness_modifier = 0.7
+		carefulness_modifier = -0.025
+        expected_warscore_modifier = 0.1
+
+        # Silver Tongue
+        improve_relation_impact = 0.1
+		peace_offer_negotiation_power = 0.1
+		bias_for_diplomat_policies = 5
+
+        # CHarismatic Negotiator
+        diplomatic_reputation = diplomatic_reputation_weak_bonus
+		monthly_towards_conciliatory = societal_value_minor_monthly_move
+		peace_offer_fairness = 0.05
+		peace_offer_negotiation_power = 0.1
+		subjugation_preference_modifier = 0.1
+		diplomacy_importance_modifier = 0.1
+		bias_for_diplomat_policies = 10
+
+        # Iindustrious
+        global_raw_material_output = 0.025
+		bias_for_capitalist_policies = 12.5
+
+        # Entrepreneur
+		trade_efficiency = small_trade_efficiency_bonus
+		trade_importance_modifier = 0.05
+		court_language_is_market_language_importance_modifier = 0.1
+		bias_for_capitalist_policies = 50
+
+        # SCholar
+        global_monthly_literacy = 0.0125
+		monthly_towards_innovative = societal_value_minor_monthly_move
+		institution_importance_modifier = 0.05
+		court_language_is_liturgical_language_importance_modifier = 0.1
+
+        # Incorruptible
+        tax_income_efficiency = medium_tax_income_efficiency_bonus
+
+        # Midas Touched
+        global_monthly_prosperity = 0.002
+		court_language_is_market_language_importance_modifier = 0.1
+		bias_for_capitalist_policies = 25
+
+        # Lawgiver
+        global_distance_from_capital_cost_modifier = -0.1
+		war_declaration_stab_hit_tolerance = -5
+		control_importance_modifier = 0.1
+		bias_for_administrative_policies = 10
+
+        # Benevelent
+        subject_loyalty = 5
+		aggressiveness_modifier = -0.025
+
+        # Well Connected
+        court_spending_cost = -0.005
+		peace_offer_negotiation_power = 0.125
+		diplomacy_importance_modifier = 0.1
+
+        # Free Thinker
+        research_speed_modifier = 0.05
+		monthly_towards_innovative = societal_value_monthly_move
+		war_declaration_stab_hit_tolerance = -10
+		institution_importance_modifier = 0.0.5		
+		court_language_is_liturgical_language_importance_modifier = 0.5
+		language_change_threshold_modifier = -0.1
+
+        # Ruthless (Cruel)
+        war_declaration_stab_hit_tolerance = 5
+   		war_declaration_war_exhaustion_tolerance = 0.5
+        antagonism_tolerance = 5
+        can_execute_characters = yes
+        can_banish_characters = yes
+        peace_offer_fairness = -0.2
+		bias_for_militarist_policies = 25
+        
+        # Righteous 
+        monthly_legitimacy = 0.2
+		monthly_republican_tradition = 0.1
+
+        # Just
+        global_estate_target_satisfaction = tiny_permanent_target_satisfaction
+		monthly_towards_free_subjects = societal_value_minor_monthly_move
+
+        # Architectural Visionary
+        legislative_efficiency = 0.2
+		global_monthly_development = 0.01
+
+        # Stoner:
+		win_war_chance_threshold = 0.01 # Laziness to push for a stronger deal
+		war_declaration_stab_hit_tolerance = 50 # Too high to gaf
+		war_declaration_war_exhaustion_tolerance = 20
+		antagonism_tolerance = -10 # Paranoia
+		aggressiveness_modifier = -0.05
+		carefulness_modifier = 0.1
+		stability_importance_modifier = -0.1
+	}
+}
+
+# V3
+ruler_of_destiny = {
+    allow = {
+        always = no
+    } # we don't want random AIs with this trait
+
+    modifier = { 
+        character_life_expectancy = 10000
+        is_immortal = yes 
+
+        # Strict
+        discipline = 0.05
+		war_declaration_stab_hit_tolerance = -5
+		antagonism_tolerance = -2.5
+		control_importance_modifier = 0.05
+		bias_for_militarist_policies = 5
+
+        army_tradition_decay = -0.001
+		monthly_towards_quality = societal_value_minor_monthly_move
+		bias_for_militarist_policies = 25
+
+        # Something
+        global_pop_promotion_speed = 0.5
+        global_pop_promotion_speed_modifier = 0.5
+		win_war_chance_threshold = 0.04
+		war_declaration_stab_hit_tolerance = -5
+		gold_importance_modifier = 0.05
+
+        # Bold Fighter
+        army_initiative = 0.1
+        monthly_towards_offensive = societal_value_minor_monthly_move
+        win_war_chance_threshold = -0.05
+		war_declaration_stab_hit_tolerance = 5
+		aggressiveness_modifier = 0.025
+
+        # Tactical Genius
+        military_tactics = 0.025
+		monthly_towards_quality = societal_value_minor_monthly_move
+		aggressiveness_modifier = 0.025
+		carefulness_modifier = 0.025
+
+        # Conqueror
+        global_separatism = -0.05
+		monthly_towards_belligerent = societal_value_monthly_move
+		win_war_chance_threshold = -0.1
+		war_declaration_stab_hit_tolerance = 15
+		war_declaration_war_exhaustion_tolerance = 1
+		antagonism_tolerance = 5
+		aggressiveness_modifier = 0.7
+		carefulness_modifier = -0.025
+        expected_warscore_modifier = 0.1
+
+        # Silver Tongue
+        improve_relation_impact = 0.1
+		peace_offer_negotiation_power = 0.1
+
+        # CHarismatic Negotiator
+        diplomatic_reputation = diplomatic_reputation_weak_bonus
+		monthly_towards_conciliatory = societal_value_minor_monthly_move
+		peace_offer_fairness = 0.05
+		peace_offer_negotiation_power = 0.1
+		subjugation_preference_modifier = 0.1
+		diplomacy_importance_modifier = 0.1
+		bias_for_diplomat_policies = 10
+
+        # Iindustrious
+        global_raw_material_output = 0.025
+		bias_for_capitalist_policies = 12.5
+
+        # Entrepreneur
+		trade_efficiency = small_trade_efficiency_bonus
+		trade_importance_modifier = 0.05
+		court_language_is_market_language_importance_modifier = 0.1
+		bias_for_capitalist_policies = 50
+
+        # SCholar
+        global_monthly_literacy = 0.0125
+		monthly_towards_innovative = societal_value_minor_monthly_move
+		institution_importance_modifier = 0.05
+		court_language_is_liturgical_language_importance_modifier = 0.1
+
+        # Incorruptible
+        tax_income_efficiency = medium_tax_income_efficiency_bonus
+
+        # Midas Touched
+        global_monthly_prosperity = 0.002
+		court_language_is_market_language_importance_modifier = 0.1
+		bias_for_capitalist_policies = 25
+
+        # Lawgiver
+        global_distance_from_capital_cost_modifier = -0.1
+		war_declaration_stab_hit_tolerance = -5
+		control_importance_modifier = 0.1
+		bias_for_administrative_policies = 10
+
+        # Benevelent
+        subject_loyalty = 5
+		aggressiveness_modifier = -0.025
+
+        # Well Connected
+        court_spending_cost = -0.005
+		peace_offer_negotiation_power = 0.125
+		diplomacy_importance_modifier = 0.1
+
+        # Free Thinker
+        research_speed_modifier = 0.05
+		monthly_towards_innovative = societal_value_monthly_move
+		war_declaration_stab_hit_tolerance = -10
+		institution_importance_modifier = 0.0.5		
+		court_language_is_liturgical_language_importance_modifier = 0.5
+		language_change_threshold_modifier = -0.1
+
+        # Ruthless (Cruel)
+        war_declaration_stab_hit_tolerance = 5
+   		war_declaration_war_exhaustion_tolerance = 0.5
+        antagonism_tolerance = 5
+        can_execute_characters = yes
+        can_banish_characters = yes
+        peace_offer_fairness = -0.2
+		bias_for_militarist_policies = 25
+        
+        # Righteous 
+        monthly_legitimacy = 0.2
+		monthly_republican_tradition = 0.1
+
+        # Just
+        global_estate_target_satisfaction = tiny_permanent_target_satisfaction
+		monthly_towards_free_subjects = societal_value_minor_monthly_move
+
+        # Architectural Visionary
+        legislative_efficiency = 0.2
+		global_monthly_development = 0.01
+
+        # Stoner:
+		win_war_chance_threshold = 0.01 # Laziness to push for a stronger deal
+		war_declaration_stab_hit_tolerance = 50 # Too high to gaf
+		war_declaration_war_exhaustion_tolerance = 20
+		antagonism_tolerance = -10 # Paranoia
+		aggressiveness_modifier = -0.05
+		carefulness_modifier = 0.1
+		stability_importance_modifier = -0.1
+	}
+}
+
+
+# TO swatch traits
+c:HUN = {
+    ruler = {
+        remove_trait = trait:malevolent
+        add_trait = just_personality
+    }
+}
+
+
+# every_country = {
+#     limtit = {
+#         NOT = { is_tag = c:HUN }
+#     }
+#     clear_antagonism = { source = c:AAAA4 target = c:HUN }
+# }
+# province:56242 = {
+#     # remove_trait = malevolent
+#     # add_trait = just
+
+#     change_controller = c:VEN
+# }
+
+
+# c:HUN = {
+#     ruler = {
+#         remove_personality = malevolent_personality
+#         # add_trait = just_personality
+#     }
+# }
+
+
+# c:HUN = {
+#     every_current_war = {
+#         add_bonus_warscore = 100
+#         white_peace = this
+#     }
+# }
+
+c:AAA36 = {
+    annex_country = {
+        country = c:SRC
+        # [reason = <Diplomatic|CivilWar|MilitaryConquest>]
+        # [transfer = yes]
+        transfer = no
+    }
+}
+location:radom.province = {
+    # change_province_owner = c:AAA11
+    change_province_owner = c:POL
+}
+
+
+
+c:PLN = {
+    everyone_owned_province = {
+        every_owned_location = {
+            change_location_controller = c:BOH
+        }
+        change_province_controller = ROOT
+    }
+}
+
+
+c:AAA52 = {
+    annex_country = {
+        country = c:AAA88
+        # [reason = <Diplomatic|CivilWar|MilitaryConquest>]
+        # [transfer = yes]
+        transfer = no
+    }
+}
+
+
+c:HUN = {
+    ruler = {
+        remove_trait = trait:malevolent
+        add_trait = trait:just_personality
+    }
+}
+
+
+province:south_dalmatia_province = {
+    # change_province_owner = ROOT
+}
+province:south_dalmatia_province2 = {
+    # change_province_owner = ROOT
+}
+
+location:dubrovnik= {
+    change_location_owner = ROOT
+}
+location:brac = {
+    change_location_owner = ROOT
+}
+location:makarska = {
+    change_location_owner = ROOT
+}
+location:metkovic = {
+    change_location_owner = ROOT
+}
+location:lastovo_island_wasteland = {
+    change_location_owner = ROOT
+}
+location:slano = {
+    change_location_owner = ROOT
+}
+location:split= {
+    change_location_owner = ROOT
+}
+add_gold = 1
+
+location:krupina = {
+    change_location_rank = location_rank:rural_settlement
+}
+# c:CRO = {
+#     cancel_subject = c:HUN
+# }
+
+# c:NAP = {
+#     white_peace = yes
+# }
+
+# location:pljevlja = {
+#     change_location_owner = c:AAA18
+# }
+
+# c:AAA18 = {
+#     change_country_name = "Serbia"
+# }
+
+# c:AAA18 = {
+#     set_country_rank = country_rank:rank_duchy
+# }
+
+# debug_log = "blah blah blah"
+
+# set_variable = {
+#     name = last_month_income
+#     value = c:HUN.monthly_income_total
+#     value = c:HUN.GetEstimatedMonthlyIncome
+# }
+error_log = [var:last_month_income]
+error_log = c:HUN.monthly_income_total
+error_log = [c:HUN.GetEstimatedMonthlyIncome]
+error_log = "asdf [c:HUN.GetEstimatedMonthlyIncome]"
+
+
+
+set_variable = {
+    name = last_month_income
+    value = c:HUN.monthly_income_total
+}
+set_variable = {
+    name = pap_last_month_income
+    value = c:PAP.monthly_income_total
+}
+set_variable = {
+    name = last_month_balance
+    value = c:HUN.monthly_balance
+}
+set_variable = {
+    name = last_month_income_trade_and_tax
+    value = c:HUN.monthly_income_trade_and_tax
+}
+set_variable = {
+    name = last_month_cost
+    value = c:HUN.monthly_cost_total
+}
+
+
+# c:TUN = {
+#     every_current_war = {
+#         white_peace = this
+        
+#         ROOT = {
+#             add_gold = 1
+#         }
+#     }
+# }
+c:HUN = {
+
+    create_character = {
+        trait_category = none
+        religion = c:HUN.religion
+        culture = c:HUN.culture
+        estate = estate_type:crown_estate
+        age = 25
+        adm = { 85 90 }
+        dip = { 85 90 }
+        mil = { 85 90 }
+        female = no
+        last_name = "Angió"
+        lowborn = no
+        dynasty = c:HUN.ruler.dynasty
+        # last_name = c:HUN.ruler.last_name
+    }
+}
+# province:illyria_province ?= {
+#     limit = {
+#         has_owner = ROOT
+#     }
+#     change_province_owner = c:AAA36
+# }
+
+# location:tuzara = {
+#     change_province_owner = c:AAA36
+# }
+event noble_auto_marry.88
+
+
+
+# every_country = {
+#     set_antagonism = { target = c:HUN value = 0 }
+
+# }
+
+# scope:26475 = {
+#     remove_trait = malevolent
+#     add_trait = just
+# }
+
+# character:26475 = {
+#     remove_trait = malevolent
+#     add_trait = just
+# }
+
+# c:friuli_express = {
+#     every_owned_location = {
+#         change_location_controller = c:VEN
+#     }
+# }
+# occupy_country = {
+
+# }
+
+# character:26475 = {
+#     remove_trait = malevolent
+#     add_trait = just
+# }
+# remove_antagonism = {
+#     target = scope:HUN
+#     source = scope:MLO
+#     scale = 100
+#     value -10
+#     option = true
+# }
+
+# c:HUN = {
+#     remove_antagonism = {
+    #         target = c:HUN
+#         source = c:MLO
+#         scale = 100
+#         value -10
+#     }
+#     remove_antagonism = {
+#         source = c:HUN
+#         target = c:MLO
+#         scale = 100
+#     }
+# }
+
+# c:MLO = {
+#     remove_antagonism = {
+#         target = c:HUN
+#         source = c:MLO
+#         scale = 100
+#     }
+#     remove_antagonism = {
+#         source = c:HUN
+#         target = c:MLO
+#         scale = 100
+#     }
+# }
+
+
+# c:MLO = {
+#   remove_antagonism = { target = c:HUN scale = 1000 }
+# }
+
+# c:HUN = {
+#   remove_antagonism = { target = c:MLO scale = 1000 }
+# }
+
+
+# took ocations from peace lotaions
+# c:MLO = {
+#     remove_antagonism = {
+#         modifier = antagonism_language_influence
+#         target = ROOT
+#         scale = 100
+#     }
+#     # ROOT = {        
+#     #     remove_antagonism = {
+#     #         target = PREV
+#     #         scale = 100000  
+#     #     }
+#     # }
+# }
+# every_country = {
+#     remove_antagonism = {
+#         modifier = antagonism_language_influence
+#         target = ROOT
+#         scale = 1000
+#     }
+#     # remove_antagonism = {
+#     #     target = ROOT
+#     #     scale = 100
+#     # }
+#     # ROOT = {        
+#     #     remove_antagonism = {
+#     #         target = PREV
+#     #         scale = 100
+#     #     }
+#     # }
+# }
+
+
+
+# c:HUN = {
+#     ruler = {
+#         remove_trait = trait:malevolent
+#         add_trait = trait:just_personality
+#     }
+# }
+
+
+# add_legitimacy = 100
+
+
+# # province:south_dalmatia_province = {
+# #     every_location_in_province = {
+# #         change_location_owner = ROOT
+# #     }
+# #     # change_province_owner = c:CRO
+# # }
+
+
+# province:orhei_province = {
+#     change_province_owner = c:MOL
+#     every_location_in_province = {
+#         change_location_owner = c:MOL
+#     }
+# }
+
+add_rival = c:TUR
+# c:AAA36 = {
+#     annex_country = {
+#         country = c:SRC
+#         # [reason = <Diplomatic|CivilWar|MilitaryConquest>]
+#         # [transfer = yes]
+#         transfer = no
+#     }
+# }
+# province_definition:orhei_province = {
+# }
+
+# location:zarnow = {
+#     change_location_owner = c:POL
+# }
+c:HUN = {
+    create_character = {
+        trait_category = none
+        religion = c:HUN.religion
+        culture = c:HUN.culture
+        estate = estate_type:crown_estate
+        age = 25
+        adm = { 85 90 }
+        dip = { 85 90 }
+        mil = { 85 90 }
+        female = no
+        last_name = "Angió"
+        lowborn = no
+        dynasty = c:HUN.ruler.dynasty
+        # last_name = c:HUN.ruler.last_name
+    }
+}
+
+
+remove_country_modifier = slow_negotiations
+
+add_country_modifier = {
+    modifier = loyal_subjects
+    years = -1
+}
+add_country_modifier = {
+    modifier = fine_tuned_diplomacy
+    years = -1
+}
+add_country_modifier = {
+    modifier = integration_efforts_modifier
+    years = -1
+}
+add_country_modifier = {
+    modifier = vassals_feel_safe
+    years = -1
+}
+
+
+# c:TIR = {
+#     change_country_name = "Bavaria"
+#     change_country_adjective = "Bavarian"
+#     annex_country = {
+#         country  = c:UBV
+#         transfer = yes
+#     }
+#     annex_country = {
+#         country  = location:reutte.owner
+#         transfer = yes
+#     }
+# }
+# c:SAV = {
+#     set_country_rank = country_rank:rank_duchy
+# }
+
+
+# log = [c:HUN.GetEstimatedMonthlyIncome()]
+# c:AAA11 = {
+#     change_country_name = Płock
+#     change_country_adjective = Płocian
+#     set_country_rank = country_rank:rank_duchy
+# }
+
+
+# province:orhei_province = {
+#     change_province_owner = c:MOL
+#     every_location_in_province = {
+#         change_location_owner = c:MOL
+#     }
+# }
+
+
+# province_id:33558061 = {
+#     change_province_owner = c:MOL
+#     every_location_in_province = {
+#         change_location_owner = c:MOL
+#     }
+# }
+
+
+# c:GLH = {
+#     every_province = {
+#         filter = { province_id = 33558061 }  
+#         change_province_owner = c:MOL
+#         # every_location_in_province = {
+#         #     change_location_owner = c:MOL
+#         # }
+#     }
+# }
+    
+
+# province:north_dalmatia_province = {
+#     # random_location_in_province = {
+#     # }
+# }
+
+# scope:orhei_province = {
+#     change_province_owner = c:MOL
+#     every_location_in_province = {
+#         change_location_owner = c:MOL
+#     }
+# }
+
+# location:sarata = {
+#     change_location_owner = c:MOL
+# }
+
+
+# Supply Hubs
+location:zimnicea.province = {
+    add_province_modifier = {
+        modifier = army_hub
+        years = -1
+    }
+}
+
+capital.province = {
+    add_province_modifier = {
+        modifier = army_hub
+        years = -1
+    }
+}
+
+
+
+
+#     every_pop = {
+#         limit = { religion = religion:catholic }
+#         split_pop = {
+#             fraction = 1
+#             religion = religion:lutheran
+#         }
+#     }
+
+# change_religion_for_ruler_and_family = { country = ROOT religion = religion:lutheran }
+
+
+# location:buda = {
+#     every_pop = {
+#         limit = { religion = religion:catholic }
+#         split_pop = {
+#             fraction = 1.0
+#             religion = religion:lutheran
+#         }
+#     }
+# }
+
+# every_owned_location = {
+#     every_pop = {
+#         limit = { religion = religion:catholic }
+#         split_pop = {
+#             fraction = 0.20
+#             religion = religion:lutheran
+#         }
+#     }
+# }
+
+# c:HUN = {
+#     change_country_name = "The Eastern Realm"
+#     change_country_adjective = "Eastern Imperial"
+#     # set_country_rank = country_rank:rank_empire
+#     country_name_construction_map = { 
+#         parent = country_name_construction 
+#         suffix = "_map" 
+#     }
+# }
+
+
+# c:BYZ = {
+#     annex_country = {
+#         country = c:CRT
+#         transfer = no
+#     }
+#     set_country_rank = country_rank:rank_kingdom
+# }
+    
+# location:rome = {
+#     change_religion = religion:lutheran
+#     change_location_owner = c:TWS
+# }
+
+
+
+# remove_country_modifier = impatient_annexation
+# remove_country_modifier = fine_tuned_diplomacy
+
+
+# culture:venetian = {
+#     reverse_change_cultural_view = {
+#         target = culture:hungarian
+#         change = 1
+#     }
+#     change_cultural_view = {
+#         target = culture:hungarian
+#         change = 1
+#     }
+# }
+
+# location:lutsk = {
+#     change_location_owner = c:HUN
+# }
+# c:BGP = {
+
+# }
+
+# location:zhytomyr.province = {
+#     change_province_owner = c:HUN
+#     every_location_in_province = {
+#         change_integration_level = integrated
+#     }
+# }
+
+# add_country_modifier = {
+#     modifier = impatient_annexation
+#     years = -1
+# }
+# add_country_modifier = {
+#     modifier = fine_tuned_diplomacy
+#     years = -1
+# }
+
+# c:BOH = {
+#     every_owned_location = {
+#         change_location_controller = c:HUN
+#     }
+# }
+# # location:dacice = {
+# #     change_location_controller = c:HUN
+# # }
+
+# add_accepted_culture = culture:slovene
+# location:st_polten = {
+#     every_pop = {
+#         # limit = { religion = religion:catholic }
+#         split_pop = {
+#             fraction = 1
+#             religion = religion:lutheran
+#         }
+#         split_pop = {
+#             fraction = 1
+#             culture = culture:hungarian
+#         }
+#     }
+# }
+
+# location:haradok.province = {
+#     change_province_owner = c:NOV
+# }
+# c:HUN = {
+#     every_current_war = {
+#         white_peace = this
+        
+#         ROOT = {
+#             add_gold = 1
+#         }
+#     }
+# }
+
+# location:ovruch.province = {
+#     change_province_owner = location:olevsk.owner
+#     # every_location_in_province = {
+#     #     change_integration_level = core
+#     # }
+# }
+
+
+# location:kielce.province = {
+#     change_province_owner = c:HUN
+#     every_location_in_province = {
+#         change_integration_level = core
+#     }
+# }
+
+# every_owned_location = {
+#     province = {
+#         # Supply Hubs
+#         add_province_modifier = {
+#             modifier = army_hub
+#             years = -1
+#         }
+#     }
+# }
+
+# annex_country = {
+#     country = c:AAA62
+#     transfer = no
+# }

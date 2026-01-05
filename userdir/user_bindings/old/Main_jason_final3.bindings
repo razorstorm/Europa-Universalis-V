@@ -1,0 +1,507 @@
+version=4
+
+binding={
+	input_action="animation_editor_remove"
+	scancode=0
+}
+binding={
+	input_action="animation_editor_fit"
+	scancode=0
+}
+binding={
+	input_action="animation_editor_cancel_drag"
+	scancode=0
+}
+binding={
+	input_action="tools_search"
+	scancode=0
+}
+binding={
+	input_action="tools_close_search"
+	scancode=0
+}
+binding={
+	input_action="tools_search_go_to_next"
+	scancode=0
+}
+binding={
+	input_action="curve_editor_remove"
+	scancode=0
+}
+binding={
+	input_action="show_menu"
+	scancode=41
+	modifier=shift
+}
+binding={
+	input_action="show_menu"
+	scancode=41
+	modifier=shift
+}
+binding={
+	input_action="pause"
+	scancode=44
+	modifier=shift
+}
+binding={
+	input_action="previous_window"
+	scancode=0
+}
+binding={
+	input_action="previous_window"
+	scancode=43
+	modifier=ctrl
+	modifier=shift
+}
+binding={
+	input_action="next_window"
+	scancode=0
+}
+binding={
+	input_action="next_window"
+	scancode=43
+	modifier=ctrl
+}
+binding={
+	input_action="top_left_3"
+	scancode=0
+}
+binding={
+	input_action="top_left_3"
+	scancode=5
+}
+binding={
+	input_action="unpause"
+	scancode=0
+}
+binding={
+	input_action="camera_up"
+	scancode=0
+}
+binding={
+	input_action="camera_up"
+	scancode=0
+}
+binding={
+	input_action="camera_down"
+	scancode=0
+}
+binding={
+	input_action="camera_down"
+	scancode=0
+}
+binding={
+	input_action="camera_left"
+	scancode=0
+}
+binding={
+	input_action="camera_left"
+	scancode=0
+}
+binding={
+	input_action="camera_right"
+	scancode=0
+}
+binding={
+	input_action="camera_right"
+	scancode=0
+}
+binding={
+	input_action="find_province"
+	scancode=0
+}
+binding={
+	input_action="detach_damaged_ship"
+	scancode=0
+}
+binding={
+	input_action="split_half"
+	scancode=22
+}
+binding={
+	input_action="split_half"
+	scancode=22
+}
+binding={
+	input_action="reorg_units"
+	scancode=5
+	modifier=ctrl
+}
+binding={
+	input_action="reorg_units"
+	scancode=5
+	modifier=ctrl
+}
+binding={
+	input_action="max_zoom_out"
+	scancode=75
+}
+binding={
+	input_action="max_zoom_out"
+	scancode=75
+}
+binding={
+	input_action="delete"
+	scancode=0
+}
+binding={
+	input_action="delete"
+	scancode=42
+}
+binding={
+	input_action="select_objective"
+	scancode=29
+	modifier=shift
+}
+binding={
+	input_action="select_objective"
+	scancode=29
+	modifier=shift
+}
+binding={
+	input_action="mapmode_terrain"
+	scancode=0
+}
+binding={
+	input_action="mapmode_political"
+	scancode=0
+}
+binding={
+	input_action="mapmode_political"
+	scancode=26
+}
+binding={
+	input_action="mapmode_culture"
+	scancode=8
+	modifier=shift
+}
+binding={
+	input_action="mapmode_culture"
+	scancode=8
+	modifier=shift
+}
+binding={
+	input_action="mapmode_location_religion"
+	scancode=21
+	modifier=shift
+}
+binding={
+	input_action="mapmode_location_religion"
+	scancode=21
+	modifier=shift
+}
+binding={
+	input_action="mapmode_control"
+	scancode=7
+}
+binding={
+	input_action="mapmode_control"
+	scancode=7
+}
+binding={
+	input_action="mapmode_proximity"
+	scancode=7
+	modifier=shift
+}
+binding={
+	input_action="mapmode_proximity"
+	scancode=7
+	modifier=shift
+}
+binding={
+	input_action="mapmode_population"
+	scancode=26
+	modifier=shift
+}
+binding={
+	input_action="mapmode_population"
+	scancode=26
+	modifier=shift
+}
+binding={
+	input_action="mapmode_market"
+	scancode=8
+}
+binding={
+	input_action="mapmode_market"
+	scancode=8
+}
+binding={
+	input_action="mapmode_diplomacy"
+	scancode=21
+}
+binding={
+	input_action="mapmode_diplomacy"
+	scancode=21
+}
+binding={
+	input_action="mapmode_tactical"
+	scancode=20
+	modifier=shift
+}
+binding={
+	input_action="mapmode_tactical"
+	scancode=20
+	modifier=shift
+}
+binding={
+	input_action="mapmode_tax_base"
+	scancode=9
+	modifier=shift
+}
+binding={
+	input_action="mapmode_tax_base"
+	scancode=9
+	modifier=shift
+}
+binding={
+	input_action="resume"
+	gamepad_button=""
+}
+binding={
+	input_action="entity_designer_fit_camera"
+	scancode=0
+}
+binding={
+	input_action="entity_editor_rollback"
+	scancode=0
+}
+binding={
+	input_action="entity_editor_fit_camera"
+	scancode=0
+}
+binding={
+	input_action="decals_editor_select_mode"
+	scancode=0
+}
+binding={
+	input_action="decals_editor_rotate_mode"
+	scancode=0
+}
+binding={
+	input_action="decals_editor_delete_instance"
+	scancode=0
+}
+binding={
+	input_action="map_content_editor_select_mode"
+	scancode=0
+}
+binding={
+	input_action="map_content_editor_apply_changes"
+	scancode=0
+}
+binding={
+	input_action="map_content_editor_discard_changes"
+	scancode=0
+}
+binding={
+	input_action="map_content_editor_property_paint_cancel"
+	scancode=0
+}
+binding={
+	input_action="map_content_editor_brush_tool"
+	scancode=0
+}
+binding={
+	input_action="mask_painter_delete"
+	scancode=0
+}
+binding={
+	input_action="mask_painter_brush_tool"
+	scancode=0
+}
+binding={
+	input_action="mask_painter_eraser_tool"
+	scancode=0
+}
+binding={
+	input_action="mapobjects_tool_add_objects"
+	scancode=0
+}
+binding={
+	input_action="mapobjects_tool_select_objects"
+	scancode=0
+}
+binding={
+	input_action="mapobjects_tool_move_objects"
+	scancode=0
+}
+binding={
+	input_action="mapobjects_tool_rotate_objects"
+	scancode=0
+}
+binding={
+	input_action="mapobjects_tool_scale_objects"
+	scancode=0
+}
+binding={
+	input_action="mapobjects_tool_delete"
+	scancode=0
+}
+binding={
+	input_action="mapobjects_tool_focus_view"
+	scancode=0
+}
+binding={
+	input_action="mapobject_painter_blur"
+	scancode=0
+}
+binding={
+	input_action="spline_tool_select_anchor"
+	scancode=0
+}
+binding={
+	input_action="spline_tool_error_focus"
+	scancode=0
+}
+binding={
+	input_action="spline_tool_focus_on_selection"
+	scancode=0
+}
+binding={
+	input_action="node_editor_selected_remove"
+	scancode=0
+}
+binding={
+	input_action="node_editor_nodes_fit"
+	scancode=0
+}
+binding={
+	input_action="scene_editor_delete_entity"
+	scancode=0
+}
+binding={
+	input_action="scene_editor_fit_camera"
+	scancode=0
+}
+binding={
+	input_action="scene_editor_pan_mode"
+	scancode=0
+}
+binding={
+	input_action="scene_editor_translation_mode"
+	scancode=0
+}
+binding={
+	input_action="scene_editor_rotation_mode"
+	scancode=0
+}
+binding={
+	input_action="scene_editor_scale_mode"
+	scancode=0
+}
+binding={
+	input_action="tweaker_remove_snapshots"
+	scancode=0
+}
+binding={
+	input_action="mapmode_building_based"
+	scancode=59
+	modifier=ctrl
+}
+binding={
+	input_action="mapmode_building_based"
+	scancode=59
+	modifier=ctrl
+}
+binding={
+	input_action="mapmode_pop_based"
+	scancode=60
+	modifier=ctrl
+}
+binding={
+	input_action="mapmode_pop_based"
+	scancode=60
+	modifier=ctrl
+}
+binding={
+	input_action="mapmode_army_based"
+	scancode=61
+	modifier=ctrl
+}
+binding={
+	input_action="mapmode_army_based"
+	scancode=61
+	modifier=ctrl
+}
+binding={
+	input_action="mapmode_government"
+	scancode=62
+	modifier=ctrl
+}
+binding={
+	input_action="mapmode_government"
+	scancode=62
+	modifier=ctrl
+}
+binding={
+	input_action="mapmode_country_rank"
+	scancode=12
+}
+binding={
+	input_action="mapmode_country_rank"
+	scancode=12
+}
+binding={
+	input_action="mapmode_dynasty"
+	scancode=18
+	modifier=shift
+}
+binding={
+	input_action="mapmode_dynasty"
+	scancode=18
+	modifier=shift
+}
+binding={
+	input_action="mapmode_court_language"
+	scancode=15
+	modifier=shift
+}
+binding={
+	input_action="mapmode_court_language"
+	scancode=15
+	modifier=shift
+}
+binding={
+	input_action="mapmode_integration"
+	scancode=4
+	modifier=shift
+}
+binding={
+	input_action="mapmode_integration"
+	scancode=0
+}
+binding={
+	input_action="mapmode_stability"
+	scancode=22
+	modifier=shift
+}
+binding={
+	input_action="mapmode_stability"
+	scancode=0
+}
+binding={
+	input_action="mapmode_development"
+	scancode=8
+	modifier=ctrl
+}
+binding={
+	input_action="mapmode_development"
+	scancode=0
+}
+binding={
+	input_action="mapmode_raw_material"
+	scancode=4
+}
+binding={
+	input_action="mapmode_raw_material"
+	scancode=4
+}
+binding={
+	input_action="mapmode_roads"
+	scancode=20
+}
+binding={
+	input_action="mapmode_roads"
+	scancode=20
+}
