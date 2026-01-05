@@ -99,6 +99,7 @@
 	
 	overlord_modifier = {
 		monthly_towards_decentralization = societal_value_tiny_monthly_move
+        monthly_prestige = 0.01
 	}
 
 	

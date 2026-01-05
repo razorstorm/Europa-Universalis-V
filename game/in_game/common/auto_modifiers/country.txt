@@ -1001,10 +1001,10 @@ lack_of_rivals = {
 	}
 
 
-	monthly_prestige = -0.1
-	antagonism_received_modifier = 0.1
-	counter_espionage = -0.1
-	spy_network_construction = -0.1
+	# monthly_prestige = -0.1
+	# antagonism_received_modifier = 0.1
+	# counter_espionage = -0.1
+	# spy_network_construction = -0.1
 }
 
 larger_than_expected_army = {
