@@ -15,7 +15,7 @@
 	unit_actions={
 		repair_ship=no
 		balance_army=yes
-		build_to_navy=no
+		build_to_navy=yes
 		recruit_to=no
 		upgrade_army=yes
 		upgrade_fleet=yes
@@ -36,11 +36,24 @@
 	diplo_actions={
 	}
 	outliner={
-		law=yes
+		navy_construction=no
 		agenda=no
 		player=no
-		reforms=yes
-		estate_construction=no
+		combat=yes
+		character=yes
+		goods=yes
+		diplomacy=yes
 		government=yes
+		market=yes
+		unit_navy=yes
+		location=no
+		reforms=yes
+		seazone=yes
+		player_construction=yes
+		law=yes
+		unit_army=yes
+		estate_construction=no
+		country=yes
+		io=yes
 	}
 }

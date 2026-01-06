@@ -10462,6 +10462,14 @@ integration_efforts_modifier = {
 	diplomatic_annexation_cost = -0.05
 }
 
+culture_capacity_modifier = {
+	game_data = {
+		category = country
+	}
+
+	cultures_capacity_modifier = 5
+}
+
 taxation_reforms_modifier = {
 	game_data = {
 		category = country

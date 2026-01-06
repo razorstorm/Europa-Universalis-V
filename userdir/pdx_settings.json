@@ -25,7 +25,8 @@
 		"num_game_times_opened":	7,
 		"player_proficiency":	"SETTING_PLAYER_PROFICIENCY_EXPERT",
 		"skip_playthrough":	true,
-		"show_message_log":	false,
+		"show_message_log":	true,
+		"economy_unused_balance_settings":	false,
 		"autosave":	"halfyear",
 		"debug_saves":	25
 	},
@@ -34,10 +35,10 @@
 		"mapobject_quality":	"medium",
 		"ssao":	true,
 		"refraction_quality":	"disabled",
-		"renderer":	"DX12",
 		"vsync":	false,
 		"texture_streaming":	false,
 		"mesh_lod_bias":	"high",
+		"enable_particles":	false,
 		"texture_quality":	"ultra",
 		"maximize_tick_speed":	true,
 		"resolution":	"3840x2160",
@@ -59,6 +60,7 @@
 	},
 	"Map":	{
 		"province_mapname_mode":	"always_off",
+		"io_show_as_overlords":	"NO",
 		"country_names":	"LONG"
 	},
 	"Notifications":	{

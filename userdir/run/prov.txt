@@ -1,32 +1,32 @@
 
 
-add_legitimacy = 100
 remove_country_modifier = slow_negotiations
 
-# set_variable = {
-#     name = is_named_eastern_realm
-#     value = yes
-# }
-# c:HUN = {
-#     create_character = {
-#         trait_category = none
-#         religion = c:HUN.religion
-#         culture = c:HUN.culture
-#         estate = estate_type:crown_estate
-#         age = 25
-#         adm = { 85 90 }
-#         dip = { 85 90 }
-#         mil = { 85 90 }
-#         female = no
-#         last_name = "Angió"
-#         lowborn = no
-#         dynasty = c:HUN.ruler.dynasty
-#         # last_name = c:HUN.ruler.last_name
-#     }
-# }
 
+c:HUN = {
+    create_character = {
+        trait_category = none
+        religion = c:HUN.religion
+        culture = c:HUN.culture
+        estate = estate_type:crown_estate
+        age = 25
+        adm = { 85 90 }
+        dip = { 85 90 }
+        mil = { 85 90 }
+        female = no
+        last_name = "Angió"
+        lowborn = no
+        dynasty = c:HUN.ruler.dynasty
+        # last_name = c:HUN.ruler.last_name
+    }
+}
 
+add_country_modifier = {
+    modifier = culture_capacity_modifier
+    years = -1
+}
 
+add_accepted_culture = culture:german_transylvanian
 
 # c:HUN = { 
 #     create_dynasty_from_location = random
@@ -53,12 +53,7 @@ remove_country_modifier = slow_negotiations
 #     change_province_owner = c:NOV
 # }
 
-c:TWS = {
-    add_country_modifier = {
-        modifier = nap_neapolitan_court_autonomy
-        years = -1
-    }
-}
+
 
 every_owned_location = {
     every_pop = {

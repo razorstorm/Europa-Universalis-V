@@ -13,6 +13,9 @@
 }RULER_FAMILY_CHAR_COMES_OF_AGE={
 	settings={
 	}
+}NEW_CORE={
+	settings={
+	}
 }OTHER_PERFORMS_violate_treaty_of_tordesillas_ACTION={
 	settings={
 	}
@@ -20,6 +23,9 @@
 	settings={
 	}
 }CHANGE_POLICY_IN_LAW={
+	settings={
+	}
+}NEW_WORK_OF_ART_BETTER={
 	settings={
 	}
 }OTHER_PERFORMS_tordesillas_upheld_treaty_relevance_ACTION={
@@ -31,6 +37,10 @@
 	}
 }CREATE_MARKET_OTHERS={
 	settings={
+	}
+}SIEGEOVER_LOST={
+	settings={
+		onmap=yes
 	}
 }WE_IMPROVE_RELATION={
 	settings={

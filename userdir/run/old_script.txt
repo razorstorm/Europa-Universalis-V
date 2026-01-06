@@ -2,6 +2,7 @@
 #     cancel_subject = c:HUN
 # }
 
+add_legitimacy = 100
 
 set_variable = {
     name = is_named_eastern_realm
@@ -34,6 +35,10 @@ set_variable = {
 
 add_country_modifier = {
     modifier = impatient_annexation
+    years = -1
+}
+add_country_modifier = {
+    modifier = multicultural_empire
     years = -1
 }
 
