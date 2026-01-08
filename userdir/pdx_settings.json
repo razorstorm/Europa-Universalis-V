@@ -25,7 +25,7 @@
 		"num_game_times_opened":	7,
 		"player_proficiency":	"SETTING_PLAYER_PROFICIENCY_EXPERT",
 		"skip_playthrough":	true,
-		"autosave":	"halfyear",
+		"autosave":	"monthly",
 		"debug_saves":	25
 	},
 	"Graphics":	{

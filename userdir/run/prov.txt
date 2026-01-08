@@ -3,28 +3,28 @@
 remove_country_modifier = slow_negotiations
 
 
-c:HUN = {
-    create_character = {
-        trait_category = none
-        religion = c:HUN.religion
-        culture = c:HUN.culture
-        estate = estate_type:crown_estate
-        age = 25
-        adm = { 85 90 }
-        dip = { 85 90 }
-        mil = { 85 90 }
-        female = no
-        last_name = "Angió"
-        lowborn = no
-        dynasty = c:HUN.ruler.dynasty
-        # last_name = c:HUN.ruler.last_name
-    }
-}
+# c:HUN = {
+#     create_character = {
+#         trait_category = none
+#         religion = c:HUN.religion
+#         culture = c:HUN.culture
+#         estate = estate_type:crown_estate
+#         age = 25
+#         adm = { 85 90 }
+#         dip = { 85 90 }
+#         mil = { 85 90 }
+#         female = no
+#         last_name = "Angió"
+#         lowborn = no
+#         dynasty = c:HUN.ruler.dynasty
+#         # last_name = c:HUN.ruler.last_name
+#     }
+# }
 
-add_country_modifier = {
-    modifier = cabinet_member_size
-    years = -1
-}
+# add_country_modifier = {
+#     modifier = cabinet_member_size
+#     years = -1
+# }
 
 add_accepted_culture = culture:german_transylvanian
 
@@ -47,8 +47,8 @@ add_accepted_culture = culture:german_transylvanian
 # }
 
 # country_name_construction_map = { parent = country_name_construction suffix = "_map" }  
-# location:theodoro = {
-#     change_location_owner = c:CRI
+# location:zittau = {
+#     change_location_owner = c:HUN
 # }
 # location:beilngries.province = {
 #     # every_location_in_province = {
