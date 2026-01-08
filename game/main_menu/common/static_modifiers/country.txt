@@ -10470,6 +10470,14 @@ culture_capacity_modifier = {
 	cultures_capacity_modifier = 5
 }
 
+cabinet_member_size = {
+	game_data = {
+		category = country
+	}
+
+    government_size = 1
+}
+
 taxation_reforms_modifier = {
 	game_data = {
 		category = country

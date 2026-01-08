@@ -2659,3 +2659,89 @@ save autosave
 ave
 save autosave
 GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+yesman
+save autosave
+yesman
+save autosave
+yesman
+save autosave
+make_subject vassal aaa25
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+yesman
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+make_subject vassal um
+make_subject vassal ulm
+yesman
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+yesman
+yesmansave autosave
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+yesman
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+sailors 10000
+save autosave
+GUI.ClearWidgets ideas_window

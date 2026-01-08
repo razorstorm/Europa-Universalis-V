@@ -28,6 +28,13 @@ add_country_modifier = {
 
 add_accepted_culture = culture:german_transylvanian
 
+c:NOV = {
+    annex_country = {
+        country = c:UM
+        transfer = no
+    }
+}
+
 # c:HUN = { 
 #     create_dynasty_from_location = random
 #     last_dynasty_in_location = { save_scope_as = target_dynasty }
@@ -43,17 +50,25 @@ add_accepted_culture = culture:german_transylvanian
 # location:theodoro = {
 #     change_location_owner = c:CRI
 # }
-# location:rapla.province = {
+# location:beilngries.province = {
 #     # every_location_in_province = {
 #         # limit = {
 #         #     has_owner = c:HUN
 #         # }
 #         # change_location_owner = c:AAA90
 #     # }
-#     change_province_owner = c:NOV
+#     change_province_owner = c:HUN
 # }
 
-
+every_owned_location = {
+    province = {
+        # Supply Hubs
+        add_province_modifier = {
+            modifier = army_hub
+            years = -1
+        }
+    }
+}
 
 every_owned_location = {
     every_pop = {

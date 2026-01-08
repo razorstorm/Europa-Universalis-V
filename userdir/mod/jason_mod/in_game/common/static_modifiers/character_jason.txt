@@ -1,0 +1,6 @@
+immortal_modifier = {
+	game_data = {
+		category = character
+	}
+    is_immortal = yes
+}

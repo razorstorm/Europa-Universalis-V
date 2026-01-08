@@ -1,0 +1,10 @@
+
+impatient_annexation = {
+	game_data = {
+		category = country
+	}
+
+	monthly_diplomats = -0.15
+	diplomatic_annexation_cost = -0.4
+
+}

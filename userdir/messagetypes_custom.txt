@@ -16,10 +16,18 @@
 }NEW_CORE={
 	settings={
 	}
+}CABINET_ACTION={
+	settings={
+		log=no
+		popup=yes
+	}
 }OTHER_PERFORMS_violate_treaty_of_tordesillas_ACTION={
 	settings={
 	}
 }COUNTRY_JOIN_INTERNATIONAL_ORGANIZATION_TARGETTING_US={
+	settings={
+	}
+}ACTION_ask_for_money_PERFORMED_ON_US={
 	settings={
 	}
 }CHANGE_POLICY_IN_LAW={

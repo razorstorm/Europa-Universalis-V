@@ -1,6 +1,7 @@
 ﻿{
 	map_modes={
 		development=yes
+		tax_base=yes
 		natural_harbor_suitability=yes
 		integration=yes
 		cities=yes
@@ -37,9 +38,9 @@
 	}
 	outliner={
 		navy_construction=no
-		agenda=no
 		player=no
 		combat=yes
+		agenda=no
 		character=yes
 		goods=yes
 		diplomacy=yes
