@@ -22,18 +22,18 @@ c:HUN = {
 }
 
 add_country_modifier = {
-    modifier = culture_capacity_modifier
+    modifier = cabinet_member_size
     years = -1
 }
 
 add_accepted_culture = culture:german_transylvanian
 
-c:NOV = {
-    annex_country = {
-        country = c:UM
-        transfer = no
-    }
-}
+# c:NOV = {
+#     annex_country = {
+#         country = c:UM
+#         transfer = no
+#     }
+# }
 
 # c:HUN = { 
 #     create_dynasty_from_location = random

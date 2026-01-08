@@ -2745,3 +2745,6 @@ save autosave
 sailors 10000
 save autosave
 GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
