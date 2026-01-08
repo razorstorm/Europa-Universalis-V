@@ -2,13 +2,6 @@
 # Hardcoded
 ###################################
 
-immortal_modifier = {
-	game_data = {
-		category = character
-	}
-    is_immortal = yes
-}
-
 character_base_values = {
 	game_data = {
 		category = character

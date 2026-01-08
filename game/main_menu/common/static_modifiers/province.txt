@@ -36,12 +36,6 @@ province_starving = {
 	local_peasants_migration_allowed = yes
 }
 
-army_hub = {
-	game_data = {
-		category = province
-	}
-	local_supply_limit_modifier = 50
-}
 
 
 ###################################

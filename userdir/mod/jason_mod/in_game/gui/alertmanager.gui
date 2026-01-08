@@ -2449,26 +2449,26 @@ types AlertManager {
 		# Our Truce will expire soon
 		############################
 
-		alert_banner = {
-			name = "truce_ending"
+		# alert_banner = {
+		# 	name = "truce_ending"
 
-			action_tooltip = {
-				click_type = left
-				title = "ALERT_CTA_LEFT_CLICK"
-				using = snd_UI_alert_openAndCycle
-				on_action = "[OpenLateralViewWithParams('diplomacy', 'tabcontent = relations')]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "ALERT_CTA_LEFT_CLICK"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		on_action = "[OpenLateralViewWithParams('diplomacy', 'tabcontent = relations')]"
+		# 	}
 
-			onmousehierarchyenter = "[SetHighlightedTab('diplomacy_group')]"
-			onmousehierarchyleave = "[ResetHighlightedTab]"
+		# 	onmousehierarchyenter = "[SetHighlightedTab('diplomacy_group')]"
+		# 	onmousehierarchyleave = "[ResetHighlightedTab]"
 
-			using = yellow_alert
-			using = alert_list_tooltip
+		# 	using = yellow_alert
+		# 	using = alert_list_tooltip
 
-			blockoverride "icon_texture" {
-				texture = "gfx/interface/icons/alerts_icons/truce_ending.dds"
-			}
-		}
+		# 	blockoverride "icon_texture" {
+		# 		texture = "gfx/interface/icons/alerts_icons/truce_ending.dds"
+		# 	}
+		# }
 
 		###################################
 		# Nearly maxed out stored research progress
@@ -2545,48 +2545,48 @@ types AlertManager {
 		# Unused cb
 		###########################
 
-		alert_banner = {
-			name = "has_casus_belli"
+		# alert_banner = {
+		# 	name = "has_casus_belli"
 
-			action_tooltip = {
-				click_type = left
-				title = "ALERT_CTA_CYCLE_LEFT_CLICK"
-				using = snd_UI_alert_openAndCycle
-				on_action = "[AlertUnusedCB.Next]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "ALERT_CTA_CYCLE_LEFT_CLICK"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		on_action = "[AlertUnusedCB.Next]"
+		# 	}
 
-			action_tooltip = {
-				click_modifier = shift
-				click_type = left
-				title = "ALERT_HINT"
-				using = snd_UI_alert_openAndCycle
-				on_action = "[AlertUnusedCB.Next]"
-				on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_casus_belli')]"
-			}
+		# 	action_tooltip = {
+		# 		click_modifier = shift
+		# 		click_type = left
+		# 		title = "ALERT_HINT"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		on_action = "[AlertUnusedCB.Next]"
+		# 		on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_casus_belli')]"
+		# 	}
 
-			tooltipwidget = {
-				SimpleContextualRowTooltipType = {
-					lowpriotextcontext = "[AlertItem.GetTooltip]"
-					blockoverride "title_button" {
-						hint_button = {
-							action_tooltip = {
-								title = "OPEN_HINT"
-								on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_casus_belli')]"
-							}
-						}
-					}
-					blockoverride "shift_left_extra" {
-						replacement_shift_item = {}
-					}
-				}
-			}
+		# 	tooltipwidget = {
+		# 		SimpleContextualRowTooltipType = {
+		# 			lowpriotextcontext = "[AlertItem.GetTooltip]"
+		# 			blockoverride "title_button" {
+		# 				hint_button = {
+		# 					action_tooltip = {
+		# 						title = "OPEN_HINT"
+		# 						on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_casus_belli')]"
+		# 					}
+		# 				}
+		# 			}
+		# 			blockoverride "shift_left_extra" {
+		# 				replacement_shift_item = {}
+		# 			}
+		# 		}
+		# 	}
 
-			using = green_alert
+		# 	using = green_alert
 
-			blockoverride "icon_texture" {
-				texture = "gfx/interface/icons/alerts_icons/unused_cb.dds"
-			}
-		}
+		# 	blockoverride "icon_texture" {
+		# 		texture = "gfx/interface/icons/alerts_icons/unused_cb.dds"
+		# 	}
+		# }
 
 		###########################
 		# Unhappy Estates
@@ -3105,43 +3105,43 @@ types AlertManager {
 		# Heir Incompetent
 		####################################
 
-		alert_banner = {
-			name = "is_heir_incompetent"
+		# alert_banner = {
+		# 	name = "is_heir_incompetent"
 
-			action_tooltip = {
-				click_type = left
-				title = "ALERT_CTA_LEFT_CLICK"
-				using = snd_UI_alert_openAndCycle
-				on_action = "[AlertManager.ShowHeir]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "ALERT_CTA_LEFT_CLICK"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		on_action = "[AlertManager.ShowHeir]"
+		# 	}
 
-			using = yellow_alert
+		# 	using = yellow_alert
 
-			blockoverride "icon_texture" {
-				texture = "gfx/interface/icons/alerts_icons/heir_incompetent.dds"
-			}
-		}
+		# 	blockoverride "icon_texture" {
+		# 		texture = "gfx/interface/icons/alerts_icons/heir_incompetent.dds"
+		# 	}
+		# }
 
 		###################################
 		# Ruler Incompetent
 		####################################
 
-		alert_banner = {
-			name = "is_ruler_incompetent"
+		# alert_banner = {
+		# 	name = "is_ruler_incompetent"
 
-			action_tooltip = {
-				click_type = left
-				title = "ALERT_CTA_LEFT_CLICK"
-				using = snd_UI_alert_openAndCycle
-				on_action = "[AlertManager.ShowRuler]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "ALERT_CTA_LEFT_CLICK"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		on_action = "[AlertManager.ShowRuler]"
+		# 	}
 
-			using = yellow_alert
+		# 	using = yellow_alert
 
-			blockoverride "icon_texture" {
-				texture = "gfx/interface/icons/alerts_icons/ruler_incompetent.dds"
-			}
-		}
+		# 	blockoverride "icon_texture" {
+		# 		texture = "gfx/interface/icons/alerts_icons/ruler_incompetent.dds"
+		# 	}
+		# }
 
 		###########################
 		# Army without leader in war
@@ -4221,52 +4221,52 @@ types AlertManager {
 		# (Eventual) Yellow Revolt Tick
 		###########################
 
-		alert_banner = {
-			name = "has_possible_revolt"
+		# alert_banner = {
+		# 	name = "has_possible_revolt"
 
-			action_tooltip = {
-				click_type = left
-				title = "ALERT_CTA_LEFT_CLICK"
-				using = snd_UI_alert_openAndCycle
-				on_action = "[OpenLateralViewWithParams('country_people', 'subtab = rebels')]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "ALERT_CTA_LEFT_CLICK"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		on_action = "[OpenLateralViewWithParams('country_people', 'subtab = rebels')]"
+		# 	}
 			
-			action_tooltip = {
-				click_modifier = shift
-				click_type = left
-				title = "ALERT_HINT"
-				using = snd_UI_alert_openAndCycle
-				on_action = "[OpenLateralViewWithParams('country_people', 'subtab = rebels')]"
-				on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_rebels_growing')]"
-			}
+		# 	action_tooltip = {
+		# 		click_modifier = shift
+		# 		click_type = left
+		# 		title = "ALERT_HINT"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		on_action = "[OpenLateralViewWithParams('country_people', 'subtab = rebels')]"
+		# 		on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_rebels_growing')]"
+		# 	}
 			
-			tooltipwidget = {
-				SimpleContextualStringPairTooltipType = {
-					lowpriotextcontext = "[AlertItem.GetTooltip]"
-					blockoverride "title_button" {
-						hint_button = {
-							action_tooltip = {
-								title = "OPEN_HINT"
-								on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_rebels_growing')]"
-							}
-						}
-					}
-					blockoverride "shift_left_extra" {
-						replacement_shift_item = {}
-					}
-				}
-			}
+		# 	tooltipwidget = {
+		# 		SimpleContextualStringPairTooltipType = {
+		# 			lowpriotextcontext = "[AlertItem.GetTooltip]"
+		# 			blockoverride "title_button" {
+		# 				hint_button = {
+		# 					action_tooltip = {
+		# 						title = "OPEN_HINT"
+		# 						on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_rebels_growing')]"
+		# 					}
+		# 				}
+		# 			}
+		# 			blockoverride "shift_left_extra" {
+		# 				replacement_shift_item = {}
+		# 			}
+		# 		}
+		# 	}
 			
-			onmousehierarchyenter = "[SetHighlightedTab('society_group')]"
-			onmousehierarchyleave = "[ResetHighlightedTab]"
+		# 	onmousehierarchyenter = "[SetHighlightedTab('society_group')]"
+		# 	onmousehierarchyleave = "[ResetHighlightedTab]"
 
-			using = yellow_alert
-			using = alert_list_tooltip
+		# 	using = yellow_alert
+		# 	using = alert_list_tooltip
 
-			blockoverride "icon_texture" {
-				texture = "gfx/interface/icons/alerts_icons/yellow_revolt_tick.dds"
-			}
-		}
+		# 	blockoverride "icon_texture" {
+		# 		texture = "gfx/interface/icons/alerts_icons/yellow_revolt_tick.dds"
+		# 	}
+		# }
 
 		###################################
 		# Action lacks a cabinet member
@@ -4841,107 +4841,107 @@ types AlertManager {
 		# Devastated locations
 		###################################
 
-		alert_banner = {
-			name = "has_devastated_locations"
+		# alert_banner = {
+		# 	name = "has_devastated_locations"
 
-			action_tooltip = {
-				click_type = left
-				title = "ALERT_CTA_CYCLE_LOCATIONS_LEFT_CLICK"
-				using = snd_UI_alert_openAndCycle
-				on_action = "[AlertHasDevastatedLocations.Next]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "ALERT_CTA_CYCLE_LOCATIONS_LEFT_CLICK"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		on_action = "[AlertHasDevastatedLocations.Next]"
+		# 	}
 
-			using = yellow_alert
-			using = alert_list_tooltip
+		# 	using = yellow_alert
+		# 	using = alert_list_tooltip
 
-			tooltipwidget = {
-				ContextualTooltipType = {
-					blockoverride "title_text" {
-						text = "ALERT_HAS_DEVASTATED_LOCATIONS"
-					}
-					blockoverride "concept_link" {
-						text = "[prosperity|E]"
-					}
-					blockoverride "tooltip_content" {
-						TooltipListBase = {
-							blockoverride "block_title" {
-								text = "ALERT_HAS_DEVASTATED_LOCATIONS_TEXT"
-							}
-							TooltipListScrollArea = {
-								blockoverride "block_scrollarea" {
-									maximumsize = { -1 390 }
-								}
+		# 	tooltipwidget = {
+		# 		ContextualTooltipType = {
+		# 			blockoverride "title_text" {
+		# 				text = "ALERT_HAS_DEVASTATED_LOCATIONS"
+		# 			}
+		# 			blockoverride "concept_link" {
+		# 				text = "[prosperity|E]"
+		# 			}
+		# 			blockoverride "tooltip_content" {
+		# 				TooltipListBase = {
+		# 					blockoverride "block_title" {
+		# 						text = "ALERT_HAS_DEVASTATED_LOCATIONS_TEXT"
+		# 					}
+		# 					TooltipListScrollArea = {
+		# 						blockoverride "block_scrollarea" {
+		# 							maximumsize = { -1 390 }
+		# 						}
 
-								blockoverride "scrollarea_content" {
-									TooltipListColumnContent = {
-										set_parent_dimension_to_minimum = height
-										layoutpolicy_horizontal = expanding
+		# 						blockoverride "scrollarea_content" {
+		# 							TooltipListColumnContent = {
+		# 								set_parent_dimension_to_minimum = height
+		# 								layoutpolicy_horizontal = expanding
 
-										TooltipTableColumn = {
-											blockoverride "column_title" {}
-											blockoverride "column_title_text" { 
-												text = "[location|e]" 
-											}
-											blockoverride "column_title_right" { 
-												expand = {} 
-											}
+		# 								TooltipTableColumn = {
+		# 									blockoverride "column_title" {}
+		# 									blockoverride "column_title_text" { 
+		# 										text = "[location|e]" 
+		# 									}
+		# 									blockoverride "column_title_right" { 
+		# 										expand = {} 
+		# 									}
 							
-											blockoverride "field_left" {}
+		# 									blockoverride "field_left" {}
 							
-											blockoverride "field_text" {
-												default_format = "#subtle_name"
-												align = left|nobaseline
-												raw_text = "[Location.GetName]"
-											}
+		# 									blockoverride "field_text" {
+		# 										default_format = "#subtle_name"
+		# 										align = left|nobaseline
+		# 										raw_text = "[Location.GetName]"
+		# 									}
 							
-											blockoverride "field_right" { expand = {} }
-										}
+		# 									blockoverride "field_right" { expand = {} }
+		# 								}
 							
-										TooltipTableColumn = {
-											blockoverride "column_title" {}
-											blockoverride "column_title_left" { 
-												expand = {}
-											}
+		# 								TooltipTableColumn = {
+		# 									blockoverride "column_title" {}
+		# 									blockoverride "column_title_left" { 
+		# 										expand = {}
+		# 									}
 
-											blockoverride "column_title_text" { 
-												text = "[prosperity|e]" 
-												default_format = "#explanation_link"
-											}
+		# 									blockoverride "column_title_text" { 
+		# 										text = "[prosperity|e]" 
+		# 										default_format = "#explanation_link"
+		# 									}
 
-											blockoverride "field_text" {
-												visible = no
-											}
+		# 									blockoverride "field_text" {
+		# 										visible = no
+		# 									}
 
-											blockoverride "field_right" {
-												expand = {} 
+		# 									blockoverride "field_right" {
+		# 										expand = {} 
 
-												text_single = {
-													text = "[Location.GetProsperity|+r%]"
+		# 										text_single = {
+		# 											text = "[Location.GetProsperity|+r%]"
 
-													tooltipwidget = {
-														using = location_prosperity_tooltip
-													}
-												}
-											}
-										}
+		# 											tooltipwidget = {
+		# 												using = location_prosperity_tooltip
+		# 											}
+		# 										}
+		# 									}
+		# 								}
 
-										blockoverride "column_datamodel"  {  
-											datamodel = "[AlertHasDevastatedLocations.GetDevastatedLocations]"
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
+		# 								blockoverride "column_datamodel"  {  
+		# 									datamodel = "[AlertHasDevastatedLocations.GetDevastatedLocations]"
+		# 								}
+		# 							}
+		# 						}
+		# 					}
+		# 				}
+		# 			}
+		# 		}
+		# 	}
 
-			blockoverride "icon_texture" {
-				texture = "gfx/interface/icons/location_icons/prosperity_low.dds"
-			}
+		# 	blockoverride "icon_texture" {
+		# 		texture = "gfx/interface/icons/location_icons/prosperity_low.dds"
+		# 	}
 
-			onmousehierarchyenter = "[AlertHasDevastatedLocations.EnableHighlight(PdxGuiWidget.AccessSelf)]"
-		}
+		# 	onmousehierarchyenter = "[AlertHasDevastatedLocations.EnableHighlight(PdxGuiWidget.AccessSelf)]"
+		# }
 
 		###################################
 		# We can add setup a law
@@ -5461,48 +5461,48 @@ types AlertManager {
 		# Has unraised levies in ongoing war
 		###################################
 
-		alert_banner = {
-			name = "has_unraised_levies_in_war"
+		# alert_banner = {
+		# 	name = "has_unraised_levies_in_war"
 
-			action_tooltip = {
-				click_type = left
-				title = "ALERT_CTA_CYCLE_LEFT_CLICK"
-				using = snd_UI_alert_openAndCycle
-				on_action = "[AlertHasUnraisedLeviesInWar.Next]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "ALERT_CTA_CYCLE_LEFT_CLICK"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		on_action = "[AlertHasUnraisedLeviesInWar.Next]"
+		# 	}
 
-			action_tooltip = {
-				click_modifier = shift
-				click_type = left
-				title = "ALERT_HINT"
-				using = snd_UI_alert_openAndCycle
-				on_action = "[AlertHasUnraisedLeviesInWar.Next]"
-				on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_has_unraised_levies_in_war')]"
-			}
+		# 	action_tooltip = {
+		# 		click_modifier = shift
+		# 		click_type = left
+		# 		title = "ALERT_HINT"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		on_action = "[AlertHasUnraisedLeviesInWar.Next]"
+		# 		on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_has_unraised_levies_in_war')]"
+		# 	}
 			
-			tooltipwidget = {
-				SimpleContextualTooltipType = {
-					lowpriotextcontext = "[AlertItem.GetTooltip]"
-					blockoverride "title_button" {
-						hint_button = {
-							action_tooltip = {
-								title = "OPEN_HINT"
-								on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_has_unraised_levies_in_war')]"
-							}
-						}
-					}
-					blockoverride "shift_left_extra" {
-						replacement_shift_item = {}
-					}
-				}
-			}
+		# 	tooltipwidget = {
+		# 		SimpleContextualTooltipType = {
+		# 			lowpriotextcontext = "[AlertItem.GetTooltip]"
+		# 			blockoverride "title_button" {
+		# 				hint_button = {
+		# 					action_tooltip = {
+		# 						title = "OPEN_HINT"
+		# 						on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = hint_has_unraised_levies_in_war')]"
+		# 					}
+		# 				}
+		# 			}
+		# 			blockoverride "shift_left_extra" {
+		# 				replacement_shift_item = {}
+		# 			}
+		# 		}
+		# 	}
 
-			using = green_alert
+		# 	using = green_alert
 
-			blockoverride "icon_texture" {
-				texture = "gfx/interface/icons/alerts_icons/has_unraised_levies_in_war.dds"
-			}
-		}
+		# 	blockoverride "icon_texture" {
+		# 		texture = "gfx/interface/icons/alerts_icons/has_unraised_levies_in_war.dds"
+		# 	}
+		# }
 
 		###################################
 		# We have max Diplomats available

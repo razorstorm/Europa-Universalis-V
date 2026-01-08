@@ -18,7 +18,7 @@
 
 	cooldown = {
 		type = improve_cultural_view_subject
-		years = 10
+		years = 50
 	}
 
 	select_trigger = {

@@ -1,7 +1,7 @@
 # c:CRO = {
 #     cancel_subject = c:HUN
 # }
-
+# -debug_mode --userdir=F:\Steam\steamapps\common\Europa Universalis V\userdir -dx12
 add_legitimacy = 100
 
 set_variable = {

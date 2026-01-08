@@ -75,7 +75,6 @@
 	text = {
 		localization_key = country_name_construction_prefix_adjective_rank
 		trigger = {
-            NOT = { has_variable = is_named_eastern_realm }
 			OR = {
 				AND = {
 					country_rank = country_rank:rank_empire 

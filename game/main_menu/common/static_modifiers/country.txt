@@ -2,17 +2,6 @@
 # Hardcoded
 ###################################
 
-
-impatient_annexation = {
-	game_data = {
-		category = country
-	}
-
-	monthly_diplomats = -0.15
-	diplomatic_annexation_cost = -0.4
-
-}
-
 is_bankrupt = {
 	game_data = {
 		category = country
@@ -10460,22 +10449,6 @@ integration_efforts_modifier = {
 	}
 
 	diplomatic_annexation_cost = -0.05
-}
-
-culture_capacity_modifier = {
-	game_data = {
-		category = country
-	}
-
-	cultures_capacity_modifier = 5
-}
-
-cabinet_member_size = {
-	game_data = {
-		category = country
-	}
-
-    government_size = 1
 }
 
 taxation_reforms_modifier = {

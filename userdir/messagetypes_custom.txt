@@ -13,6 +13,9 @@
 }RULER_FAMILY_CHAR_COMES_OF_AGE={
 	settings={
 	}
+}WE_PERFORM_start_exploration_ACTION={
+	settings={
+	}
 }NEW_CORE={
 	settings={
 	}
@@ -69,6 +72,9 @@
 		onmap=yes
 	}
 }PROPOSE_resolution_in_international_organization_ACTION={
+	settings={
+	}
+}START_EXPLORATION_WE={
 	settings={
 	}
 }RULER_FAMILY_CHAR_DEATH={

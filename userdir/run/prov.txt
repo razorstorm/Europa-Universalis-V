@@ -2,7 +2,7 @@
 
 remove_country_modifier = slow_negotiations
 
-
+add_legitimacy = 100
 # c:HUN = {
 #     create_character = {
 #         trait_category = none
@@ -21,12 +21,59 @@ remove_country_modifier = slow_negotiations
 #     }
 # }
 
-# add_country_modifier = {
-#     modifier = cabinet_member_size
+add_country_modifier = {
+    modifier = happy_subjects
+    years = -1
+}
+
+c:SCA = {
+    cancel_subject = c:GSW
+}
+c:GSW = {
+    change_religion = religion:lutheran
+    # every_owned_location = {
+    #     every_pop = {
+    #         # limit = { religion = religion:catholic }
+    #         split_pop = {
+    #             fraction = 0.7
+    #             religion = religion:lutheran
+    #         }
+    #     }
+    # }
+}
+
+# add_casus_belli = {
+#     target = c:MLO
+#     type = casus_belli:cb_following_through_on_threat
+#     province = location:trevision.province
 #     years = -1
 # }
 
 add_accepted_culture = culture:german_transylvanian
+
+every_subject = {
+    limit = {
+        NOT = {
+            religion = religion:lutheran
+        }
+    }
+    change_religion = religion:lutheran
+    # every_owned_location = {
+    #     every_pop = {
+    #         # limit = { religion = religion:catholic }
+    #         split_pop = {
+    #             fraction = 0.7
+    #             religion = religion:lutheran
+    #         }
+    #     }
+    # }
+}
+
+# c:MLO = {
+#     every_current_war = {
+#         white_peace = this
+#     }
+# }
 
 # c:NOV = {
 #     annex_country = {
@@ -47,7 +94,7 @@ add_accepted_culture = culture:german_transylvanian
 # }
 
 # country_name_construction_map = { parent = country_name_construction suffix = "_map" }  
-# location:zittau = {
+# location:bayreuth = {
 #     change_location_owner = c:HUN
 # }
 # location:beilngries.province = {
@@ -61,6 +108,13 @@ add_accepted_culture = culture:german_transylvanian
 # }
 
 every_owned_location = {
+    limit = {
+        NOT = {
+            province = {
+                has_province_modifier = army_hub
+            }
+        }
+    }
     province = {
         # Supply Hubs
         add_province_modifier = {

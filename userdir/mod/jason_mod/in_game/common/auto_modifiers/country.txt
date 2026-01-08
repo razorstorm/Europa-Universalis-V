@@ -982,16 +982,16 @@ monthly_income_impact = {
 
 }
 
+happy_subjects = {
+	subject_loyalty = 50
+}
+
+
 num_embraced_institutions = {
 	scales_with = num_embraced_institutions
 
 	great_power_score_exempt_from_forfeit = 10
 }
-
-
-
-
-
 
 lack_of_rivals = {
 	scales_with = {
@@ -999,12 +999,6 @@ lack_of_rivals = {
 		subtract = num_rivals
 		min = 0
 	}
-
-
-	monthly_prestige = -0.1
-	antagonism_received_modifier = 0.1
-	counter_espionage = -0.1
-	spy_network_construction = -0.1
 }
 
 larger_than_expected_army = {
