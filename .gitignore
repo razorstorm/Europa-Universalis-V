@@ -14,8 +14,8 @@ pdx_login_cache.txt
 launcher-v2.sqlite
 continue_game.json
 *.sqlite
-save\ games/
-old_saves/
+userdir/save*games/
+userdir/backup/
 binaries/
 
 *.bin
@@ -30,3 +30,13 @@ game/main_menu/localization
 clausewitz/
 
 userdir/account/PDX/SDK/eu5/account.json
+
+userdir/loading_screen/progress_bar_hints_LoadingScreen_MainMenu.txt
+userdir/loading_screen/progress_bar_hints_MainMenu_Game.txt
+
+userdir/loading_screen_history.txt
+
+userdir/news_feed/cached_braze_content_cards.json
+userdir/news_feed/startup.json
+userdir/loading_screen_history.txt
+userdir/messagetypes_custom.txt

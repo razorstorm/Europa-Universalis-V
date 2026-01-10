@@ -2887,3 +2887,34 @@ run prov.txt
 save autosave
 antagonism -1000
 save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+legitimacy 100
+run prov.txt
+yesman
+make_subject vassal gsw
+run prov.txt
+save autosave
+yesman
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+yesman
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+spynetwork
+save autosave
+GUI.ClearWidgets ideas_window
