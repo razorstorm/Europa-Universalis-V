@@ -40,3 +40,9 @@ userdir/news_feed/cached_braze_content_cards.json
 userdir/news_feed/startup.json
 userdir/loading_screen_history.txt
 userdir/messagetypes_custom.txt
+
+userdir/dlc_signature
+
+userdir/graphs/bookmarkinit.dot
+userdir/graphs/calculate_cached_data.dot
+userdir/graphs/clear_cached_data.dot

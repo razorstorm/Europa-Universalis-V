@@ -2918,3 +2918,4 @@ save autosave
 spynetwork
 save autosave
 GUI.ClearWidgets ideas_window
+save autosave
