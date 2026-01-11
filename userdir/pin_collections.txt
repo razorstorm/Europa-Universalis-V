@@ -8,7 +8,7 @@
 		cities=yes
 		antagonism=yes
 		satisfaction=yes
-		rebels=yes
+		rebels=no
 		roads=yes
 		supply=yes
 	}
@@ -39,19 +39,20 @@
 	}
 	outliner={
 		navy_construction=no
+		player=no
 		combat=yes
 		agenda=no
-		player=no
 		character=yes
 		goods=yes
+		rebel=no
 		diplomacy=yes
 		government=yes
 		market=yes
 		unit_navy=yes
-		location=no
+		location=yes
 		reforms=yes
 		seazone=yes
-		player_construction=yes
+		player_construction=no
 		law=yes
 		unit_army=yes
 		estate_construction=no

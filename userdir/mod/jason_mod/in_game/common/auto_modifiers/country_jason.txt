@@ -32,3 +32,11 @@ lack_of_rivals = {
 		min = 0
 	}
 }
+
+free_trade_monthly_cheat = {
+    monthly_towards_free_trade = 0.51
+}
+
+crown_power_cheat = {
+    global_crown_estate_power = 10
+}

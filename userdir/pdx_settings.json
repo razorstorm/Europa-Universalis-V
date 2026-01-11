@@ -52,8 +52,10 @@
 	"Interface":	{
 		"map_tooltips":	"SETTING_MAP_TOOLTIPS_ENABLE_NO_SEAZONES",
 		"map_tooltip_delay":	0.500000,
+		"show_outliner":	true,
 		"skip_agenda":	true,
 		"tooltip_delay":	0.400000,
+		"tooltip_lock_time":	0.600000,
 		"warning_wrong_playset":	false
 	},
 	"Map":	{

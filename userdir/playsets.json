@@ -46,13 +46,9 @@
 				}]
 		}, {
 			"name":	"Main",
-			"isActive":	true,
 			"isAutomaticallySorted":	true,
 			"orderedListMods":	[{
 					"path":	"F:/Steam/steamapps/workshop/content/3450310/3601047146/",
-					"isEnabled":	true
-				}, {
-					"path":	"F:/Steam/steamapps/workshop/content/3450310/3607293096/",
 					"isEnabled":	true
 				}, {
 					"path":	"F:/Steam/steamapps/workshop/content/3450310/3606305941/",
@@ -73,16 +69,16 @@
 					"path":	"F:/Steam/steamapps/workshop/content/3450310/3601937478/",
 					"isEnabled":	true
 				}, {
-					"path":	"F:/Steam/steamapps/workshop/content/3450310/3616723597/",
-					"isEnabled":	true
-				}, {
-					"path":	"F:/Steam/steamapps/workshop/content/3450310/3619130338/",
-					"isEnabled":	true
-				}, {
 					"path":	"F:/Steam/steamapps/workshop/content/3450310/3624485168/",
 					"isEnabled":	true
 				}, {
 					"path":	"F:/Steam/steamapps/common/Europa Universalis V/userdir/mod/jason_mod/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3602160105/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3600131257/",
 					"isEnabled":	true
 				}],
 			"DLC":	[{
@@ -121,6 +117,54 @@
 					"isEnabled":	true
 				}, {
 					"path":	"F:/Steam/steamapps/workshop/content/3450310/3606305941/",
+					"isEnabled":	true
+				}],
+			"DLC":	[{
+					"paradoxAppId":	"Ancient Monument Pack",
+					"isEnabled":	true
+				}, {
+					"paradoxAppId":	"Shared DLC Data",
+					"isEnabled":	true
+				}, {
+					"paradoxAppId":	"Sacred Sites",
+					"isEnabled":	true
+				}]
+		}, {
+			"name":	"Main 2",
+			"isActive":	true,
+			"isAutomaticallySorted":	false,
+			"orderedListMods":	[{
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3600582579/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3601047146/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3600131257/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3601937478/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3602160105/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3603031599/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3604105554/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3605677866/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3606305941/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/workshop/content/3450310/3624485168/",
+					"isEnabled":	true
+				}, {
+					"path":	"F:/Steam/steamapps/common/Europa Universalis V/userdir/mod/jason_mod/",
 					"isEnabled":	true
 				}],
 			"DLC":	[{

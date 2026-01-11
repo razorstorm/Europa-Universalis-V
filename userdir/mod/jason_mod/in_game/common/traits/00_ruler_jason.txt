@@ -26,7 +26,6 @@ ruler_of_destiny = {
 		control_importance_modifier = 0.05
 
         army_tradition_decay = -0.001
-		monthly_towards_quality = societal_value_minor_monthly_move
 		bias_for_militarist_policies = 25
 
         # Something
@@ -64,9 +63,8 @@ ruler_of_destiny = {
         improve_relation_impact = 0.1
 		peace_offer_negotiation_power = 0.1
 
-        # CHarismatic Negotiator
+        # Charismatic Negotiator
         diplomatic_reputation = diplomatic_reputation_weak_bonus
-		monthly_towards_conciliatory = societal_value_minor_monthly_move
 		peace_offer_fairness = 0.05
 		peace_offer_negotiation_power = 0.1
 		subjugation_preference_modifier = 0.1
@@ -82,6 +80,7 @@ ruler_of_destiny = {
 		trade_importance_modifier = 0.05
 		court_language_is_market_language_importance_modifier = 0.1
 		bias_for_capitalist_policies = 50
+        monthly_towards_plutocracy = societal_value_minor_monthly_move
 
         # SCholar
         global_monthly_literacy = 0.0125
@@ -135,7 +134,6 @@ ruler_of_destiny = {
 
         # Just
         global_estate_target_satisfaction = tiny_permanent_target_satisfaction
-		monthly_towards_free_subjects = societal_value_minor_monthly_move
 
         # Architectural Visionary
         legislative_efficiency = 0.2

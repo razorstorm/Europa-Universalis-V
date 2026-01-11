@@ -1,86 +1,54 @@
 
 
 remove_country_modifier = slow_negotiations
+remove_country_modifier = assassinated_ruler
 
 add_legitimacy = 100
-# c:HUN = {
-#     create_character = {
-#         trait_category = none
-#         religion = c:HUN.religion
-#         culture = c:HUN.culture
-#         estate = estate_type:crown_estate
-#         age = 25
-#         adm = { 85 90 }
-#         dip = { 85 90 }
-#         mil = { 85 90 }
-#         female = no
-#         last_name = "Angió"
-#         lowborn = no
-#         dynasty = c:HUN.ruler.dynasty
-#         # last_name = c:HUN.ruler.last_name
-#     }
+c:HUN = {
+    create_character = {
+        trait_category = none
+        religion = c:HUN.religion
+        culture = c:HUN.culture
+        estate = estate_type:crown_estate
+        age = 25
+        adm = { 85 100 }
+        dip = { 85 100 }
+        mil = { 85 100 }
+        female = no
+        last_name = "Angió"
+        lowborn = no
+        dynasty = c:HUN.ruler.dynasty
+        # last_name = c:HUN.ruler.last_name
+    }
+}
+
+
+# c:GLH = {
+#     cancel_subject = c:KIE
 # }
 
-add_country_modifier = {
-    modifier = happy_subjects
-    years = -1
-}
-
-c:SCA = {
-    cancel_subject = c:GSW
-}
-c:GSW = {
-    change_religion = religion:lutheran
-    # every_owned_location = {
-    #     every_pop = {
-    #         # limit = { religion = religion:catholic }
-    #         split_pop = {
-    #             fraction = 0.7
-    #             religion = religion:lutheran
-    #         }
-    #     }
-    # }
-}
-
-# add_casus_belli = {
-#     target = c:MLO
-#     type = casus_belli:cb_following_through_on_threat
-#     province = location:trevision.province
+# add_country_modifier = {
+#     modifier = crown_power_cheat
 #     years = -1
 # }
 
-add_accepted_culture = culture:german_transylvanian
-
-every_subject = {
-    limit = {
-        NOT = {
-            religion = religion:lutheran
-        }
-    }
-    change_religion = religion:lutheran
-    # every_owned_location = {
-    #     every_pop = {
-    #         # limit = { religion = religion:catholic }
-    #         split_pop = {
-    #             fraction = 0.7
-    #             religion = religion:lutheran
-    #         }
-    #     }
-    # }
-}
-
-# c:MLO = {
-#     every_current_war = {
-#         white_peace = this
-#     }
+# c:GSW = {
+#     change_religion = religion:lutheran
+#     # every_owned_location = {
+#     #     every_pop = {
+#     #         # limit = { religion = religion:catholic }
+#     #         split_pop = {
+#     #             fraction = 0.7
+#     #             religion = religion:lutheran
+#     #         }
+#     #     }
+#     # }
 # }
 
-# c:NOV = {
-#     annex_country = {
-#         country = c:UM
-#         transfer = no
-#     }
-# }
+
+add_accepted_culture = culture:ruthenian
+
+
 
 # c:HUN = { 
 #     create_dynasty_from_location = random
@@ -94,18 +62,12 @@ every_subject = {
 # }
 
 # country_name_construction_map = { parent = country_name_construction suffix = "_map" }  
-# location:bayreuth = {
-#     change_location_owner = c:HUN
-# }
-# location:beilngries.province = {
-#     # every_location_in_province = {
-#         # limit = {
-#         #     has_owner = c:HUN
-#         # }
-#         # change_location_owner = c:AAA90
-#     # }
-#     change_province_owner = c:HUN
-# }
+location:zdzitov = {
+    change_location_owner = c:HUN
+}
+location:lelchytsy.province = {
+    change_province_owner = c:HUN
+}
 
 every_owned_location = {
     limit = {
@@ -123,17 +85,31 @@ every_owned_location = {
         }
     }
 }
-
 every_owned_location = {
     every_pop = {
-        limit = { 
-            NOT = {
-                religion = religion:lutheran
-            }
-        }
+        limit = { NOT = { religion = religion:lutheran }}
         split_pop = {
             fraction = 1
             religion = religion:lutheran
         }
     }
 }
+
+every_subject = {
+    limit = {
+        NOT = {
+            religion = religion:lutheran
+        }
+    }
+    change_religion = religion:lutheran
+    every_owned_location = {
+        every_pop = {
+            limit = { NOT = { religion = religion:lutheran }}
+            split_pop = {
+                fraction = 1
+                religion = religion:lutheran
+            }
+        }
+    }
+}
+

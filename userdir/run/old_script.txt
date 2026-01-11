@@ -9,9 +9,25 @@ set_variable = {
     value = yes
 }
 
-# c:NAP = {
-#     white_peace = yes
-# }
+c:MLO = {
+    every_current_war = {
+        white_peace = this
+    }
+}
+
+c:NOV = {
+    annex_country = {
+        country = c:UM
+        transfer = no
+    }
+}
+
+add_casus_belli = {
+    target = c:MLO
+    type = casus_belli:cb_following_through_on_threat
+    province = location:trevision.province
+    years = -1
+}
 
 # location:pljevlja = {
 #     change_location_owner = c:AAA18
@@ -232,7 +248,22 @@ location:tighina.province = { change_province_owner = c:MOL }
 #         }
 #     }
 # }
-
+c:MNG = {
+    remove_antagonism = {
+        target = c:HUN
+        source = c:MNG
+        scale = 100
+        value -1000
+        option = true
+    }
+    add_antagonism = {
+        target = c:HUN
+        source = c:MNG
+        scale = 100
+        value -1000
+        option = true
+    }
+}
 # c:BOH = {
 #     remove_opinion = {
 #         modifier = opinion_improved_relations
@@ -1152,6 +1183,11 @@ location:krupina = {
 # c:CRO = {
 #     cancel_subject = c:HUN
 # }
+c:SMO = {
+    every_owned_location = {
+        change_location_controller = c:HUN
+    }
+}
 
 # c:NAP = {
 #     white_peace = yes
