@@ -2,16 +2,73 @@
 #     cancel_subject = c:HUN
 # }
 # -debug_mode --userdir=F:\Steam\steamapps\common\Europa Universalis V\userdir -dx12
+
+# To Figure Out Mass Expand Logic:
+
+# game\in_game\gui\build_location_lateralview.gui, search for BuildBestFromRankingItemsShift
+# game\in_game\gui\expand_raw_goods_lateralview.gui, search for ExpandBestFromRankingItemsShift
+remove_opinion = {
+    target = c:HUN
+    modifier = opinion_overruled_imperial_diet 
+} 
+
+create_alliance = { target = c:CAS }
+remove_country_modifier = assassinated_ruler
+remove_country_modifier = slow_negotiations
 add_legitimacy = 100
 
+# c:HUN = {
+#     create_character = {
+#         trait_category = none
+#         religion = c:HUN.religion
+#         culture = c:HUN.culture
+#         estate = estate_type:crown_estate
+#         age = 25
+#         adm = { 85 100 }
+#         dip = { 85 100 }
+#         mil = { 85 100 }
+#         female = no
+#         lowborn = no
+#         dynasty = ROOT.ruler.dynasty
+#         # last_name = c:HUN.ruler.last_name
+#     }
+# }
+
+# ROOT = {
+#     create_character = {
+#         trait_category = none
+#         religion = THIS.religion
+#         culture = THIS.culture
+#         estate = estate_type:crown_estate
+#         age = 25
+#         adm = { 85 100 }
+#         dip = { 85 100 }
+#         mil = { 85 100 }
+#         female = no
+#         lowborn = no
+#         dynasty = THIS.ruler.dynasty
+#     }
+# }
 set_variable = {
     name = is_named_eastern_realm
     value = yes
 }
 
+create_alliance = { target = c:BYZ }
+
+create_crown_character = yes
+
 c:MLO = {
     every_current_war = {
         white_peace = this
+    }
+}
+
+# Set union level to max
+c:HUN = {
+    create_union_of_level = { 
+        target = c:NOV
+        level = 8
     }
 }
 
@@ -22,12 +79,48 @@ c:NOV = {
     }
 }
 
+c:NOV = {
+    set_country_rank = country_rank:rank_empire
+}
+
+
+# Make a specific subject loyal
+c:TWS = {
+    add_country_modifier = {
+        modifier = loyal_to_overlord_cheat
+        years = -1
+    }
+}
+
+
 add_casus_belli = {
     target = c:MLO
     type = casus_belli:cb_following_through_on_threat
     province = location:trevision.province
     years = -1
 }
+
+
+# Update HRE to Lutheran
+every_country = {
+    limit = {
+        is_member_of_international_organization = international_organization:hre
+        NOT = {
+            religion = religion:lutheran
+        }
+    }
+
+    change_religion = religion:lutheran
+
+    every_pop = {
+        limit = { NOT = { religion = religion:lutheran }}
+        split_pop = {
+            fraction = 1
+            religion = religion:lutheran
+        }
+    }
+}
+
 
 # location:pljevlja = {
 #     change_location_owner = c:AAA18
@@ -348,6 +441,47 @@ c:MNG = {
 #     }
 # }
 
+
+# Add pop capacity to capital
+capital = {
+    add_location_modifier = {
+        modifier = economic_urbanization_modifier
+        years = -1
+        mode = add_and_extend
+    }
+    add_location_modifier = {
+        modifier = coastal
+        years = -1
+        mode = add_and_extend
+    }
+    add_location_modifier = {
+        modifier = pue_the_sky_city
+        years = -1
+        mode = add_and_extend
+    }
+    add_location_modifier = {
+        modifier = location_closeness_to_equator_impact
+        years = -1
+        mode = add_and_extend
+    }
+    add_location_modifier = {
+        modifier = capital
+        years = -1
+        mode = add_and_extend
+    }
+    add_location_modifier = {
+        modifier = province_capital
+        years = -1
+        mode = add_and_extend
+    }
+}
+
+
+location:buda = {
+    # construct_rgo_upgrade = 10
+    # change_max_raw_material_workers = 2
+    change_raw_material = goods:gold
+}
 # every_owned_location = {
 #     every_pop = {
 #         limit = { religion = religion:catholic }
@@ -368,7 +502,7 @@ c:MNG = {
 #     }
 # }
 
-
+change_raw_material = 
 # c:BYZ = {
 #     annex_country = {
 #         country = c:CRT
@@ -1180,9 +1314,9 @@ add_gold = 1
 location:krupina = {
     change_location_rank = location_rank:rural_settlement
 }
-# c:CRO = {
-#     cancel_subject = c:HUN
-# }
+c:CRO = {
+    cancel_subject = c:HUN
+}
 c:SMO = {
     every_owned_location = {
         change_location_controller = c:HUN
@@ -1519,7 +1653,25 @@ add_country_modifier = {
 #         # }
 #     }
 # }
-    
+
+# Working Create Crown Characters
+c:HUN = {
+    create_character = {
+        trait_category = none
+        religion = c:HUN.religion
+        culture = c:HUN.culture
+        estate = estate_type:crown_estate
+        age = 25
+        adm = { 85 100 }
+        dip = { 85 100 }
+        mil = { 85 100 }
+        female = no
+        last_name = "Angió"
+        lowborn = no
+        dynasty = c:HUN.ruler.dynasty
+        # last_name = c:HUN.ruler.last_name
+    }
+}
 
 # province:north_dalmatia_province = {
 #     # random_location_in_province = {
@@ -1553,7 +1705,16 @@ capital.province = {
     }
 }
 
-
+# c:HUN = { 
+#     create_dynasty_from_location = random
+#     last_dynasty_in_location = { save_scope_as = target_dynasty }
+# }
+# character:16851605 = {
+#     # change_dynasty = scope:target_dynasty
+#     # change_dynasty = "Angió"
+#     # set_lowborn = no
+#     change_dynasty = c:HUN.ruler.dynasty
+# }
 
 
 #     every_pop = {
@@ -1687,6 +1848,15 @@ capital.province = {
 #         }
 #     }
 # }
+
+every_country = {
+    limit = {
+        culture = { has_culture_group = culture_group:german_group }
+        religion = religion:catholic
+    }
+
+    change_religion = religion:lutheran
+}
 
 # location:ovruch.province = {
 #     change_province_owner = location:olevsk.owner

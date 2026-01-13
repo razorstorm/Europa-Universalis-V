@@ -6,11 +6,12 @@
 		natural_harbor_suitability=yes
 		integration=yes
 		cities=yes
-		antagonism=yes
+		opinion=yes
 		satisfaction=yes
+		antagonism=yes
 		rebels=no
-		roads=yes
 		supply=yes
+		roads=yes
 	}
 	character_actions={
 	}
@@ -38,10 +39,10 @@
 	diplo_actions={
 	}
 	outliner={
-		navy_construction=no
+		navy_construction=yes
+		agenda=no
 		player=no
 		combat=yes
-		agenda=no
 		character=yes
 		goods=yes
 		rebel=no
@@ -52,7 +53,7 @@
 		location=yes
 		reforms=yes
 		seazone=yes
-		player_construction=no
+		player_construction=yes
 		law=yes
 		unit_army=yes
 		estate_construction=no

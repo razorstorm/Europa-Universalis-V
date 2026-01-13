@@ -1,0 +1,40 @@
+create_crown_character = {
+    create_character = {
+        trait_category = none
+        # father = root.ruler
+        dynasty = root.ruler.dynasty
+		culture = root.ruler.culture
+		religion = root.ruler.religion
+        estate = estate_type:crown_estate
+        age = 25
+        adm = { 85 100 }
+        dip = { 85 100 }
+        mil = { 85 100 }
+        female = no
+        lowborn = no
+    }
+}
+
+convert_fraction_of_pops = {
+    every_pop = {
+        limit = { NOT = { religion = religion:$religion$ }}
+        split_pop = {
+            fraction = $fraction$
+            religion = religion:$religion$
+        }
+    }
+}
+
+expand_all_rgos = {
+    while = {
+        count = 10
+        every_owned_location = {
+            limit = {
+                NOT = {
+                    is_full_expanded_rgo = yes
+                }
+            }
+            construct_rgo_upgrade = 10
+        }
+    }
+}

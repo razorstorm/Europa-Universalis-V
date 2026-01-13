@@ -1,0 +1,63 @@
+
+every_country = {
+
+    remove_antagonism = { 
+        target = c:HUN 
+        # value = 100
+        modifier = antagonism_declared_war_on_subject
+    }
+    remove_antagonism = { 
+        target = c:HUN 
+        # value = 100
+        modifier = antagonism_taking_land
+    }
+    remove_antagonism = { 
+        target = c:HUN 
+        # value = 100
+        modifier = antagonism_subjugated_nation
+    }
+    remove_antagonism = { 
+        target = c:HUN 
+        # value = 100
+        modifier = antagonism_forced_ruler_change
+    }
+    remove_antagonism = { 
+        target = c:HUN 
+        # value = 100
+        modifier = antagonism_opened_war_path
+    }
+    remove_antagonism = { 
+        target = c:HUN 
+        # value = 100
+        modifier = antagonism_planned_invasion
+    }
+# add_antagonism = { target = c:FRA modifier = opinion_did_not_influence_succession_antagonism }
+    remove_opinion = {
+        target = c:HUN
+        modifier = opinion_hre_passed_controversial_law 
+    } 
+    remove_opinion = {
+        target = c:HUN
+        modifier = opinion_hre_passed_opposed_law 
+    } 
+    remove_opinion = {
+        target = c:HUN
+        modifier = opinion_hre_passed_rebellious_law 
+    } 
+    remove_opinion = {
+        target = c:HUN
+        modifier = recent_conflict_lost 
+    } 
+    remove_opinion = {
+        target = c:HUN
+        modifier = opinion_war 
+    } 
+    remove_opinion = {
+        target = c:HUN
+        modifier = opinion_declared_war 
+    } 
+    remove_opinion = {
+        target = c:HUN
+        modifier = opinion_overruled_imperial_diet 
+    } 
+}

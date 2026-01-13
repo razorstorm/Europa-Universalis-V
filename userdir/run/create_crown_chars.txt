@@ -1,0 +1,16 @@
+# While loop doesn't seem to work
+# while = {
+#     count = 10
+# }
+
+create_crown_character = yes
+create_crown_character = yes
+create_crown_character = yes
+create_crown_character = yes
+create_crown_character = yes
+create_crown_character = yes
+create_crown_character = yes
+create_crown_character = yes
+create_crown_character = yes
+create_crown_character = yes
+create_crown_character = yes

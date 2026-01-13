@@ -2,72 +2,89 @@
 
 remove_country_modifier = slow_negotiations
 remove_country_modifier = assassinated_ruler
+remove_country_modifier = crown_power_cheat
 
 add_legitimacy = 100
-c:HUN = {
-    create_character = {
-        trait_category = none
-        religion = c:HUN.religion
-        culture = c:HUN.culture
-        estate = estate_type:crown_estate
-        age = 25
-        adm = { 85 100 }
-        dip = { 85 100 }
-        mil = { 85 100 }
-        female = no
-        last_name = "Angió"
-        lowborn = no
-        dynasty = c:HUN.ruler.dynasty
-        # last_name = c:HUN.ruler.last_name
+
+# c:FRA = {
+#     cancel_subject = c:NED
+# }
+
+# c:KIT = {
+#     every_owned_location = {
+#         change_location_controller = c:AAA39
+#     }
+# }
+
+# Update HRE to Lutheran
+every_country = {
+    limit = {
+        is_member_of_international_organization = international_organization:hre
+    }
+
+    if = {
+        limit = {
+            NOT = {
+                religion = religion:lutheran
+            }
+        }
+        change_religion = religion:lutheran
+    }
+
+    convert_fraction_of_pops = {
+        religion = lutheran
+        fraction = 1
     }
 }
 
 
-# c:GLH = {
-#     cancel_subject = c:KIE
+# c:AAA39 = {
+#     annex_country = {
+#         country = c:KIT
+#         transfer = no
+#     }
 # }
 
-# add_country_modifier = {
-#     modifier = crown_power_cheat
-#     years = -1
+# capital = {
+#     every_pop = {
+#         limit = {
+#             owner = root
+#             pop_type = pop_type:laborers
+#             culture = root.culture
+#             religion = root.religion
+#         }
+#         add_pop_size = {
+#             value = pop_size 
+#             multiply = 1.1
+#         }
+#     }
 # }
 
-# c:GSW = {
-#     change_religion = religion:lutheran
-#     # every_owned_location = {
-#     #     every_pop = {
-#     #         # limit = { religion = religion:catholic }
-#     #         split_pop = {
-#     #             fraction = 0.7
-#     #             religion = religion:lutheran
-#     #         }
-#     #     }
-#     # }
-# }
-
-
-add_accepted_culture = culture:ruthenian
-
-
-
-# c:HUN = { 
-#     create_dynasty_from_location = random
-#     last_dynasty_in_location = { save_scope_as = target_dynasty }
-# }
-# character:16851605 = {
-#     # change_dynasty = scope:target_dynasty
-#     # change_dynasty = "Angió"
-#     # set_lowborn = no
-#     change_dynasty = c:HUN.ruler.dynasty
-# }
-
-# country_name_construction_map = { parent = country_name_construction suffix = "_map" }  
-location:zdzitov = {
-    change_location_owner = c:HUN
+every_owned_location = {
+    limit = {
+        has_building = building:workshop
+    }
+    construct_building = 
 }
-location:lelchytsy.province = {
-    change_province_owner = c:HUN
-}
+
+expand_all_rgos = yes
+
+# add_accepted_culture = culture:crimean
+
+# change_imperial_authority = { value = -50 } 
+
+# location:gravia = {
+#     change_location_owner = c:HUN
+# }
+# location:rentina.province = {
+#     change_province_owner = c:HUN
+# }
+
+
+# c:AAA64 = {
+#     change_country_name = "Tanzania"
+#     change_country_adjective = "Tanzanian"
+# }
 
 every_owned_location = {
     limit = {
@@ -85,15 +102,12 @@ every_owned_location = {
         }
     }
 }
-every_owned_location = {
-    every_pop = {
-        limit = { NOT = { religion = religion:lutheran }}
-        split_pop = {
-            fraction = 1
-            religion = religion:lutheran
-        }
-    }
-}
+# every_owned_location = {
+#     convert_fraction_of_pops = {
+#         religion = lutheran
+#         fraction = 1
+#     }
+# }
 
 every_subject = {
     limit = {
@@ -102,14 +116,9 @@ every_subject = {
         }
     }
     change_religion = religion:lutheran
-    every_owned_location = {
-        every_pop = {
-            limit = { NOT = { religion = religion:lutheran }}
-            split_pop = {
-                fraction = 1
-                religion = religion:lutheran
-            }
-        }
+    convert_fraction_of_pops = {
+        religion = lutheran
+        fraction = 1
     }
 }
 
