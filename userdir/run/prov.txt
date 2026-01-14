@@ -1,90 +1,52 @@
+# add_legitimacy = 100
 
-
-remove_country_modifier = slow_negotiations
-remove_country_modifier = assassinated_ruler
-remove_country_modifier = crown_power_cheat
-
-add_legitimacy = 100
-
-# c:FRA = {
-#     cancel_subject = c:NED
+# c:SOI = {
+#     cancel_subject = c:NQS
 # }
-
-# c:KIT = {
+# c:AAA96 = {
 #     every_owned_location = {
-#         change_location_controller = c:AAA39
+#         change_location_controller = c:GLH
 #     }
 # }
 
-# Update HRE to Lutheran
-every_country = {
-    limit = {
-        is_member_of_international_organization = international_organization:hre
-    }
 
-    if = {
-        limit = {
-            NOT = {
-                religion = religion:lutheran
-            }
-        }
-        change_religion = religion:lutheran
-    }
-
-    convert_fraction_of_pops = {
-        religion = lutheran
-        fraction = 1
-    }
+international_organization:hre = {
+    remove_country_from_international_organization = c:SAV
+    remove_country_from_international_organization = c:SCA
+    remove_country_from_international_organization = c:LIT
+    remove_country_from_international_organization = c:PRU
+    remove_country_from_international_organization = c:TWS
 }
 
 
-# c:AAA39 = {
-#     annex_country = {
-#         country = c:KIT
-#         transfer = no
-#     }
-# }
+# Build infrastructure
+build_all_gov_infrastructure = yes
 
-# capital = {
-#     every_pop = {
-#         limit = {
-#             owner = root
-#             pop_type = pop_type:laborers
-#             culture = root.culture
-#             religion = root.religion
-#         }
-#         add_pop_size = {
-#             value = pop_size 
-#             multiply = 1.1
-#         }
-#     }
-# }
+destroy_harmful_estate_buildings = yes
 
-every_owned_location = {
-    limit = {
-        has_building = building:workshop
+c:CRI = {
+    annex_country = {
+        country = c:GAZ
+        transfer = no
     }
-    construct_building = 
+}
+c:SCA = {
+    set_country_rank = country_rank:rank_empire
 }
 
-expand_all_rgos = yes
+# add_country_modifier = {
+#     modifier = happy_subjects_2
+#     years = -1
+# }
 
 # add_accepted_culture = culture:crimean
 
-# change_imperial_authority = { value = -50 } 
-
-# location:gravia = {
-#     change_location_owner = c:HUN
-# }
-# location:rentina.province = {
-#     change_province_owner = c:HUN
-# }
-
-
-# c:AAA64 = {
-#     change_country_name = "Tanzania"
-#     change_country_adjective = "Tanzanian"
-# }
+location:alluyes = {
+    change_location_owner = c:FRA
+}
+location:pavlovskaya.province = {
+    change_province_owner = c:CRI
+}
 
 every_owned_location = {
     limit = {
@@ -94,6 +56,7 @@ every_owned_location = {
             }
         }
     }
+
     province = {
         # Supply Hubs
         add_province_modifier = {
@@ -102,12 +65,13 @@ every_owned_location = {
         }
     }
 }
-# every_owned_location = {
-#     convert_fraction_of_pops = {
-#         religion = lutheran
-#         fraction = 1
-#     }
-# }
+
+every_owned_location = {
+    convert_fraction_of_pops = {
+        religion = lutheran
+        fraction = 1
+    }
+}
 
 every_subject = {
     limit = {

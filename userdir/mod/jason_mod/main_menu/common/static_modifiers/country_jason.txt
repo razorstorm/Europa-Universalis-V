@@ -1,0 +1,76 @@
+
+impatient_annexation = {
+	game_data = {
+		category = country
+	}
+
+	monthly_diplomats = -0.15
+	diplomatic_annexation_cost = -0.4
+
+}
+
+culture_capacity_modifier = {
+	game_data = {
+		category = country
+	}
+
+	cultures_capacity_modifier = 5
+}
+
+cabinet_member_size = {
+	game_data = {
+		category = country
+	}
+
+    government_size = 1
+}
+
+lack_of_rivals = {
+    game_data = {
+		category = country
+	}
+
+	scales_with = {
+		value = modifier:num_possible_rivals
+		subtract = num_rivals
+		min = 0
+	}
+}
+
+free_trade_monthly_cheat = {
+    game_data = {
+		category = country
+	}
+
+    monthly_towards_free_trade = 0.51
+}
+
+crown_power_cheat = {
+    game_data = {
+		category = country
+	}
+
+    global_crown_estate_power = 10
+}
+
+loyal_to_overlord_cheat = {
+    game_data = {
+		category = country
+	}
+    loyalty_to_overlord = 300
+}
+
+
+happy_subjects = {
+    game_data = {
+		category = country
+	}
+	subject_loyalty = 50
+}
+
+happy_subjects_2 = {
+    game_data = {
+		category = country
+	}
+	subject_loyalty = 5000
+}

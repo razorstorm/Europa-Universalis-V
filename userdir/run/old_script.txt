@@ -15,7 +15,45 @@ remove_opinion = {
 create_alliance = { target = c:CAS }
 remove_country_modifier = assassinated_ruler
 remove_country_modifier = slow_negotiations
+remove_country_modifier = crown_power_cheat
 add_legitimacy = 100
+
+
+capital = {
+    add_location_modifier = {
+        modifier = foreign_shia_settlers
+        years = -1
+    }
+}
+
+# wars
+c:CHI = {
+    every_current_war = {
+        white_peace = this
+    }
+}
+
+capital = {
+    add_location_modifier = {
+        modifier = local_pop_capacity_cheat
+        years = -1
+    }
+}
+
+c:NOV = {
+    add_country_modifier = {
+        modifier = ikko_ikki_crushed
+        years = -1
+    }
+    add_country_modifier = {
+        modifier = nap_neapolitan_court_autonomy
+        years = -1
+    }
+    add_country_modifier = {
+        modifier = delhi_loyal_governors_modifier
+        years = -1
+    }
+}
 
 # c:HUN = {
 #     create_character = {
@@ -54,11 +92,80 @@ set_variable = {
     value = yes
 }
 
+
+# Destroy Estate Buildings
+ROOT = {
+    every_owned_location = {
+        limit = {
+            has_building = building_type:rotten_borough
+        }
+
+        destroy_all_buildings_of_type = building_type:rotten_borough
+    }
+    every_owned_location = {
+        limit = {
+            has_building = building_type:parish_church
+        }
+
+        destroy_all_buildings_of_type = building_type:parish_church
+    }
+    every_owned_location = {
+        limit = {
+            has_building = building_type:local_shrine
+        }
+
+        destroy_all_buildings_of_type = building_type:local_shrine
+    }
+    every_owned_location = {
+        limit = {
+            has_building = building_type:spiritual_retreat
+        }
+
+        destroy_all_buildings_of_type = building_type:spiritual_retreat
+    }
+    every_owned_location = {
+        limit = {
+            has_building = building_type:burgher_mansion
+        }
+
+        destroy_all_buildings_of_type = building_type:burgher_mansion
+    }
+    every_owned_location = {
+        limit = {
+            has_building = building_type:local_assembly
+        }
+
+        destroy_all_buildings_of_type = building_type:local_assembly
+    }
+    every_owned_location = {
+        limit = {
+            has_building = building_type:pirate_haven
+        }
+
+        destroy_all_buildings_of_type = building_type:pirate_haven
+    }
+    every_owned_location = {
+        limit = {
+            has_building = building_type:festival_grounds
+        }
+
+        destroy_all_buildings_of_type = building_type:festival_grounds
+    }
+    every_owned_location = {
+        limit = {
+            has_building = building_type:peasants_hunting_grounds
+        }
+
+        destroy_all_buildings_of_type = building_type:peasants_hunting_grounds
+    }
+}
+
+
 create_alliance = { target = c:BYZ }
 
 create_crown_character = yes
 
-c:MLO = {
+c:CHI = {
     every_current_war = {
         white_peace = this
     }
@@ -69,6 +176,14 @@ c:HUN = {
     create_union_of_level = { 
         target = c:NOV
         level = 8
+    }
+}
+
+# Local crown power
+every_owned_location = {
+    add_location_modifier = {
+        modifier = local_crown_power_cheat
+        years = -1
     }
 }
 
@@ -91,7 +206,21 @@ c:TWS = {
         years = -1
     }
 }
+c:KIE = {
+    break_alliance = { target = c:MOS }
+    break_alliance = { target = c:TUR }
+}
 
+c:VLR = {
+    cancel_subject = c:AAA96
+}
+
+c:NOV = {
+    annex_country = {
+        country = c:RSO
+        transfer = no
+    }
+}
 
 add_casus_belli = {
     target = c:MLO
@@ -441,6 +570,214 @@ c:MNG = {
 #     }
 # }
 
+# Build infra
+every_owned_location = {
+    if = {
+        limit = {
+            NOT = { has_building = building_type:bailiff }
+            can_build_building = building_type:bailiff
+        }
+        construct_building = {
+            building_type = building_type:bailiff
+            cost_multiplier = 1
+        }
+    }
+    if = {
+        limit = {
+            NOT = { has_building = building_type:cathedral }
+            can_build_building = building_type:cathedral
+        }
+        construct_building = {
+            building_type = building_type:cathedral
+            cost_multiplier = 1
+        }
+    }
+    if = {
+        limit = {
+            NOT = { has_building = building_type:university }
+            can_build_building = building_type:university
+        }
+        construct_building = {
+            building_type = building_type:university
+            cost_multiplier = 1
+        }
+    }
+    if = {
+        limit = {
+            NOT = { has_building = building_type:counting_house }
+            can_build_building = building_type:counting_house
+        }
+        construct_building = {
+            building_type = building_type:counting_house
+            cost_multiplier = 1
+        }
+    }
+    if = {
+        limit = {
+            NOT = { has_building = building_type:library }
+            can_build_building = building_type:library
+        }
+        construct_building = {
+            building_type = building_type:library
+            cost_multiplier = 1
+        }
+    }
+    if = {
+        limit = {
+            NOT = { has_building = building_type:hospital }
+            can_build_building = building_type:hospital
+        }
+        construct_building = {
+            building_type = building_type:hospital
+            cost_multiplier = 1
+        }
+    }
+    if = {
+        limit = {
+            NOT = { has_building = building_type:theater }
+            can_build_building = building_type:theater
+        }
+        construct_building = {
+            building_type = building_type:theater
+            cost_multiplier = 1
+        }
+    }
+    if = {
+        limit = {
+            NOT = { has_building = building_type:minting_office }
+            can_build_building = building_type:minting_office
+        }
+        construct_building = {
+            building_type = building_type:minting_office
+            cost_multiplier = 1
+        }
+    }
+}
+
+c:NOV = {   
+    add_country_modifier = {
+        modifier = happy_subjects
+        years = -1
+    }
+}
+
+c:AAA25 = {
+    make_subject_of = {
+        target = c:NOV
+        type = subject_type:vassal
+    }	
+}
+
+# Destroy estate buildings
+every_owned_location = {
+    limit = {
+        has_building = building_type:rotten_borough
+    }
+
+    destroy_all_buildings_of_type = building_type:rotten_borough
+}
+every_owned_location = {
+    limit = {
+        has_building = building_type:parish_church
+    }
+
+    destroy_all_buildings_of_type = building_type:parish_church
+}
+every_owned_location = {
+    limit = {
+        has_building = building_type:local_shrine
+    }
+
+    destroy_all_buildings_of_type = building_type:local_shrine
+}
+every_owned_location = {
+    limit = {
+        has_building = building_type:spiritual_retreat
+    }
+
+    destroy_all_buildings_of_type = building_type:spiritual_retreat
+}
+every_owned_location = {
+    limit = {
+        has_building = building_type:burgher_mansion
+    }
+
+    destroy_all_buildings_of_type = building_type:burgher_mansion
+}
+every_owned_location = {
+    limit = {
+        has_building = building_type:local_assembly
+    }
+
+    destroy_all_buildings_of_type = building_type:local_assembly
+}
+every_owned_location = {
+    limit = {
+        has_building = building_type:pirate_haven
+    }
+
+    destroy_all_buildings_of_type = building_type:pirate_haven
+}
+every_owned_location = {
+    limit = {
+        has_building = building_type:festival_grounds
+    }
+
+    destroy_all_buildings_of_type = building_type:festival_grounds
+}
+every_owned_location = {
+    limit = {
+        has_building = building_type:peasants_hunting_grounds
+    }
+
+    destroy_all_buildings_of_type = building_type:peasants_hunting_grounds
+}
+
+change_imperial_authority = { value = -50 } 
+
+
+c:AAA64 = {
+    change_country_name = "Tanzania"
+    change_country_adjective = "Tanzanian"
+}
+
+
+# Expand capital pops
+capital = {
+    every_pop = {
+        limit = {
+            owner = root
+            pop_type = pop_type:laborers
+            culture = root.culture
+            religion = root.religion
+        }
+        add_pop_size = {
+            value = pop_size 
+            multiply = 1.1
+        }
+    }
+}
+
+# Purge Bad Characters
+
+every_character = {
+    limit = {
+        OR = {
+            adm < 85
+            dip < 85
+            mil < 85
+        }
+        
+        NOT = {
+            is_ruler = yes
+        }
+    }
+    kill_character = {
+        target = this
+        reason = fever
+    }
+}
+
 
 # Add pop capacity to capital
 capital = {
@@ -473,6 +810,47 @@ capital = {
         modifier = province_capital
         years = -1
         mode = add_and_extend
+    }
+}
+
+
+
+# Update HRE to Lutheran
+every_country = {
+    limit = {
+        is_member_of_international_organization = international_organization:hre
+    }
+
+    add_opinion = {
+        target = ROOT
+        modifier = opinion_pap_reassign_cleric_positive
+    }
+    add_opinion = {
+        target = ROOT
+        modifier = chi_gifts_from_subject
+    }
+
+    make_subject_of = {
+        target = c:HUN
+        type = subject_type:vassal
+    }	
+    
+    c:FRA = {
+        cancel_subject = PREV
+    }
+
+    if = {
+        limit = {
+            NOT = {
+                religion = religion:lutheran
+            }
+        }
+        change_religion = religion:lutheran
+    }
+
+    convert_fraction_of_pops = {
+        religion = lutheran
+        fraction = 1
     }
 }
 

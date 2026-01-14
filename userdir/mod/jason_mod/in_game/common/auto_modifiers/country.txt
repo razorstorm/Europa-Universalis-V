@@ -965,9 +965,6 @@ peasants_percentage_in_country = {
 	monthly_towards_traditional_economy = societal_value_monthly_move
 }
 
-
-
-
 total_merchant_capacity_impact = {
 	scales_with =  total_merchant_capacity
 
@@ -980,10 +977,6 @@ monthly_income_impact = {
 
 	great_power_score = 0.05
 
-}
-
-happy_subjects = {
-	subject_loyalty = 50
 }
 
 

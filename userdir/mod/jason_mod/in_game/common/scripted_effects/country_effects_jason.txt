@@ -38,3 +38,201 @@ expand_all_rgos = {
         }
     }
 }
+
+build_all_gov_infrastructure = {
+    every_owned_location = {
+        if = {
+            limit = {
+                NOT = { has_building = building_type:bailiff }
+                can_build_building = building_type:bailiff
+            }
+            construct_building = {
+                building_type = building_type:bailiff
+                cost_multiplier = 1
+            }
+        }
+        if = {
+            limit = {
+                NOT = { has_building = building_type:cathedral }
+                can_build_building = building_type:cathedral
+            }
+            construct_building = {
+                building_type = building_type:cathedral
+                cost_multiplier = 1
+            }
+        }
+        if = {
+            limit = {
+                NOT = { has_building = building_type:university }
+                can_build_building = building_type:university
+            }
+            construct_building = {
+                building_type = building_type:university
+                cost_multiplier = 1
+            }
+        }
+        if = {
+            limit = {
+                NOT = { has_building = building_type:counting_house }
+                can_build_building = building_type:counting_house
+            }
+            construct_building = {
+                building_type = building_type:counting_house
+                cost_multiplier = 1
+            }
+        }
+        if = {
+            limit = {
+                NOT = { has_building = building_type:library }
+                can_build_building = building_type:library
+            }
+            construct_building = {
+                building_type = building_type:library
+                cost_multiplier = 1
+            }
+        }
+        if = {
+            limit = {
+                NOT = { has_building = building_type:hospital }
+                can_build_building = building_type:hospital
+            }
+            construct_building = {
+                building_type = building_type:hospital
+                cost_multiplier = 1
+            }
+        }
+        if = {
+            limit = {
+                NOT = { has_building = building_type:theater }
+                can_build_building = building_type:theater
+            }
+            construct_building = {
+                building_type = building_type:theater
+                cost_multiplier = 1
+            }
+        }
+        if = {
+            limit = {
+                NOT = { has_building = building_type:minting_office }
+                can_build_building = building_type:minting_office
+            }
+            construct_building = {
+                building_type = building_type:minting_office
+                cost_multiplier = 1
+            }
+        }
+        if = {
+            limit = {
+                NOT = { has_building = building_type:bridge }
+                can_build_building = building_type:bridge
+            }
+            construct_building = {
+                building_type = building_type:bridge
+                cost_multiplier = 1
+            }
+        }
+    }
+}
+
+destroy_harmful_estate_buildings = {
+    every_owned_location = {
+        limit = {
+            has_building = building_type:rotten_borough
+        }
+
+        destroy_all_buildings_of_type = building_type:rotten_borough
+    }
+    every_owned_location = {
+        limit = {
+            has_building = building_type:parish_church
+        }
+
+        destroy_all_buildings_of_type = building_type:parish_church
+    }
+    every_owned_location = {
+        limit = {
+            has_building = building_type:local_shrine
+        }
+
+        destroy_all_buildings_of_type = building_type:local_shrine
+    }
+    every_owned_location = {
+        limit = {
+            has_building = building_type:spiritual_retreat
+        }
+
+        destroy_all_buildings_of_type = building_type:spiritual_retreat
+    }
+    every_owned_location = {
+        limit = {
+            has_building = building_type:burgher_mansion
+        }
+
+        destroy_all_buildings_of_type = building_type:burgher_mansion
+    }
+    every_owned_location = {
+        limit = {
+            has_building = building_type:local_assembly
+        }
+
+        destroy_all_buildings_of_type = building_type:local_assembly
+    }
+    every_owned_location = {
+        limit = {
+            has_building = building_type:pirate_haven
+        }
+
+        destroy_all_buildings_of_type = building_type:pirate_haven
+    }
+    every_owned_location = {
+        limit = {
+            has_building = building_type:festival_grounds
+        }
+
+        destroy_all_buildings_of_type = building_type:festival_grounds
+    }
+    every_owned_location = {
+        limit = {
+            has_building = building_type:peasants_hunting_grounds
+        }
+
+        destroy_all_buildings_of_type = building_type:peasants_hunting_grounds
+    }
+}
+
+boost_capital_laborers = {
+    capital = {
+        every_pop = {
+            limit = {
+                owner = root
+                pop_type = pop_type:laborers
+                culture = root.culture
+                religion = root.religion
+            }
+            add_pop_size = {
+                value = pop_size 
+                multiply = 1.1
+            }
+        }
+    }
+}
+
+purge_weak_characters = {
+    every_character = {
+        limit = {
+            OR = {
+                adm < 85
+                dip < 85
+                mil < 85
+            }
+            
+            NOT = {
+                is_ruler = yes
+            }
+        }
+        kill_character = {
+            target = this
+            reason = fever
+        }
+    }
+}
