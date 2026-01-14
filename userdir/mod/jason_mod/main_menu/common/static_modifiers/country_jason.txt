@@ -1,76 +1,105 @@
 
 impatient_annexation = {
-	game_data = {
-		category = country
-	}
+    game_data = {
+        category = country
+    }
 
-	monthly_diplomats = -0.15
-	diplomatic_annexation_cost = -0.4
+    monthly_diplomats = -0.15
+    diplomatic_annexation_cost = -0.4
 
 }
 
 culture_capacity_modifier = {
-	game_data = {
-		category = country
-	}
+    game_data = {
+        category = country
+    }
 
-	cultures_capacity_modifier = 5
+    cultures_capacity_modifier = 5
 }
 
 cabinet_member_size = {
-	game_data = {
-		category = country
-	}
+    game_data = {
+        category = country
+    }
 
     government_size = 1
 }
 
 lack_of_rivals = {
     game_data = {
-		category = country
-	}
+        category = country
+    }
 
-	scales_with = {
-		value = modifier:num_possible_rivals
-		subtract = num_rivals
-		min = 0
-	}
+    scales_with = {
+        value = modifier:num_possible_rivals
+        subtract = num_rivals
+        min = 0
+    }
 }
 
 free_trade_monthly_cheat = {
     game_data = {
-		category = country
-	}
+        category = country
+    }
 
     monthly_towards_free_trade = 0.51
 }
 
 crown_power_cheat = {
     game_data = {
-		category = country
-	}
+        category = country
+    }
 
     global_crown_estate_power = 10
 }
 
+small_crown_power_cheat = {
+    game_data = {
+        category = country
+    }
+
+    global_crown_estate_power = 1
+}
+medium_crown_power_cheat = {
+    game_data = {
+        category = country
+    }
+
+    global_crown_estate_power = 5
+}
+large_crown_power_cheat = {
+    game_data = {
+        category = country
+    }
+
+    global_crown_estate_power = 10
+}
+huge_crown_power_cheat = {
+    game_data = {
+        category = country
+    }
+
+    global_crown_estate_power = 100
+}
+
 loyal_to_overlord_cheat = {
     game_data = {
-		category = country
-	}
+        category = country
+    }
     loyalty_to_overlord = 300
 }
 
 
 happy_subjects = {
     game_data = {
-		category = country
-	}
-	subject_loyalty = 50
+        category = country
+    }
+    subject_loyalty = 50
 }
 
 happy_subjects_2 = {
     game_data = {
-		category = country
-	}
-	subject_loyalty = 5000
+        category = country
+    }
+    subject_loyalty = 5000
 }

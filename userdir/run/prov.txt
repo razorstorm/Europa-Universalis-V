@@ -1,77 +1,124 @@
-# add_legitimacy = 100
-
-# c:SOI = {
-#     cancel_subject = c:NQS
-# }
-# c:AAA96 = {
-#     every_owned_location = {
-#         change_location_controller = c:GLH
-#     }
-# }
+log = "===============================Running Prov.txt=========================================="
+####################################################################################
 
 
-international_organization:hre = {
-    remove_country_from_international_organization = c:SAV
-    remove_country_from_international_organization = c:SCA
-    remove_country_from_international_organization = c:LIT
-    remove_country_from_international_organization = c:PRU
-    remove_country_from_international_organization = c:TWS
+####################################################################################
+####################################################################################
+# Continuous things to run for this campaign + Global Flags
+####################################################################################
+
+ROOT = {
+    # add_country_modifier = {
+    #     modifier = medium_crown_power_cheat
+    #     years = -1
+    # }
+    
+    ######
+        
+    # c:SOI = {
+    #     cancel_subject = c:NQS
+    # }
+    # c:AAA96 = {
+    #     every_owned_location = {
+    #         change_location_controller = c:GLH
+    #     }
+    # }
 }
 
+####################################################################################
+# Ceding Locations
+####################################################################################
 
-# Build infrastructure
-build_all_gov_infrastructure = yes
-
-destroy_harmful_estate_buildings = yes
-
-c:CRI = {
-    annex_country = {
-        country = c:GAZ
-        transfer = no
+ROOT = {
+    location:neustadt = {
+        change_location_owner = c:HUN
+        # remove_location_modifier = local_crown_power_cheat
+    }
+    location:pavlovskaya.province = {
+        change_province_owner = c:CRI
     }
 }
-c:SCA = {
-    set_country_rank = country_rank:rank_empire
+
+####################################################################################
+# Country Fixes
+####################################################################################
+
+ROOT = {
+    c:CRI = {
+        annex_country = {
+            country = c:GAZ
+            transfer = no
+        }
+    }
+    c:SCA = {
+        set_country_rank = country_rank:rank_empire
+    }
+
+    # Cultures
+    add_accepted_culture = culture:crimean
 }
 
-# add_country_modifier = {
-#     modifier = happy_subjects_2
-#     years = -1
-# }
+####################################################################################
+# Location Fixes
+####################################################################################
 
-# add_accepted_culture = culture:crimean
+ROOT = {
+    every_owned_location = {
+        limit = {
+            OR = {
+                NOT = {
+                    has_location_modifier = local_crown_power_cheat
+                }
+                NOT = {
+                    province = {
+                        has_province_modifier = army_hub
+                    }
+                }
+            }
+        }
 
-location:alluyes = {
-    change_location_owner = c:FRA
-}
-location:pavlovskaya.province = {
-    change_province_owner = c:CRI
-}
+        if = {
+            limit = { NOT = { has_location_modifier = local_crown_power_cheat }
 
-every_owned_location = {
-    limit = {
-        NOT = {
-            province = {
-                has_province_modifier = army_hub
+            add_location_modifier = {
+                modifier = local_crown_power_cheat
+                years = -1
+            }
+        }
+
+        # province = {
+        #     if = {
+        #         limit = { NOT = { has_province_modifier = army_hub } }
+        #         add_province_modifier = {
+        #             modifier = army_hub
+        #             years = -1
+        #         }
+        #     }
+        # }
+        
+        add_loc_mod_once = {
+            modifier = local_crown_power_cheat
+            years = -1
+        }
+        province = {
+            add_prov_mod_once = {
+                modifier = army_hub
+                years = -1
             }
         }
     }
-
-    province = {
-        # Supply Hubs
-        add_province_modifier = {
-            modifier = army_hub
-            years = -1
+    
+    every_owned_location = {
+        convert_fraction_of_pops = {
+            religion = lutheran
+            fraction = 1
         }
     }
 }
-
-every_owned_location = {
-    convert_fraction_of_pops = {
-        religion = lutheran
-        fraction = 1
-    }
-}
+    
+####################################################################################
+# Subject  Fixes
+####################################################################################
 
 every_subject = {
     limit = {
@@ -85,4 +132,12 @@ every_subject = {
         fraction = 1
     }
 }
+
+####################################################################################
+# Auto Infra Building
+####################################################################################
+
+# Build infrastructure
+build_all_gov_infrastructure = yes
+destroy_harmful_estate_buildings = yes
 

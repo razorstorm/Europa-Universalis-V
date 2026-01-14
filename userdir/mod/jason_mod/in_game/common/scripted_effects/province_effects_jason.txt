@@ -1,0 +1,13 @@
+add_prov_mod_once = {
+    if = {
+        limit = {
+            NOT = { has_province_modifier = $modifier$ }
+        }
+        add_province_modifier = {
+            modifier = $modifier$
+            mode = $mode$
+            years = $years$
+            size = $size$
+        }
+    }
+}

@@ -1,0 +1,13 @@
+add_loc_mod_once = {
+    if = {
+        limit = {
+            NOT = { has_location_modifier = $modifier$ }
+        }
+        add_location_modifier = {
+            modifier = $modifier$
+            mode = $mode$
+            years = $years$
+            size = $size$
+        }
+    }
+}

@@ -4230,3 +4230,27 @@ make_subject fiefdom sca
 save autosave
 run prov.txt
 save autosave
+make_subject fiefdom ned
+make_subject fiefdom sca
+make_subject fiefdom sav
+save autosave
+make_subject fiefdom lit
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+clear
+run prov.txt

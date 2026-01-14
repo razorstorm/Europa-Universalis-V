@@ -18,6 +18,53 @@ remove_country_modifier = slow_negotiations
 remove_country_modifier = crown_power_cheat
 add_legitimacy = 100
 
+international_organization:hre = {
+    # remove_country_from_international_organization = c:SAV
+    # remove_country_from_international_organization = c:SCA
+    # remove_country_from_international_organization = c:LIT
+    # remove_country_from_international_organization = c:PRU
+    # remove_country_from_international_organization = c:TWS
+
+    add_country_to_international_organization = c:TWS
+    add_country_to_international_organization = c:SAV
+    add_country_to_international_organization = c:PRU
+    add_country_to_international_organization = c:LIT
+    add_country_to_international_organization = c:SCA
+}
+
+every_owned_location = {
+    limit = {
+        OR = {
+            NOT = {
+                has_location_modifier = local_crown_power_cheat
+            }
+            NOT = {
+                province = {
+                    has_province_modifier = army_hub
+                }
+            }
+        }
+    }
+
+    add_loc_mod_once = {
+        modifier = local_crown_power_cheat
+        years = -1
+    }
+    province = {
+        add_prov_mod_once = {
+            modifier = army_hub
+            years = -1
+        }
+    }
+
+    # province = {
+    #     # Supply Hubs
+    #     add_province_modifier = {
+    #         modifier = army_hub
+    #         years = -1
+    #     }
+    # }
+}
 
 capital = {
     add_location_modifier = {
