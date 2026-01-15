@@ -25,6 +25,24 @@ convert_fraction_of_pops = {
     }
 }
 
+accept_every_present_culture = {   
+    every_pop = {
+        this.culture = {
+            reverse_change_cultural_view = {
+                target = culture:hungarian
+                change = 10
+            }
+            change_cultural_view = {
+                target = culture:hungarian
+                change = 10
+            }
+        }
+        ROOT = {
+            add_accepted_culture = prev.culture
+        }
+    }
+}
+    
 expand_all_rgos = {
     while = {
         count = 10

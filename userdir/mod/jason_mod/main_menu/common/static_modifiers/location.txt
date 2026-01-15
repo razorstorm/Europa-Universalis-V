@@ -3365,3 +3365,14 @@ local_pop_capacity_cheat = {
 
     local_population_capacity = 500
 }
+
+
+infinite_buildings_cheat = {
+	game_data = {
+		category = location
+	}
+	local_institution_growth_modifier = 0.25
+	free_building_levels = 500
+    local_monthly_prosperity = 0.01
+	maximum_stockpile_capacity = 250
+}

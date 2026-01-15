@@ -87,7 +87,7 @@
 
 	food_access = yes
 	
-	can_change_rank = no
+	can_change_rank = yes
 	can_change_heir_selection = yes
 
 	minimum_opinion_for_offer = 150
@@ -116,7 +116,7 @@
 	diplo_chance_accept_subject = {
 		base = -90
 		current_strength = 0.2
-		border_distance = -0.3
+		border_distance = -0.01
 		negative_opinion = -5
 		positive_opinion = 0.25
 		rank_difference = -5
@@ -124,7 +124,7 @@
 		receiving_defensive_support = 5
 		royal_ties = 1
 
-		num_of_limited_subjects = -5
+		num_of_limited_subjects = -0.5
 		culture_war = 3
 		diplomatic_reputation = 1
 		different_religion = -20
@@ -132,9 +132,12 @@
 		same_court_language = 10
 		different_culture = -10
 		different_government_type = -25
-		actor_at_war = -20
+		actor_at_war = -200
 		competing_power = -200
 		tax_base = -0.25
+        scope:actor ?= {
+            tax_base = 0.20
+        }
 		
 		reject_subjugation_reasons = -1
 		accept_subjugation_reasons = 1

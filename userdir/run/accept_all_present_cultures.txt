@@ -1,0 +1,9 @@
+
+    every_owned_location = {
+        limit = {
+            owner = { NOT = { has_primary_or_accepted_culture = this.dominant_culture }}
+        }
+        ROOT = {
+            add_accepted_culture = this.dominant_culture
+        }
+    }

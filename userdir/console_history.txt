@@ -4254,3 +4254,213 @@ save autosave
 run prov.txt
 clear
 run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+n prov.txt
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+clear
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+clear
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+clear
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+clear
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+make_subject fiefdom vln
+save autosave
+yesman
+make_subject fiefdom pic
+save autosave
+make_subject fiefdom bur
+save autosave
+make_subject fiefdom chp
+save autosave
+make_subject march aaa82
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+yesman
+make_subject fiefdom bur
+make_subject fiefdompic
+make_subject fiefdom pic
+make_subject fiefdom chp
+save autosave
+make_subject march swi
+make_subject fiefdom aaa82
+save autosave
+run prov.txt
+save autosave
+make_subject pap fief
+make_subject fief pap
+make_subject fiefdom pap
+save autosave
+run prov.txt
+make_subject march aaa82
+save autosave
+clear
+make_subject fiefdom vln
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+make_subject march pru
+make_subject march aaa90
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+make_subject state_bank hsa
+GUI.ClearWidgets ideas_window
+save autosave
+make_subject vassal vln
+make_subject vassal sav
+make_subject vassal lit
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+make_subject vassal pap
+make_subject vassal byz
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+clear
+save aurun prov.txt
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+ave autosave
+save autosave
+make_subject colonial_nation AAA64
+save autosave
+effect c:AAA64 = { change_country_name = "Lake Victoria" }
+save autosave
+effect c:AAA64 = { change_country_name = "Holy Roman Lake Victoria" }
+save autosave
+effect c:AAA64 = { change_country_name = "Lake Victoria" }
+save autosave
+effect c:AAA64 = { change_country_name = "Lake Victoria" }
+run prov.txt
+effect c:AAA64 = { change_country_name = "Lake Victoria" }
+run prov.txt
+save autosave
+effect c:AAA64 = { change_country_name = "test" }
+effect c:AAA64 = { change_country_name = "Lake Victoria" }
+effect c:AAA64 = { change_country_name = "test" }
+effect c:AAA64 = { change_country_name = "test3" }
+effect c:AAA64 = { change_country_name = "denonym" }
+effect c:AAA64 = { change_country_name = "Lake Victoria" }
+save autosave
+run prov.txt
+save autosave
+make_subject vassal aaa58
+save autosave
+effect c:ABA75 = { change_country_name = "The Kongo Coast" }
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+clear
+run prov.txt
+clear
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save test_save
+clear
+save test_save
+run prov.txt
+save autosave
+run prov.txt
+clear
+run prov.txt
+clear
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+clear
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+clear
+run prov.txt
+save autosave
+run prov.txt
+clear
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave

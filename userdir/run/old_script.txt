@@ -388,7 +388,7 @@ location:tighina.province = { change_province_owner = c:MOL }
 # location:buda = {
 #     change_development = 100
 # }
-
+change_country_color = map_HUN
 # province:south_dalmatia_province = {
 #     every_location_in_province = {
 #         change_location_owner = ROOT
@@ -782,7 +782,6 @@ every_owned_location = {
 
 change_imperial_authority = { value = -50 } 
 
-
 c:AAA64 = {
     change_country_name = "Tanzania"
     change_country_adjective = "Tanzanian"
@@ -805,8 +804,21 @@ capital = {
     }
 }
 
-# Purge Bad Characters
 
+every_pop = {
+    limit = {
+        owner = root
+        pop_type = pop_type:soldiers
+        culture = root.culture
+        religion = root.religion
+    }
+    add_pop_size = {
+        value = pop_size 
+        subtract = 1000
+    }
+}
+
+# Purge Bad Characters
 every_character = {
     limit = {
         OR = {
@@ -902,10 +914,15 @@ every_country = {
 }
 
 
+country_name_construction_map = { 
+    parent = country_name_construction 
+    suffix = "_map" 
+}
+
 location:buda = {
     # construct_rgo_upgrade = 10
     # change_max_raw_material_workers = 2
-    change_raw_material = goods:gold
+    change_raw_material = goods:goods_gold
 }
 # every_owned_location = {
 #     every_pop = {
@@ -917,6 +934,21 @@ location:buda = {
 #     }
 # }
 
+
+# Unify HRE properly:
+
+every_country = {
+    limit = {
+        is_member_of_international_organization = international_organization:hre
+        is_subject_type = vassal
+    }
+    # add_gold = 1
+    ROOT = {
+        annex_country_diplomatically = { country = prev }
+    }
+    # trigger_event_silently = { id = hre.103 }
+}
+
 # c:HUN = {
 #     change_country_name = "The Eastern Realm"
 #     change_country_adjective = "Eastern Imperial"
@@ -927,7 +959,7 @@ location:buda = {
 #     }
 # }
 
-change_raw_material = 
+# change_raw_material = 
 # c:BYZ = {
 #     annex_country = {
 #         country = c:CRT
@@ -957,6 +989,43 @@ culture:venetian = {
         change = 1
     }
 }
+
+# Accept all present cultures:
+every_owned_location = {
+    # limit = {
+    #     owner = { NOT = { has_primary_or_accepted_culture = this.dominant_culture }}
+    # }
+    ROOT = {
+        add_accepted_culture = prev.dominant_culture
+    }
+}
+
+# Accept all existent cultures
+every_pop = {
+    limit = { 
+        NOT = {
+            ROOT = {
+                has_primary_or_accepted_culture = prev.culture
+            }
+        } 
+    }
+    culture = {
+        reverse_change_cultural_view = {
+            target = culture:hungarian
+            change = 1
+        }
+        change_cultural_view = {
+            target = culture:hungarian
+            change = 1
+        }
+    }
+    ROOT = {
+        add_accepted_culture = prev.culture
+    }
+}
+
+change_country_color = map_TIM
+remove_variable = is_named_eastern_realm
 
 # location:lutsk = {
 #     change_location_owner = c:HUN

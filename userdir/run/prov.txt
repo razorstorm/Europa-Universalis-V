@@ -1,28 +1,12 @@
 log = "===============================Running Prov.txt=========================================="
 ####################################################################################
 
-
 ####################################################################################
 ####################################################################################
 # Continuous things to run for this campaign + Global Flags
 ####################################################################################
 
 ROOT = {
-    # add_country_modifier = {
-    #     modifier = medium_crown_power_cheat
-    #     years = -1
-    # }
-    
-    ######
-        
-    # c:SOI = {
-    #     cancel_subject = c:NQS
-    # }
-    # c:AAA96 = {
-    #     every_owned_location = {
-    #         change_location_controller = c:GLH
-    #     }
-    # }
 }
 
 ####################################################################################
@@ -30,12 +14,11 @@ ROOT = {
 ####################################################################################
 
 ROOT = {
-    location:neustadt = {
-        change_location_owner = c:HUN
-        # remove_location_modifier = local_crown_power_cheat
-    }
-    location:pavlovskaya.province = {
-        change_province_owner = c:CRI
+    # location:hanau = {
+    #     change_location_owner = c:ETH
+    # }
+    location:rudnya_pontic.province = {
+        change_province_owner = c:LIT
     }
 }
 
@@ -44,18 +27,29 @@ ROOT = {
 ####################################################################################
 
 ROOT = {
-    c:CRI = {
-        annex_country = {
-            country = c:GAZ
-            transfer = no
-        }
-    }
-    c:SCA = {
-        set_country_rank = country_rank:rank_empire
-    }
+    # c:NOV = {
+    #     annex_country = {
+    #         country = c:GLH
+    #         transfer = no
+    #     }
+    # }
+    
+    # c:AAA64 = {
+    #     # change_country_name = "The Eastern Realm"
+    #     change_country_adjective = "Lake Victorian"
+    #     # set_country_rank = country_rank:rank_empire
+    # }
 
     # Cultures
-    add_accepted_culture = culture:crimean
+    # add_accepted_culture = culture:crimean
+
+    # every_owned_location = {
+    #     ROOT = {
+    #         add_accepted_culture = prev.dominant_culture
+    #     }
+    # }
+
+    #  accept_every_present_culture = yes
 }
 
 ####################################################################################
@@ -78,7 +72,7 @@ ROOT = {
         }
 
         if = {
-            limit = { NOT = { has_location_modifier = local_crown_power_cheat }
+            limit = { NOT = { has_location_modifier = local_crown_power_cheat }}
 
             add_location_modifier = {
                 modifier = local_crown_power_cheat
@@ -86,15 +80,15 @@ ROOT = {
             }
         }
 
-        # province = {
-        #     if = {
-        #         limit = { NOT = { has_province_modifier = army_hub } }
-        #         add_province_modifier = {
-        #             modifier = army_hub
-        #             years = -1
-        #         }
-        #     }
-        # }
+        province = {
+            if = {
+                limit = { NOT = { has_province_modifier = army_hub } }
+                add_province_modifier = {
+                    modifier = army_hub
+                    years = -1
+                }
+            }
+        }
         
         add_loc_mod_once = {
             modifier = local_crown_power_cheat
@@ -107,7 +101,7 @@ ROOT = {
             }
         }
     }
-    
+
     every_owned_location = {
         convert_fraction_of_pops = {
             religion = lutheran
@@ -140,4 +134,4 @@ every_subject = {
 # Build infrastructure
 build_all_gov_infrastructure = yes
 destroy_harmful_estate_buildings = yes
-
+expand_all_rgos = yes
