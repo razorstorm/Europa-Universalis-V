@@ -1,332 +1,386 @@
 create_crown_character = {
-    create_character = {
-        trait_category = none
-        # father = root.ruler
-        dynasty = root.ruler.dynasty
+	create_character = {
+		trait_category = none
+		# father = root.ruler
+		dynasty = root.ruler.dynasty
 		culture = root.ruler.culture
 		religion = root.ruler.religion
-        estate = estate_type:crown_estate
-        age = 25
-        adm = { 85 100 }
-        dip = { 85 100 }
-        mil = { 85 100 }
-        female = no
-        lowborn = no
-    }
+		estate = estate_type:crown_estate
+		age = 25
+		adm = {
+			85
+			100
+		}
+		dip = {
+			85
+			100
+		}
+		mil = {
+			85
+			100
+		}
+		female = no
+		lowborn = no
+	}
 }
 
 convert_fraction_of_pops = {
-    every_pop = {
-        limit = { NOT = { religion = $religion$ }}
-        split_pop = {
-            fraction = $fraction$
-            religion = $religion$
-        }
-    }
+	every_pop = {
+		limit = {
+			NOT = {
+				religion = $religion$
+			}
+		}
+		split_pop = {
+			fraction = $fraction$
+			religion = $religion$
+		}
+	}
 }
 
-accept_every_present_culture = {   
-    every_pop = {
-        this.culture = {
-            reverse_change_cultural_view = {
-                target = culture:hungarian
-                change = 10
-            }
-            change_cultural_view = {
-                target = culture:hungarian
-                change = 10
-            }
-        }
-        ROOT = {
-            add_accepted_culture = prev.culture
-        }
-    }
+accept_every_present_culture = {
+	every_pop = {
+		this.culture = {
+			reverse_change_cultural_view = {
+				target = culture:hungarian
+				change = 10
+			}
+			change_cultural_view = {
+				target = culture:hungarian
+				change = 10
+			}
+		}
+		ROOT = {
+			add_accepted_culture = prev.culture
+		}
+	}
 }
 
 # Unclear if this works
 accept_every_present_culture_quick = {
-    every_pop = {
-        limit = {
-            OR = {
-                NOT = {
-                    ROOT = {
-                        has_primary_or_accepted_culture = prev.culture
-                    }
-                }
-                culture = {
-                    cultural_view = {
-                        target = Root.ruler.culture
-                        value <= kindred 
-                    }
-                }
-                Root.ruler.culture = {
-                    cultural_view = {
-                        target = this.culture
-                        value <= kindred 
-                    }
-                }
-            }
-        }
-        this.culture = {
-            reverse_change_cultural_view = {
-                target = Root.ruler.culture
-                change = 10
-            }
-            change_cultural_view = {
-                target = Root.ruler.culture
-                change = 10
-            }
-        }
-        ROOT = {
-            add_accepted_culture = prev.culture
-        }
-    }
+	every_pop = {
+		limit = {
+			OR = {
+				NOT = {
+					ROOT = {
+						has_primary_or_accepted_culture = prev.culture
+					}
+				}
+				culture = {
+					cultural_view = {
+						target = Root.ruler.culture
+						value <= kindred
+					}
+				}
+				Root.ruler.culture = {
+					cultural_view = {
+						target = this.culture
+						value <= kindred
+					}
+				}
+			}
+		}
+		this.culture = {
+			reverse_change_cultural_view = {
+				target = Root.ruler.culture
+				change = 10
+			}
+			change_cultural_view = {
+				target = Root.ruler.culture
+				change = 10
+			}
+		}
+		ROOT = {
+			add_accepted_culture = prev.culture
+		}
+	}
 }
-    
+
 expand_all_rgos = {
-    while = {
-        count = 10
-        every_owned_location = {
-            limit = {
-                NOT = {
-                    is_full_expanded_rgo = yes
-                }
-            }
-            construct_rgo_upgrade = 10
-        }
-    }
+	while = {
+		count = 10
+		every_owned_location = {
+			limit = {
+				NOT = {
+					is_full_expanded_rgo = yes
+				}
+			}
+			construct_rgo_upgrade = 10
+		}
+	}
 }
 
 build_all_gov_infrastructure = {
-    every_owned_location = {
-        if = {
-            limit = {
-                NOT = { has_building = building_type:bailiff }
-                can_build_building = building_type:bailiff
-            }
-            construct_building = {
-                building_type = building_type:bailiff
-                cost_multiplier = 1
-            }
-        }
-        if = {
-            limit = {
-                NOT = { has_building = building_type:cathedral }
-                can_build_building = building_type:cathedral
-            }
-            construct_building = {
-                building_type = building_type:cathedral
-                cost_multiplier = 1
-            }
-        }
-        if = {
-            limit = {
-                NOT = { has_building = building_type:university }
-                can_build_building = building_type:university
-            }
-            construct_building = {
-                building_type = building_type:university
-                cost_multiplier = 1
-            }
-        }
-        if = {
-            limit = {
-                NOT = { has_building = building_type:counting_house }
-                can_build_building = building_type:counting_house
-            }
-            construct_building = {
-                building_type = building_type:counting_house
-                cost_multiplier = 1
-            }
-        }
-        if = {
-            limit = {
-                NOT = { has_building = building_type:library }
-                can_build_building = building_type:library
-            }
-            construct_building = {
-                building_type = building_type:library
-                cost_multiplier = 1
-            }
-        }
-        if = {
-            limit = {
-                NOT = { has_building = building_type:hospital }
-                can_build_building = building_type:hospital
-            }
-            construct_building = {
-                building_type = building_type:hospital
-                cost_multiplier = 1
-            }
-        }
-        if = {
-            limit = {
-                NOT = { has_building = building_type:theater }
-                can_build_building = building_type:theater
-            }
-            construct_building = {
-                building_type = building_type:theater
-                cost_multiplier = 1
-            }
-        }
-        if = {
-            limit = {
-                NOT = { has_building = building_type:minting_office }
-                can_build_building = building_type:minting_office
-            }
-            construct_building = {
-                building_type = building_type:minting_office
-                cost_multiplier = 1
-            }
-        }
-        if = {
-            limit = {
-                NOT = { has_building = building_type:bridge }
-                can_build_building = building_type:bridge
-            }
-            construct_building = {
-                building_type = building_type:bridge
-                cost_multiplier = 1
-            }
-        }
-    }
+	every_owned_location = {
+		if = {
+			limit = {
+				NOT = {
+					has_building = building_type:bailiff
+				}
+				can_build_building = building_type:bailiff
+			}
+			construct_building = {
+				building_type = building_type:bailiff
+				cost_multiplier = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_building = building_type:cathedral
+				}
+				can_build_building = building_type:cathedral
+			}
+			construct_building = {
+				building_type = building_type:cathedral
+				cost_multiplier = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_building = building_type:university
+				}
+				can_build_building = building_type:university
+			}
+			construct_building = {
+				building_type = building_type:university
+				cost_multiplier = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_building = building_type:counting_house
+				}
+				can_build_building = building_type:counting_house
+			}
+			construct_building = {
+				building_type = building_type:counting_house
+				cost_multiplier = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_building = building_type:library
+				}
+				can_build_building = building_type:library
+			}
+			construct_building = {
+				building_type = building_type:library
+				cost_multiplier = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_building = building_type:hospital
+				}
+				can_build_building = building_type:hospital
+			}
+			construct_building = {
+				building_type = building_type:hospital
+				cost_multiplier = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_building = building_type:theater
+				}
+				can_build_building = building_type:theater
+			}
+			construct_building = {
+				building_type = building_type:theater
+				cost_multiplier = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_building = building_type:minting_office
+				}
+				can_build_building = building_type:minting_office
+			}
+			construct_building = {
+				building_type = building_type:minting_office
+				cost_multiplier = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_building = building_type:bridge
+				}
+				can_build_building = building_type:bridge
+			}
+			construct_building = {
+				building_type = building_type:bridge
+				cost_multiplier = 1
+			}
+		}
+	}
 }
 
 destroy_harmful_estate_buildings = {
-    every_owned_location = {
-        limit = {
-            has_building = building_type:rotten_borough
-        }
-
-        destroy_all_buildings_of_type = building_type:rotten_borough
-    }
-    every_owned_location = {
-        limit = {
-            has_building = building_type:parish_church
-        }
-
-        destroy_all_buildings_of_type = building_type:parish_church
-    }
-    every_owned_location = {
-        limit = {
-            has_building = building_type:local_shrine
-        }
-
-        destroy_all_buildings_of_type = building_type:local_shrine
-    }
-    every_owned_location = {
-        limit = {
-            has_building = building_type:spiritual_retreat
-        }
-
-        destroy_all_buildings_of_type = building_type:spiritual_retreat
-    }
-    every_owned_location = {
-        limit = {
-            has_building = building_type:burgher_mansion
-        }
-
-        destroy_all_buildings_of_type = building_type:burgher_mansion
-    }
-    every_owned_location = {
-        limit = {
-            has_building = building_type:local_assembly
-        }
-
-        destroy_all_buildings_of_type = building_type:local_assembly
-    }
-    every_owned_location = {
-        limit = {
-            has_building = building_type:pirate_haven
-        }
-
-        destroy_all_buildings_of_type = building_type:pirate_haven
-    }
-    every_owned_location = {
-        limit = {
-            has_building = building_type:festival_grounds
-        }
-
-        destroy_all_buildings_of_type = building_type:festival_grounds
-    }
-    every_owned_location = {
-        limit = {
-            has_building = building_type:peasants_hunting_grounds
-        }
-
-        destroy_all_buildings_of_type = building_type:peasants_hunting_grounds
-    }
+	every_owned_location = {
+		limit = {
+			has_building = building_type:rotten_borough
+		}
+		destroy_all_buildings_of_type = building_type:rotten_borough
+	}
+	every_owned_location = {
+		limit = {
+			has_building = building_type:parish_church
+		}
+		destroy_all_buildings_of_type = building_type:parish_church
+	}
+	every_owned_location = {
+		limit = {
+			has_building = building_type:local_shrine
+		}
+		destroy_all_buildings_of_type = building_type:local_shrine
+	}
+	every_owned_location = {
+		limit = {
+			has_building = building_type:spiritual_retreat
+		}
+		destroy_all_buildings_of_type = building_type:spiritual_retreat
+	}
+	every_owned_location = {
+		limit = {
+			has_building = building_type:burgher_mansion
+		}
+		destroy_all_buildings_of_type = building_type:burgher_mansion
+	}
+	every_owned_location = {
+		limit = {
+			has_building = building_type:local_assembly
+		}
+		destroy_all_buildings_of_type = building_type:local_assembly
+	}
+	every_owned_location = {
+		limit = {
+			has_building = building_type:pirate_haven
+		}
+		destroy_all_buildings_of_type = building_type:pirate_haven
+	}
+	every_owned_location = {
+		limit = {
+			has_building = building_type:festival_grounds
+		}
+		destroy_all_buildings_of_type = building_type:festival_grounds
+	}
+	every_owned_location = {
+		limit = {
+			has_building = building_type:peasants_hunting_grounds
+		}
+		destroy_all_buildings_of_type = building_type:peasants_hunting_grounds
+	}
 }
 
 boost_capital_laborers = {
-    capital = {
-        every_pop = {
-            limit = {
-                owner = root
-                pop_type = pop_type:laborers
-                culture = root.culture
-                religion = root.religion
-            }
-            add_pop_size = {
-                value = pop_size 
-                multiply = 1.1
-            }
-        }
-    }
+	capital = {
+		every_pop = {
+			limit = {
+				owner = root
+				pop_type = pop_type:laborers
+				culture = root.culture
+				religion = root.religion
+			}
+			add_pop_size = {
+				value = pop_size
+				multiply = 1.1
+			}
+		}
+	}
 }
 
 purge_weak_characters = {
-    every_character = {
-        limit = {
-            OR = {
-                adm < 85
-                dip < 85
-                mil < 85
-            }
-            NOT = {
-                in_cabinet = yes
-            }
-            NOT = {
-                is_general = yes
-            }
-            NOT = {
-                is_admiral = yes
-            }   
-            NOT = {
-                is_ruler = yes
-            }
-        }
-        kill_character = {
-            target = this
-            reason = fever
-        }
-    }
+	every_character = {
+		limit = {
+			OR = {
+				adm < 85
+				dip < 85
+				mil < 85
+			}
+			NOT = {
+				in_cabinet = yes
+			}
+			NOT = {
+				is_general = yes
+			}
+			NOT = {
+				is_admiral = yes
+			}
+			NOT = {
+				is_ruler = yes
+			}
+		}
+		kill_character = {
+			target = this
+			reason = fever
+		}
+	}
 }
 
 purge_weak_unemployed_characters = {
-    every_character = {
-        limit = {
-            OR = {
-                adm < 85
-                dip < 85
-                mil < 85
-            }
-            NOT = {
-                in_cabinet = yes
-            }
-            NOT = {
-                is_general = yes
-            }
-            NOT = {
-                is_admiral = yes
-            }   
-            NOT = {
-                is_ruler = yes
-            }
-        }
-        kill_character = {
-            target = this
-            reason = fever
-        }
-    }
+	every_character = {
+		limit = {
+			OR = {
+				adm < 85
+				dip < 85
+				mil < 85
+			}
+			NOT = {
+				in_cabinet = yes
+			}
+			NOT = {
+				is_general = yes
+			}
+			NOT = {
+				is_admiral = yes
+			}
+			NOT = {
+				is_ruler = yes
+			}
+		}
+		kill_character = {
+			target = this
+			reason = fever
+		}
+	}
+}
+
+add_provincial_army_hubs_to_all_provinces = {
+	every_owned_location = {
+		limit = {
+			NOT = {
+				province = {
+					has_province_modifier = army_hub
+				}
+			}
+		}
+		province = {
+			add_province_modifier = {
+				modifier = army_hub
+				years = -1
+			}
+		}
+	}
+}
+
+add_local_crown_power_to_all_locations = {
+	every_owned_location = {
+		limit = {
+			NOT = {
+				has_location_modifier = local_crown_power_cheat
+			}
+		}
+		add_location_modifier = {
+			modifier = local_crown_power_cheat
+			years = -1
+		}
+	}
 }

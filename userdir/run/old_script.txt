@@ -23,6 +23,18 @@ set_parliament_issue_support = 1
 change_societal_value = { type = quality_vs_quantity value = societal_value_move_to_left }
 change_country_color = map_TIM
 
+
+change_societal_value = { type = serfdom_vs_free_subjects value = 63 }
+
+add_country_modifier = {
+    modifier = extreme_bureaucracy
+    years = -1
+}
+add_country_modifier = {
+    modifier = good__bureaucracy
+    years = -1
+}
+
 international_organization:hre = {
     # remove_country_from_international_organization = c:SAV
     # remove_country_from_international_organization = c:SCA
@@ -2825,6 +2837,8 @@ every_country = {
 #     transfer = no
 # }
 
+
+set_religious_influence = 100
 # Culture Acceptance
 
 culture:maasai_culture = {

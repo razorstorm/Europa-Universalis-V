@@ -5,9 +5,9 @@ add_loc_mod_once = {
         }
         add_location_modifier = {
             modifier = $modifier$
-            mode = $mode$
+            # mode = $mode$
             years = $years$
-            size = $size$
+            # size = $size$
         }
     }
 }

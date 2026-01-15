@@ -1068,5 +1068,3 @@ constitutional_state = {
 		global_crown_estate_power = -0.2
 	}
 }
-
-

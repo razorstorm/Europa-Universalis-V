@@ -132,7 +132,7 @@ privy_council = {
 	
 	country_modifier = {
 		tax_income_efficiency = medium_tax_income_efficiency_bonus
-		monthly_towards_decentralization = societal_value_monthly_move
+		monthly_towards_centralization = societal_value_monthly_move
 	}
 
 	years = 2

@@ -405,7 +405,7 @@ add_religious_aspect = {
 
 	allow = {
 		scope:actor = { 
-			num_of_religious_aspects < religion.max_religious_aspects
+			# num_of_religious_aspects < religion.max_religious_aspects
 		}
 	}
 	

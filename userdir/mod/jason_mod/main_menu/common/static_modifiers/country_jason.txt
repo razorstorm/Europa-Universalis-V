@@ -119,3 +119,28 @@ more_of_religious_aspects_cheat = {
     }
     num_of_religious_aspects = 5
 }
+
+
+extreme_bureaucracy = {
+    game_data = {
+        category = country
+    }
+    government_reform_slots = 30
+    court_spending_cost = 0.2
+    stability_cost = 0.35
+}
+
+good_bureaucracy = {
+    game_data = {
+        category = country
+    }
+    government_reform_slots = 15
+    court_spending_cost = 0.2
+}
+
+small_push_toland = {
+    game_data = {
+        category = country
+    }
+    monthly_towards_land = 0.2
+}

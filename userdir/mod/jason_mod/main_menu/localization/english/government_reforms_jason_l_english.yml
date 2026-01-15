@@ -1,0 +1,11 @@
+﻿l_english:
+  universal_emancipation: "Universal Emancipation"
+  universal_emancipation_desc: "Completely emancipate the serfs to allow for more innovation at the cost of reduction in food production"
+
+  burgundian_feudalism: "[GetCountry('BUR').GetAdjectiveWithNoTooltip] Feudalism"
+  burgundian_feudalism_desc: "[GetCountry('BUR').GetAdjectiveWithNoTooltip] Feudalism"
+  grand_duchy_lit: "Grand Duchy"
+  grand_duchy_lit_desc: "Grand Duchy"
+
+  centralization_over_the_press_act: "Complete State Dominion over the Press"
+  centralization_over_the_press_act_desc: "Mere censorship is not enough, the state msut uphold a monopoly over the legitimate source of news in the country to severely reduce unrest at the cost of innovation"

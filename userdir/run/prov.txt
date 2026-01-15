@@ -3,10 +3,18 @@ log = "===============================Running Prov.txt==========================
 # Configs
 set_variable = {
 	name = auto_convert_pops
-	value = yes
+	value = no
 }
+remove_variable = auto_convert_pops
 
-# remove_variable = auto_convert_pops
+# 1) Fight ottos
+# DONE 2) Reforms and fix social values
+# DONE 3) Test add_loc_mod_once -> shit don't work but found a cleaner way
+# GAVE UP 4) Religious reforms
+# DONE Exploring upgrading now 5) New regulars
+# 6) Push to Land
+# 7) Which crownpower cheat are we on?
+
 ####################################################################################
 ####################################################################################
 # Continuous things to run for this campaign + Global Flags
@@ -21,7 +29,7 @@ ROOT = {
 		break_alliance = {
 			target = c:MAM
 		}
-	}
+    }
 }
 
 ####################################################################################
@@ -40,68 +48,35 @@ ROOT = {
 # Country Fixes
 ####################################################################################
 ROOT = {
-	# c:ETH = {
-	#     annex_country = {
-	#         country = c:AAA96
-	#         transfer = no
-	#     }
-	# }
+	c:ETH = {
+	    annex_country = {
+	        country = c:NQS
+	        transfer = no
+	    }
+	}
 
     add_country_modifier = {
-        modifier = more_of_religious_aspects_cheat
-        years = -1
+        modifier = land_vs_naval
+        duration = -1
     }
 }
+
+
+# Mil
+every_country_sub_unit = {
+    limit = {
+        experience_percentage <= 0.95
+    }
+    add_subunit_experience = 100
+}
+
 
 ####################################################################################
 # Location Fixes
 ####################################################################################
 ROOT = {
-	every_owned_location = {
-		limit = {
-			OR = {
-				NOT = {
-					has_location_modifier = local_crown_power_cheat
-				}
-				NOT = {
-					province = {
-						has_province_modifier = army_hub
-					}
-				}
-			}
-		}
-		# if = {
-		#     limit = { NOT = { has_location_modifier = local_crown_power_cheat }}
-		#     add_location_modifier = {
-		#         modifier = local_crown_power_cheat
-		#         years = -1
-		#     }
-		# }
-		# province = {
-		#     if = {
-		#         limit = { NOT = { has_province_modifier = army_hub } }
-		#         add_province_modifier = {
-		#             modifier = army_hub
-		#             years = -1
-		#         }
-		#     }
-		# }
-		add_loc_mod_once = {
-			modifier = local_crown_power_cheat
-			years = -1
-		}
-		province = {
-			add_prov_mod_once = {
-				modifier = army_hub
-				years = -1
-			}
-		}
-	}
-	if = {
-		limit = {
-			has_variable = auto_convert_pops
-		}
-	}
+    add_provincial_army_hubs_to_all_provinces = yes
+    add_local_crown_power_to_all_locations = yes
 }
 
 ####################################################################################
