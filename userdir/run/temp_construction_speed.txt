@@ -1,0 +1,4 @@
+add_country_modifier = {
+    name =  global_construction_speed
+    duration = 1
+}

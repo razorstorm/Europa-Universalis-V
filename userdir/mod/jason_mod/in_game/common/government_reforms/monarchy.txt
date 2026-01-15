@@ -205,20 +205,23 @@ centralized_inwards_totalitarianism = {
 		land_focus
 	}
 	allow = { 
-        government_power_percentage >= 75
-        societal_value:absolutism_vs_liberalism > 80
+        global_crown_estate_power = 0.65
+        # Greater than 80% Absolutism
+        societal_value:absolutism_vs_liberalism < 80
     }
 	country_modifier = {
 		government_reform_slots = 1
 		monthly_towards_absolutism = societal_value_large_monthly_move
 		monthly_towards_centralization = societal_value_large_monthly_move
 		monthly_towards_land = societal_value_large_monthly_move
-        global_crown_estate_power = 1
+        global_crown_estate_power = 10
         government_reform_slots = 2
         court_spending_cost = 0.2
-        stability_cost = 0.5 # Oppressive Remines are Expensive
+        stability_cost = 0.75 # Oppressive Remines are Expensive
+        country_cabinet_efficiency = 0.20
 
-        pop_join_rebel_threshold  = 0.20
+        pop_join_rebel_threshold  = 0.40
+        global_war_score_cost = -0.50
         
         monthly_legitimacy = 0.10
 		government_reform_slots = 2

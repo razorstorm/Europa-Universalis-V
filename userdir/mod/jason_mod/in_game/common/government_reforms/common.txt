@@ -595,6 +595,9 @@ mining_communities = {
 
 universal_serfdom = {
 	age = age_3_discovery
+    potential = {
+        always = yes
+    }
 
 	societal_values = {
 		serfdom_focus
@@ -618,7 +621,9 @@ universal_serfdom = {
 universal_emancipation = {
 	age = age_3_discovery
 
-    
+    potential = {
+        always = yes
+    }
     allow = { 
         NOT = {
             has_reform = government_reform:universal_serfdom

@@ -144,3 +144,21 @@ small_push_toland = {
     }
     monthly_towards_land = 0.2
 }
+
+
+immortal_cultivation = {
+    monthly_experience_gain = 10000
+}
+
+happy_estates_cheat = {
+    game_data = {
+        category = country
+    }
+    nobles_estate_target_satisfaction = 4*medium_permanent_target_satisfaction
+    clergy_estate_target_satisfaction = 4*medium_permanent_target_satisfaction
+    peasant_estate_target_satisfaction = 4*medium_permanent_target_satisfaction
+    laborers_estate_target_satisfaction = 4*medium_permanent_target_satisfaction
+    soldiers_estate_target_satisfaction = 4*medium_permanent_target_satisfaction
+    tribes_estate_target_satisfaction = 4*medium_permanent_target_satisfaction
+    diplomatic_reputation = diplomatic_reputation_weak_bonus
+}

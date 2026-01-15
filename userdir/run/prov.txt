@@ -7,13 +7,19 @@ set_variable = {
 }
 remove_variable = auto_convert_pops
 
+# Annying stuff at the top"
+# Mil
+every_country_sub_unit = {
+    add_subunit_experience = 100
+}
+
 # 1) Fight ottos
 # DONE 2) Reforms and fix social values
 # DONE 3) Test add_loc_mod_once -> shit don't work but found a cleaner way
 # GAVE UP 4) Religious reforms
 # DONE Exploring upgrading now 5) New regulars
-# 6) Push to Land
-# 7) Which crownpower cheat are we on?
+# DONE 6) Push to Land
+# DONE 7) Which crownpower cheat are we on? Both wre, but turning off the global ones didn't ale ,icj doff?
 # 8 implmenent fascism
 
 ####################################################################################
@@ -21,6 +27,13 @@ remove_variable = auto_convert_pops
 # Continuous things to run for this campaign + Global Flags
 ####################################################################################
 ROOT = {
+    capital = {
+        change_max_raw_material_workers = 100
+        add_country_modifier = {
+            name = pol_cracovian_salt_mines
+            year = 1
+        }
+    }
 	c:TUR = {
 		break_alliance = {
 			target = c:MAM
@@ -30,6 +43,17 @@ ROOT = {
 		break_alliance = {
 			target = c:MAM
 		}
+    }
+
+    c:RUS = {
+        add_country_modifier =  { 
+            name = popular_noble 
+            years = -1
+        }
+        add_country_modifier =  { 
+            name = happy_estates_cheat 
+            years = -1
+        }
     }
 }
 
@@ -49,25 +73,23 @@ ROOT = {
 # Country Fixes
 ####################################################################################
 ROOT = {
-	# c:ETH = {
+	# c:RUS = {
 	#     annex_country = {
-	#         country = c:NQS
+	#         country = c:AAA55
 	#         transfer = no
 	#     }
-	# 
-}
+	
+    # }
 
-
-# Mil
-every_country_sub_unit = {
-    limit = {
-        unit = {
-            experience_percentage > 999
-        }
-        
+    
+    # remove_country_modifier = medium_crown_power_cheat
+    
+    add_country_modifier = {
+        name = happy_estates_cheat
+        duration = -1
     }
-    add_subunit_experience = 100
 }
+    
 
 
 ####################################################################################

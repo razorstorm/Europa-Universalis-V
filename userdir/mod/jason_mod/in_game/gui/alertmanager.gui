@@ -4222,7 +4222,7 @@ types AlertManager {
 		###########################
 
 		# alert_banner = {
-		# 	name = "has_possible_revolt"
+		# 	name = "has_Q_revolt"
 
 		# 	action_tooltip = {
 		# 		click_type = left
@@ -5630,23 +5630,23 @@ types AlertManager {
 		# Unmarried Children
 		###################################
 
-		alert_banner = {
-			name = "has_unmarried_children"
+		# alert_banner = {
+		# 	name = "has_unmarried_children"
 
-			action_tooltip = {
-				click_type = left
-				title = "ALERT_HAS_UNMARRIED_CHILDREN_LEFT_CLICK"
-				using = snd_UI_alert_openAndCycle
-				on_action = "[AlertHasUnmarriedChildren.Next]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "ALERT_HAS_UNMARRIED_CHILDREN_LEFT_CLICK"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		on_action = "[AlertHasUnmarriedChildren.Next]"
+		# 	}
 
-			using = green_alert
-			using = alert_list_tooltip
+		# 	using = green_alert
+		# 	using = alert_list_tooltip
 
-			blockoverride "icon_texture" {
-				texture = "gfx/interface/icons/alerts_icons/unmarried_children.dds"
-			}
-		}
+		# 	blockoverride "icon_texture" {
+		# 		texture = "gfx/interface/icons/alerts_icons/unmarried_children.dds"
+		# 	}
+		# }
 
 		###################################
 		# Can Request Aid
@@ -5960,101 +5960,101 @@ types AlertManager {
 		# New policies are available
 		############################
 
-		alert_banner = {
-			name = "can_codify_new_policies"
+		# alert_banner = {
+		# 	name = "can_codify_new_policies"
 
-			action_tooltip = {
-				click_type = left
-				title = "ALERT_CTA_CYCLE_POLICIES_LEFT_CLICK"
-				using = snd_UI_alert_openAndCycle
-				on_action = "[AlertCanCodifyNewPolicies.Next]"
-			}
+		# 	action_tooltip = {
+		# 		click_type = left
+		# 		title = "ALERT_CTA_CYCLE_POLICIES_LEFT_CLICK"
+		# 		using = snd_UI_alert_openAndCycle
+		# 		on_action = "[AlertCanCodifyNewPolicies.Next]"
+		# 	}
 	
-			tooltipwidget = {
-				ContextualTooltipType = {
-					blockoverride "title_text" {
-						text = "ALERT_CAN_CODIFY_NEW_POLICIES"
-					}
-					blockoverride "concept_link" {
-						text = "[policies|E]"
-					}
-					blockoverride "tooltip_content" {
-						TooltipListBase = {
-							blockoverride "block_title" {
-								text = "ALERT_CAN_CODIFY_NEW_POLICIES_TEXT"
-							}
-							TooltipListScrollArea = {
-								blockoverride "block_scrollarea" {
-									maximumsize = { -1 390 }
-								}
+		# 	tooltipwidget = {
+		# 		ContextualTooltipType = {
+		# 			blockoverride "title_text" {
+		# 				text = "ALERT_CAN_CODIFY_NEW_POLICIES"
+		# 			}
+		# 			blockoverride "concept_link" {
+		# 				text = "[policies|E]"
+		# 			}
+		# 			blockoverride "tooltip_content" {
+		# 				TooltipListBase = {
+		# 					blockoverride "block_title" {
+		# 						text = "ALERT_CAN_CODIFY_NEW_POLICIES_TEXT"
+		# 					}
+		# 					TooltipListScrollArea = {
+		# 						blockoverride "block_scrollarea" {
+		# 							maximumsize = { -1 390 }
+		# 						}
 
-								blockoverride "scrollarea_content" {
-									TooltipListColumnContent = {
-										set_parent_dimension_to_minimum = height
-										layoutpolicy_horizontal = expanding
+		# 						blockoverride "scrollarea_content" {
+		# 							TooltipListColumnContent = {
+		# 								set_parent_dimension_to_minimum = height
+		# 								layoutpolicy_horizontal = expanding
 
-										TooltipTableColumn = {
-											blockoverride "column_title" {}
-											blockoverride "column_title_text" { 
-												text = "[law|e]" 
-											}
-											blockoverride "column_title_right" { 
-												expand = {} 
-											}
+		# 								TooltipTableColumn = {
+		# 									blockoverride "column_title" {}
+		# 									blockoverride "column_title_text" { 
+		# 										text = "[law|e]" 
+		# 									}
+		# 									blockoverride "column_title_right" { 
+		# 										expand = {} 
+		# 									}
 							
-											blockoverride "field_left" {}
+		# 									blockoverride "field_left" {}
 							
-											blockoverride "field_text" {
-												default_format = "#subtle_name"
-												align = left|nobaseline
-												raw_text = "[Policy.GetLaw.GetName]"
-											}
+		# 									blockoverride "field_text" {
+		# 										default_format = "#subtle_name"
+		# 										align = left|nobaseline
+		# 										raw_text = "[Policy.GetLaw.GetName]"
+		# 									}
 							
-											blockoverride "field_right" { expand = {} }
-										}
+		# 									blockoverride "field_right" { expand = {} }
+		# 								}
 							
-										TooltipTableColumn = {
-											blockoverride "column_title" {}
-											blockoverride "column_title_left" { 
-												expand = {}
-											}
+		# 								TooltipTableColumn = {
+		# 									blockoverride "column_title" {}
+		# 									blockoverride "column_title_left" { 
+		# 										expand = {}
+		# 									}
 
-											blockoverride "column_title_text" { 
-												text = "[policy|e]" 
-												default_format = "#explanation_link"
-											}
+		# 									blockoverride "column_title_text" { 
+		# 										text = "[policy|e]" 
+		# 										default_format = "#explanation_link"
+		# 									}
 
-											blockoverride "field_text" {
-												visible = no
-											}
+		# 									blockoverride "field_text" {
+		# 										visible = no
+		# 									}
 
-											blockoverride "field_right" {
-												expand = {} 
+		# 									blockoverride "field_right" {
+		# 										expand = {} 
 
-												text_single = {
-													text = "[Policy.GetName]"
-												}
-											}
-										}
+		# 										text_single = {
+		# 											text = "[Policy.GetName]"
+		# 										}
+		# 									}
+		# 								}
 
-										blockoverride "column_datamodel"  {  
-											datamodel = "[AlertCanCodifyNewPolicies.GetPolicies]"
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
+		# 								blockoverride "column_datamodel"  {  
+		# 									datamodel = "[AlertCanCodifyNewPolicies.GetPolicies]"
+		# 								}
+		# 							}
+		# 						}
+		# 					}
+		# 				}
+		# 			}
+		# 		}
+		# 	}
 
-			using = green_alert
-			using = alert_list_tooltip
+		# 	using = green_alert
+		# 	using = alert_list_tooltip
 
-			blockoverride "icon_texture" {
-				texture = "gfx/interface/icons/alerts_icons/setup_a_law.dds"
-			}
-		}
+		# 	blockoverride "icon_texture" {
+		# 		texture = "gfx/interface/icons/alerts_icons/setup_a_law.dds"
+		# 	}
+		# }
 
 		###########################################################################
 		# BLUE ALERTS

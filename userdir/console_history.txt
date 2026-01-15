@@ -4833,3 +4833,66 @@ run prov.txt
 save autosave
 run prov.txt
 GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+clear
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+save autos run prov.txt
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+yesamannn
+trun prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosavesave autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+stability 8
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+run temp_construction_speed.txtsave autosave
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+save revertBackToProperArmy
+save autosave
+run prov.txt

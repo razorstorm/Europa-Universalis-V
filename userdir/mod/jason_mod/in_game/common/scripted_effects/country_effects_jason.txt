@@ -297,6 +297,10 @@ boost_capital_laborers = {
 	}
 }
 
+grant_massive_experience_growth = {
+    monthly_experience_gain = 1000
+}
+
 purge_weak_characters = {
 	every_character = {
 		limit = {
@@ -384,3 +388,4 @@ add_local_crown_power_to_all_locations = {
 		}
 	}
 }
+

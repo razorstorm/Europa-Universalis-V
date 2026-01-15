@@ -25,7 +25,15 @@ game/loading_screen/fonts/
 game/in_game/gfx
 game/in_game/content_source
 game/main_menu/gfx
-game/main_menu/localization
+
+# ignore everything under localization
+game/main_menu/localization/*
+
+# but NOT the english folder
+!game/main_menu/localization/english/
+
+# and NOT anything inside english
+!game/main_menu/localization/english/**
 
 clausewitz/
 
