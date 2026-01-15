@@ -4823,3 +4823,13 @@ run prov.txt
 clear
 run prov.txt
 save autosave
+run prov.txt
+save autosave
+run prov.txt
+clear
+run prov.txt
+clear
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window

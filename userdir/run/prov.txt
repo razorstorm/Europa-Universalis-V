@@ -14,6 +14,7 @@ remove_variable = auto_convert_pops
 # DONE Exploring upgrading now 5) New regulars
 # 6) Push to Land
 # 7) Which crownpower cheat are we on?
+# 8 implmenent fascism
 
 ####################################################################################
 ####################################################################################
@@ -48,24 +49,22 @@ ROOT = {
 # Country Fixes
 ####################################################################################
 ROOT = {
-	c:ETH = {
-	    annex_country = {
-	        country = c:NQS
-	        transfer = no
-	    }
-	}
-
-    add_country_modifier = {
-        modifier = land_vs_naval
-        duration = -1
-    }
+	# c:ETH = {
+	#     annex_country = {
+	#         country = c:NQS
+	#         transfer = no
+	#     }
+	# 
 }
 
 
 # Mil
 every_country_sub_unit = {
     limit = {
-        experience_percentage <= 0.95
+        unit = {
+            experience_percentage > 999
+        }
+        
     }
     add_subunit_experience = 100
 }
