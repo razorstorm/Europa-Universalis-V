@@ -1,12 +1,24 @@
 log = "===============================Running Prov.txt=========================================="
 ####################################################################################
 
+# Configs
+# set_variable = {
+#     name = auto_convert_pops
+#     value = no
+# }
+remove_variable = is_named_eastern_realm
+
+
 ####################################################################################
 ####################################################################################
 # Continuous things to run for this campaign + Global Flags
 ####################################################################################
 
 ROOT = {
+    c:KIE = {
+        break_alliance = { target = c:MOS }
+        break_alliance = { target = c:TUR }
+    }
 }
 
 ####################################################################################
@@ -17,9 +29,9 @@ ROOT = {
     # location:hanau = {
     #     change_location_owner = c:ETH
     # }
-    location:rudnya_pontic.province = {
-        change_province_owner = c:LIT
-    }
+    # location:rudnya_pontic.province = {
+    #     change_province_owner = c:LIT
+    # }
 }
 
 ####################################################################################
@@ -27,29 +39,19 @@ ROOT = {
 ####################################################################################
 
 ROOT = {
-    # c:NOV = {
+    # c:ETH = {
     #     annex_country = {
-    #         country = c:GLH
+    #         country = c:AAA96
     #         transfer = no
     #     }
     # }
-    
-    # c:AAA64 = {
-    #     # change_country_name = "The Eastern Realm"
-    #     change_country_adjective = "Lake Victorian"
-    #     # set_country_rank = country_rank:rank_empire
-    # }
+    # change_country_name = "Holy Roman Empire"
+    # change_tag_cosmetic = { tag = HRE }
+    change_country_color = map_TIM
 
+    # add_accepted_culture = culture:cossack_culture
     # Cultures
-    # add_accepted_culture = culture:crimean
-
-    # every_owned_location = {
-    #     ROOT = {
-    #         add_accepted_culture = prev.dominant_culture
-    #     }
-    # }
-
-    #  accept_every_present_culture = yes
+    # accept_every_present_culture = yes
 }
 
 ####################################################################################
@@ -114,16 +116,23 @@ ROOT = {
 # Subject  Fixes
 ####################################################################################
 
-every_subject = {
-    limit = {
-        NOT = {
-            religion = religion:lutheran
+ROOT = {
+    if = {
+        limit = {
+            has_variable = auto_convert_pops
         }
     }
-    change_religion = religion:lutheran
-    convert_fraction_of_pops = {
-        religion = lutheran
-        fraction = 1
+    every_subject = {
+        limit = {
+            NOT = {
+                religion = religion:lutheran
+            }
+        }
+        change_religion = religion:lutheran
+        convert_fraction_of_pops = {
+            religion = lutheran
+            fraction = 1
+        }
     }
 }
 

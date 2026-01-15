@@ -1,0 +1,23 @@
+
+literacy_spike = {
+	game_data = {
+		category = location
+	}
+	local_monthly_literacy = 5
+}
+
+literacy_spike_2 = {
+	game_data = {
+		category = location
+	}
+	local_monthly_literacy = 50
+}
+
+max_literacy_cheat = {
+	game_data = {
+		category = location
+	}
+	local_migration_attraction = 0.1
+	local_max_literacy = 1000
+	local_monthly_prosperity = 0.05
+}

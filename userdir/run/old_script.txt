@@ -140,6 +140,20 @@ set_variable = {
 }
 
 
+# Capital literacy cheats
+capital = {
+    add_location_modifier = {
+        modifier = max_literacy_cheat
+        years = -1
+    }
+}
+location:pest = {
+    add_location_modifier = {
+        modifier = max_literacy_cheat
+        years = -1
+    }
+}
+
 # Destroy Estate Buildings
 ROOT = {
     every_owned_location = {
@@ -838,6 +852,12 @@ every_character = {
 }
 
 
+add_country_modifier = {
+    modifier = temp_war_score_cheat
+    years = -1
+}
+
+
 # Add pop capacity to capital
 capital = {
     add_location_modifier = {
@@ -869,6 +889,28 @@ capital = {
         modifier = province_capital
         years = -1
         mode = add_and_extend
+    }
+}
+
+
+
+purge_weak_characters = {
+    every_character = {
+        limit = {
+            OR = {
+                adm < 85
+                dip < 85
+                mil < 85
+            }
+            
+            NOT = {
+                is_ruler = yes
+            }
+        }
+        kill_character = {
+            target = this
+            reason = fever
+        }
     }
 }
 
@@ -1000,6 +1042,13 @@ every_owned_location = {
     }
 }
 
+# c:LIT = {
+# #     # change_country_name = "The Eastern Realm"
+#     # change_country_adjective = "Lake Victorian"
+#     set_country_rank = country_rank:rank_kingdom
+# }
+
+
 # Accept all existent cultures
 every_pop = {
     limit = { 
@@ -1023,6 +1072,26 @@ every_pop = {
         add_accepted_culture = prev.culture
     }
 }
+
+# Literacy Spike
+capital = {
+    add_location_modifier = {
+        modifier = literacy_spike
+        years = -1
+    }
+}
+location:pest = {
+    add_location_modifier = {
+        modifier = literacy_spike
+        years = -1
+    }
+}
+
+# Reset HRE
+change_tag_cosmetic = { tag = HRE }
+change_country_color = map_TIM
+change_tag = { tag = HRE }
+change_country_color = map_TIM
 
 change_country_color = map_TIM
 remove_variable = is_named_eastern_realm
@@ -2076,6 +2145,324 @@ c:HUN = {
     }
 }
 
+# Auto promote cities
+ c:dannenberg = {
+        if = {
+            limit = {
+                rank_index = 2
+                population < 0
+            }
+            add_country_modifier = {
+                modifier = loyal_subjects
+                years = -1
+            }
+            remove_country_modifier = loyal_subjects
+        }
+
+    }
+    # every_owned_location = {
+    #     limit = {
+    #         rank_index = 1
+    #         population < 3000
+    #     }
+    #     if = {
+    #         limit = {
+    #             rank_index = 1
+    #             # population < 30
+    #         }
+    #         # every_pop = {  
+    #         #     limit = {
+    #         #         pop_literacy >= 5
+    #         #         owner = root
+    #         #         OR = {
+    #         #             pop_type = pop_type:peasants
+    #         #         }
+    #         #         culture = root.culture
+    #         #         religion = root.religion
+    #         #     }
+    #         #     add_pop_size = {
+    #         #         value = pop_size 
+    #         #         add = 1.0001
+    #         #     }
+    #         #     add_pop_satisfaction = pop_satisfaction_weak_bonus
+    #         # }
+    #         remove_country_modifier = slow_negotiations
+    #     }
+    #     # if = {
+    #     #     limit = {
+    #     #         rank_index = 1
+    #     #         population < 30
+    #     #     }
+    #     #     every_pop = {  
+    #     #         limit = {
+    #     #             pop_literacy >= 5
+    #     #             owner = root
+    #     #             OR = {
+    #     #                 pop_type = pop_type:burghers
+    #     #                 pop_type = pop_type:clergy
+    #     #                 pop_type = pop_type:nobles
+    #     #                 pop_type = pop_type:laborers
+    #     #             }
+    #     #             culture = root.culture
+    #     #             religion = root.religion
+    #     #         }
+    #     #         add_pop_size = {
+    #     #             value = pop_size 
+    #     #             add = 1.00001
+    #     #         }
+    #     #         add_pop_satisfaction = pop_satisfaction_weak_bonus
+    #     #     }
+    #     # }
+    #     # if = {
+    #     #     limit = {
+    #     #         rank_index = 1
+    #     #         population < 30
+    #     #     }
+    #     #     every_pop = {  
+    #     #         limit = {
+    #     #             pop_literacy >= 5
+    #     #             owner = root
+    #     #             OR = {
+    #     #                 pop_type = pop_type:clergy
+    #     #                 pop_type = pop_type:nobles
+    #     #                 pop_type = pop_type:laborers
+    #     #             }
+    #     #             culture = root.culture
+    #     #             religion = root.religion
+    #     #         }
+    #     #         add_pop_size = {
+    #     #             value = pop_size 
+    #     #             add = 1.00001
+    #     #         }
+    #     #         add_pop_satisfaction = pop_satisfaction_weak_bonus
+    #     #     }
+    #     # }
+    #     # if = {
+    #     #     limit = {
+    #     #         rank_index = 1
+    #     #         population < 30
+    #     #     }
+    #     #     every_pop = {  
+    #     #         limit = {
+    #     #             pop_literacy >= 5
+    #     #             owner = root
+    #     #             OR = {
+    #     #                 pop_type = pop_type:nobles
+    #     #                 pop_type = pop_type:laborers
+    #     #             }
+    #     #             culture = root.culture
+    #     #             religion = root.religion
+    #     #         }
+    #     #         add_pop_size = {
+    #     #             value = pop_size 
+    #     #             add = 1.00001
+    #     #         }
+    #     #         add_pop_satisfaction = pop_satisfaction_weak_bonus
+    #     #     }
+    #     # }
+    #     # if = {
+    #     #     limit = {
+    #     #         rank_index = 1
+    #     #         population < 30
+    #     #     }
+    #     #     every_pop = {  
+    #     #         limit = {
+    #     #             pop_literacy >= 5
+    #     #             owner = root
+    #     #             OR = {
+    #     #                 pop_type = pop_type:laborers
+    #     #             }
+    #     #             culture = root.culture
+    #     #             religion = root.religion
+    #     #         }
+    #     #         add_pop_size = {
+    #     #             value = pop_size 
+    #     #             add = 1.00001
+    #     #         }
+    #     #         add_pop_satisfaction = pop_satisfaction_weak_bonus
+    #     #     }
+    #     # }
+    # }
+
+    
+ c:dannenberg = {
+        if = {
+            limit = {
+                rank_index = 2
+                population < 0
+            }
+            add_country_modifier = {
+                modifier = loyal_subjects
+                years = -1
+            }
+            remove_country_modifier = loyal_subjects
+        }
+
+    }
+    # every_owned_location = {
+    #     limit = {
+    #         rank_index = 1
+    #         population < 3000
+    #     }
+    #     if = {
+    #         limit = {
+    #             rank_index = 1
+    #             # population < 30
+    #         }
+    #         # every_pop = {  
+    #         #     limit = {
+    #         #         pop_literacy >= 5
+    #         #         owner = root
+    #         #         OR = {
+    #         #             pop_type = pop_type:peasants
+    #         #         }
+    #         #         culture = root.culture
+    #         #         religion = root.religion
+    #         #     }
+    #         #     add_pop_size = {
+    #         #         value = pop_size 
+    #         #         add = 1.0001
+    #         #     }
+    #         #     add_pop_satisfaction = pop_satisfaction_weak_bonus
+    #         # }
+    #         remove_country_modifier = slow_negotiations
+    #     }
+    #     # if = {
+    #     #     limit = {
+    #     #         rank_index = 1
+    #     #         population < 30
+    #     #     }
+    #     #     every_pop = {  
+    #     #         limit = {
+    #     #             pop_literacy >= 5
+    #     #             owner = root
+    #     #             OR = {
+    #     #                 pop_type = pop_type:burghers
+    #     #                 pop_type = pop_type:clergy
+    #     #                 pop_type = pop_type:nobles
+    #     #                 pop_type = pop_type:laborers
+    #     #             }
+    #     #             culture = root.culture
+    #     #             religion = root.religion
+    #     #         }
+    #     #         add_pop_size = {
+    #     #             value = pop_size 
+    #     #             add = 1.00001
+    #     #         }
+    #     #         add_pop_satisfaction = pop_satisfaction_weak_bonus
+    #     #     }
+    #     # }
+    #     # if = {
+    #     #     limit = {
+    #     #         rank_index = 1
+    #     #         population < 30
+    #     #     }
+    #     #     every_pop = {  
+    #     #         limit = {
+    #     #             pop_literacy >= 5
+    #     #             owner = root
+    #     #             OR = {
+    #     #                 pop_type = pop_type:clergy
+    #     #                 pop_type = pop_type:nobles
+    #     #                 pop_type = pop_type:laborers
+    #     #             }
+    #     #             culture = root.culture
+    #     #             religion = root.religion
+    #     #         }
+    #     #         add_pop_size = {
+    #     #             value = pop_size 
+    #     #             add = 1.00001
+    #     #         }
+    #     #         add_pop_satisfaction = pop_satisfaction_weak_bonus
+    #     #     }
+    #     # }
+    #     # if = {
+    #     #     limit = {
+    #     #         rank_index = 1
+    #     #         population < 30
+    #     #     }
+    #     #     every_pop = {  
+    #     #         limit = {
+    #     #             pop_literacy >= 5
+    #     #             owner = root
+    #     #             OR = {
+    #     #                 pop_type = pop_type:nobles
+    #     #                 pop_type = pop_type:laborers
+    #     #             }
+    #     #             culture = root.culture
+    #     #             religion = root.religion
+    #     #         }
+    #     #         add_pop_size = {
+    #     #             value = pop_size 
+    #     #             add = 1.00001
+    #     #         }
+    #     #         add_pop_satisfaction = pop_satisfaction_weak_bonus
+    #     #     }
+    #     # }
+    #     # if = {
+    #     #     limit = {
+    #     #         rank_index = 1
+    #     #         population < 30
+    #     #     }
+    #     #     every_pop = {  
+    #     #         limit = {
+    #     #             pop_literacy >= 5
+    #     #             owner = root
+    #     #             OR = {
+    #     #                 pop_type = pop_type:laborers
+    #     #             }
+    #     #             culture = root.culture
+    #     #             religion = root.religion
+    #     #         }
+    #     #         add_pop_size = {
+    #     #             value = pop_size 
+    #     #             add = 1.00001
+    #     #         }
+    #     #         add_pop_satisfaction = pop_satisfaction_weak_bonus
+    #     #     }
+    #     # }
+    # }
+    
+    change_tag_cosmetic = { tag = HRE }
+    change_country_color = map_TIM
+    # # every_owned_location = {
+    # #     limit = {
+    # #         rank_index = 1
+    # #         population >= 30
+    # #     }
+        
+    # #     change_location_rank = location_rank:city
+    # # }
+    # # every_owned_location = {
+    # #     limit = {
+    # #         rank_index = 1
+    # #     }
+    # #     # change pops to 30k
+    # #     set_variable = {
+    # #         name = test_var
+    # #         value = no
+    # #     }
+    # # }
+
+    # # every_owned_location = {
+    # #     limit = {
+    # #         rank_index = 1
+    # #         population >= 30
+    # #     }
+        
+    # #     change_location_rank = location_rank:city
+    # # }
+    # # every_owned_location = {
+    # #     limit = {
+    # #         rank_index = 1
+    # #     }
+    # #     # change pops to 30k
+    # #     set_variable = {
+    # #         name = test_var
+    # #         value = no
+    # #     }
+    # # }
+
 
 remove_country_modifier = slow_negotiations
 
@@ -2271,6 +2658,11 @@ capital.province = {
 # remove_country_modifier = impatient_annexation
 # remove_country_modifier = fine_tuned_diplomacy
 
+every_owned_location = {
+    ROOT = {
+        add_accepted_culture = prev.dominant_culture
+    }
+}
 
 # culture:venetian = {
 #     reverse_change_cultural_view = {
@@ -2305,6 +2697,23 @@ capital.province = {
 #     modifier = fine_tuned_diplomacy
 #     years = -1
 # }
+hidden_effect = {
+    change_tag_cosmetic = { tag = HRE }
+}
+
+every_owned_location = {
+    change_location_rank = location_rank:city
+}
+# # every_owned_location = {
+# #     limit = {
+# #         rank_index = 1
+# #     }
+# #     # change pops to 30k
+# #     set_variable = {
+# #         name = test_var
+# #         value = no
+# #     }
+# # }
 
 # c:BOH = {
 #     every_owned_location = {

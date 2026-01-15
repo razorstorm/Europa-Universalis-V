@@ -103,3 +103,10 @@ happy_subjects_2 = {
     }
     subject_loyalty = 5000
 }
+
+temp_war_score_cheat = {
+	game_data = {
+		category = country
+	}
+	global_war_score_cost = -10
+}

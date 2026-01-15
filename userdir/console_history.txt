@@ -4464,3 +4464,119 @@ run prov.txt
 save autosave
 run prov.txt
 save autosave
+run prov.txt
+clear
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+clear
+run prov.txt
+save autosave save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+run script.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+clear
+save autosave
+run prov.txt
+save autosave
+clear
+run prov.txt
+save autosave
+run prov.txt
+clear
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+clear
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+save autosavesave autosave
+run prov.txt
+1save autosave
+save autosave
+clear
+run prov.txt
+run prov.txtrun prov.txt
+run prov.txt
+save autosave
+clear
+run prov.txt
+save autosave
+run prov.txt
+clear
+
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+wsave autosave
+run prov.txt
+save autosave
+run prov.txt
+clear
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+wsave autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+yesman
+run prov.txt
+save autosave
+make_subject fiefdom rus
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+clear
+GUI.ClearWidgets ideas_window
+run prov.txt
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave

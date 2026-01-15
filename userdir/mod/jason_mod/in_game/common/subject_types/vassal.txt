@@ -124,7 +124,7 @@
 		receiving_defensive_support = 5
 		royal_ties = 1
 
-		num_of_limited_subjects = -0.5
+		num_of_limited_subjects = -0.05
 		culture_war = 3
 		diplomatic_reputation = 1
 		different_religion = -20
@@ -134,10 +134,11 @@
 		different_government_type = -25
 		actor_at_war = -200
 		competing_power = -200
-		tax_base = -0.25
-        scope:actor ?= {
-            tax_base = 0.20
-        }
+		# tax_base = (scope:actor.tax_base - this.tax_base) * -0.25
+		tax_base = -scope:actor.tax_base  * 0.25
+        # scope:actor ?= {
+        #     tax_base = 0.20
+        # }
 		
 		reject_subjugation_reasons = -1
 		accept_subjugation_reasons = 1

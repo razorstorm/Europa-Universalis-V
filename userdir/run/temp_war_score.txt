@@ -1,0 +1,5 @@
+
+add_country_modifier = {
+    modifier = temp_war_score_cheat
+    years = -1
+}

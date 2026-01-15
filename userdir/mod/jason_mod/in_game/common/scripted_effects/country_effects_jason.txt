@@ -243,7 +243,43 @@ purge_weak_characters = {
                 dip < 85
                 mil < 85
             }
-            
+            NOT = {
+                in_cabinet = yes
+            }
+            NOT = {
+                is_general = yes
+            }
+            NOT = {
+                is_admiral = yes
+            }   
+            NOT = {
+                is_ruler = yes
+            }
+        }
+        kill_character = {
+            target = this
+            reason = fever
+        }
+    }
+}
+
+purge_weak_unemployed_characters = {
+    every_character = {
+        limit = {
+            OR = {
+                adm < 85
+                dip < 85
+                mil < 85
+            }
+            NOT = {
+                in_cabinet = yes
+            }
+            NOT = {
+                is_general = yes
+            }
+            NOT = {
+                is_admiral = yes
+            }   
             NOT = {
                 is_ruler = yes
             }

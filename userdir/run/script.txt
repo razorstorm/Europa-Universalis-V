@@ -1,0 +1,3 @@
+c:HUN = {
+    change_country_name = "Holy Roman Empire"
+}

@@ -5,13 +5,14 @@
 		tax_base=yes
 		natural_harbor_suitability=yes
 		integration=yes
-		cities=yes
+		literacy=yes
 		opinion=yes
-		satisfaction=yes
+		cities=yes
 		antagonism=yes
+		satisfaction=yes
 		rebels=no
-		supply=yes
 		roads=yes
+		supply=yes
 	}
 	character_actions={
 	}
@@ -40,9 +41,9 @@
 	}
 	outliner={
 		navy_construction=yes
-		agenda=no
 		player=no
 		combat=yes
+		agenda=no
 		character=yes
 		goods=yes
 		rebel=no
