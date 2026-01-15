@@ -1,0 +1,3 @@
+﻿l_english:
+  debug_culture_list_header: "Cultures detected:"
+  debug_culture_list_entry: " - [This.GetName]"

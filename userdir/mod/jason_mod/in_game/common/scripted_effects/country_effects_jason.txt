@@ -17,10 +17,10 @@ create_crown_character = {
 
 convert_fraction_of_pops = {
     every_pop = {
-        limit = { NOT = { religion = religion:$religion$ }}
+        limit = { NOT = { religion = $religion$ }}
         split_pop = {
             fraction = $fraction$
-            religion = religion:$religion$
+            religion = $religion$
         }
     }
 }
@@ -34,6 +34,46 @@ accept_every_present_culture = {
             }
             change_cultural_view = {
                 target = culture:hungarian
+                change = 10
+            }
+        }
+        ROOT = {
+            add_accepted_culture = prev.culture
+        }
+    }
+}
+
+# Unclear if this works
+accept_every_present_culture_quick = {
+    every_pop = {
+        limit = {
+            OR = {
+                NOT = {
+                    ROOT = {
+                        has_primary_or_accepted_culture = prev.culture
+                    }
+                }
+                culture = {
+                    cultural_view = {
+                        target = Root.ruler.culture
+                        value <= kindred 
+                    }
+                }
+                Root.ruler.culture = {
+                    cultural_view = {
+                        target = this.culture
+                        value <= kindred 
+                    }
+                }
+            }
+        }
+        this.culture = {
+            reverse_change_cultural_view = {
+                target = Root.ruler.culture
+                change = 10
+            }
+            change_cultural_view = {
+                target = Root.ruler.culture
                 change = 10
             }
         }

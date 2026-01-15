@@ -1,145 +1,150 @@
 log = "===============================Running Prov.txt=========================================="
 ####################################################################################
-
 # Configs
-# set_variable = {
-#     name = auto_convert_pops
-#     value = no
-# }
-remove_variable = is_named_eastern_realm
+set_variable = {
+	name = auto_convert_pops
+	value = yes
+}
 
-
+# remove_variable = auto_convert_pops
 ####################################################################################
 ####################################################################################
 # Continuous things to run for this campaign + Global Flags
 ####################################################################################
-
 ROOT = {
-    c:KIE = {
-        break_alliance = { target = c:MOS }
-        break_alliance = { target = c:TUR }
-    }
+	c:TUR = {
+		break_alliance = {
+			target = c:MAM
+		}
+	}
+	c:MOR = {
+		break_alliance = {
+			target = c:MAM
+		}
+	}
 }
 
 ####################################################################################
 # Ceding Locations
 ####################################################################################
-
 ROOT = {
-    # location:hanau = {
-    #     change_location_owner = c:ETH
-    # }
-    # location:rudnya_pontic.province = {
-    #     change_province_owner = c:LIT
-    # }
+	# location:hanau = {
+	#     change_location_owner = c:ETH
+	# }
+	# location:rudnya_pontic.province = {
+	#     change_province_owner = c:LIT
+	# }
 }
 
 ####################################################################################
 # Country Fixes
 ####################################################################################
-
 ROOT = {
-    # c:ETH = {
-    #     annex_country = {
-    #         country = c:AAA96
-    #         transfer = no
-    #     }
-    # }
-    # change_country_name = "Holy Roman Empire"
-    # change_tag_cosmetic = { tag = HRE }
-    change_country_color = map_TIM
+	# c:ETH = {
+	#     annex_country = {
+	#         country = c:AAA96
+	#         transfer = no
+	#     }
+	# }
 
-    # add_accepted_culture = culture:cossack_culture
-    # Cultures
-    # accept_every_present_culture = yes
+    add_country_modifier = {
+        modifier = more_of_religious_aspects_cheat
+        years = -1
+    }
 }
 
 ####################################################################################
 # Location Fixes
 ####################################################################################
-
 ROOT = {
-    every_owned_location = {
-        limit = {
-            OR = {
-                NOT = {
-                    has_location_modifier = local_crown_power_cheat
-                }
-                NOT = {
-                    province = {
-                        has_province_modifier = army_hub
-                    }
-                }
-            }
-        }
-
-        if = {
-            limit = { NOT = { has_location_modifier = local_crown_power_cheat }}
-
-            add_location_modifier = {
-                modifier = local_crown_power_cheat
-                years = -1
-            }
-        }
-
-        province = {
-            if = {
-                limit = { NOT = { has_province_modifier = army_hub } }
-                add_province_modifier = {
-                    modifier = army_hub
-                    years = -1
-                }
-            }
-        }
-        
-        add_loc_mod_once = {
-            modifier = local_crown_power_cheat
-            years = -1
-        }
-        province = {
-            add_prov_mod_once = {
-                modifier = army_hub
-                years = -1
-            }
-        }
-    }
-
-    every_owned_location = {
-        convert_fraction_of_pops = {
-            religion = lutheran
-            fraction = 1
-        }
-    }
+	every_owned_location = {
+		limit = {
+			OR = {
+				NOT = {
+					has_location_modifier = local_crown_power_cheat
+				}
+				NOT = {
+					province = {
+						has_province_modifier = army_hub
+					}
+				}
+			}
+		}
+		# if = {
+		#     limit = { NOT = { has_location_modifier = local_crown_power_cheat }}
+		#     add_location_modifier = {
+		#         modifier = local_crown_power_cheat
+		#         years = -1
+		#     }
+		# }
+		# province = {
+		#     if = {
+		#         limit = { NOT = { has_province_modifier = army_hub } }
+		#         add_province_modifier = {
+		#             modifier = army_hub
+		#             years = -1
+		#         }
+		#     }
+		# }
+		add_loc_mod_once = {
+			modifier = local_crown_power_cheat
+			years = -1
+		}
+		province = {
+			add_prov_mod_once = {
+				modifier = army_hub
+				years = -1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_variable = auto_convert_pops
+		}
+	}
 }
-    
-####################################################################################
-# Subject  Fixes
-####################################################################################
 
+####################################################################################
+# Subject Changes
+####################################################################################
 ROOT = {
-    if = {
-        limit = {
-            has_variable = auto_convert_pops
-        }
-    }
-    every_subject = {
-        limit = {
-            NOT = {
-                religion = religion:lutheran
-            }
-        }
-        change_religion = religion:lutheran
-        convert_fraction_of_pops = {
-            religion = lutheran
-            fraction = 1
-        }
-    }
+}
+
+####################################################################################
+# Automatic Conversions
+####################################################################################
+ROOT = {
+	if = {
+		limit = {
+			has_variable = auto_convert_pops
+		}
+		convert_fraction_of_pops = {
+			religion = root.religion
+			fraction = 1
+		}
+	}
+	if = {
+		limit = {
+			has_variable = auto_convert_pops
+		}
+		every_subject = {
+			limit = {
+				NOT = {
+					religion = root.religion
+				}
+			}
+			change_religion = root.religion
+			convert_fraction_of_pops = {
+				religion = root.religion
+				fraction = 1
+			}
+		}
+	}
 }
 
 ####################################################################################
 # Auto Infra Building
 ####################################################################################
-
 # Build infrastructure
 build_all_gov_infrastructure = yes
 destroy_harmful_estate_buildings = yes

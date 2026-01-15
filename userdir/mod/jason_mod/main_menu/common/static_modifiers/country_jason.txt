@@ -110,3 +110,12 @@ temp_war_score_cheat = {
 	}
 	global_war_score_cost = -10
 }
+
+
+
+more_of_religious_aspects_cheat = {
+    game_data = {
+        category = country
+    }
+    num_of_religious_aspects = 5
+}

@@ -18,6 +18,11 @@ remove_country_modifier = slow_negotiations
 remove_country_modifier = crown_power_cheat
 add_legitimacy = 100
 
+set_parliament_issue_support = 1
+
+change_societal_value = { type = quality_vs_quantity value = societal_value_move_to_left }
+change_country_color = map_TIM
+
 international_organization:hre = {
     # remove_country_from_international_organization = c:SAV
     # remove_country_from_international_organization = c:SCA
@@ -31,6 +36,35 @@ international_organization:hre = {
     add_country_to_international_organization = c:LIT
     add_country_to_international_organization = c:SCA
 }
+
+
+# Infinite buildings
+location:pest = {
+    add_location_modifier = {
+        modifier = infinite_buildings_cheat 
+        years = -1
+    }
+}
+
+location:hont = {
+    add_location_modifier = {
+        modifier = infinite_buildings_cheat 
+        years = -1
+    }
+}
+
+location:nitra = {
+    add_location_modifier = {
+        modifier = infinite_buildings_cheat 
+        years = -1
+    }
+}
+
+
+change_country_name = "Holy Roman Empire"
+change_tag_cosmetic = { tag = HRE }
+
+add_accepted_culture = culture:cossack_culture
 
 every_owned_location = {
     limit = {
@@ -2790,3 +2824,82 @@ every_country = {
 #     country = c:AAA62
 #     transfer = no
 # }
+
+# Culture Acceptance
+
+culture:maasai_culture = {
+    add_accepted_culture = this
+    reverse_change_cultural_view = {
+        target = root.culture
+        change = 10
+    }
+    change_cultural_view = {
+        target = root.culture
+        change = 10
+    }
+    add_accepted_culture = this
+}
+
+
+
+# TODO Fix this code that accepts all culturesclear_variable_list = culture_list
+	every_pop = {
+		# limit = {
+        #     NOT = {
+        #         is_target_in_global_variable_list = {
+        #             name = culture_list
+        #             target = this
+        #         }
+        #     }
+		# }
+        # split_pop = {
+            # fraction = 1
+            add_gold = 1
+            add_to_global_variable_list = {
+                name = culture_list
+                target = this.culture
+            }
+        # }
+	}
+	# ROOT = {
+	# 	trigger_event_non_silently = {
+	# 		id = debug_event.1
+	# 	}
+	# }
+	every_in_global_list = {
+		list = culture_list
+		limit = {
+			OR = {
+				# ROOT = {
+				#     NOT = {
+				#         has_primary_or_accepted_culture = prev
+				#     }
+				# }
+				# this.culture = {
+				#     OR = {
+				#         reverse_cultural_view = {
+				#             target = root.culture
+				#             value > neutral 
+				#         }
+				#         cultural_view = {
+				#             target = root.culture
+				#             value < kindred 
+				#         }
+				#     }
+				# }
+			}
+		}
+		this.culture = {
+			reverse_change_cultural_view = {
+				target = root.culture
+				change = 10
+			}
+			change_cultural_view = {
+				target = root.culture
+				change = 10
+			}
+		}
+		ROOT = {
+			add_accepted_culture = prev
+		}
+	}

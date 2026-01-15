@@ -1,0 +1,30 @@
+
+debug_event.1 = {
+    type = country_event
+    title = debug_culture_list_header
+    desc = "Debug Event"
+
+    trigger = {
+    }
+
+    immediate = {
+    }
+
+    option = {
+        name = OK
+		# while = {
+		# 	count = 5
+        #     custom_tooltip = {
+        #         # text = debug_culture_list_entry
+        #         text = " - [This.GetName]"
+        #     }
+        # }
+        every_in_global_list = {
+            list = culture_list
+            custom_tooltip = {
+                text = debug_culture_list_entry
+                # text = " - [This.GetName]"
+            }
+        }
+    }
+}

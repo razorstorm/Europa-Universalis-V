@@ -4580,3 +4580,113 @@ run prov.txt
 save autosave
 GUI.ClearWidgets ideas_window
 save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+save autos run prov.txt
+run prov.txt
+clear
+run prov.txt
+save ausave autosave
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autos1run prov.txt
+run prov.txt
+save autosave
+run prov.txt
+clear
+save autosaverun prov.txt
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+event debug_event.1
+run prov.txt
+event debug_event.1
+run prov.txt
+save autosave
+run prov.txt
+RUN PROV.TXT
+CLEAR
+RUN PROV.TXT
+run prov.txt
+event debug_event.1
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+GUI.ClearWidgets ideas_window
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+cash -949000
+cash -632
+cash -0.73
+run prov.txt
+clear
+run prov.txt
+clear
+run prov.txt
+save autosave
+run prov.txt
+clear
+save autosave
+GUI.ClearWidgets ideas_window
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
+run prov.txt
+save autosave
